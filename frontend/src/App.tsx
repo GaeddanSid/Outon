@@ -1,13 +1,40 @@
-import "./styles/App.css";
+import './styles/App.css';
+import React from 'react';
+import { createHashRouter, Outlet, RouterProvider } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import LandingPage from './views/LandingPage';
+import ProductView from './views/ProductView';
+import TryOnView from './views/TryOnView';
+
+function Root() {
+  return (
+    <div className="app">
+      <header className="app-header">
+        <Navbar />
+      </header>
+      <main>
+        <Outlet />
+      </main>
+    </div>
+  );
+}
 
 function App() {
+  const router = createHashRouter([
+    {
+      children: [
+        { element: <LandingPage />, path: '/' },
+        { element: <ProductView />, path: '/Products' },
+        { element: <TryOnView />, path: '/try-on' },
+      ],
+      element: <Root />,
+    },
+  ]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>Välkommen!</p>
-        <p>Hoppas det funkar för er</p>
-      </header>
-    </div>
+    <>
+      <RouterProvider router={router} />
+    </>
   );
 }
 

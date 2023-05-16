@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,40 @@
   to {
     transform: rotate(360deg);
   }
+} */
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  color: black;
+  background-size: 100%;
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  height: fit-content;
+  position: relative;
+
+  background: #fffefd;
+}
+
+.view-divs {
+  height: fit-content;
+  min-height: 950px;
+  width: 100%;
+  padding: 0 0 0px 0;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  color: black;
+}
+
+@font-face {
+  font-family: 'inter';
+  src: url(../../public/fonts/Inter/static/Inter-Regular.ttf);
 }

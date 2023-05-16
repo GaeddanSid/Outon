@@ -1,0 +1,8 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import '../styles/Navbar.css';
+import { Link } from 'react-router-dom';
+function Navbar() {
+    return (_jsx("header", { children: _jsx("nav", { children: _jsxs("div", Object.assign({ className: "navbar-container" }, { children: [_jsx(Link, Object.assign({ to: "/" }, { children: _jsx("img", { className: "logo", src: "/images/logo.png", alt: "Logo" }) })), _jsxs("div", Object.assign({ className: "nav-links-container" }, { children: [_jsx("div", Object.assign({ className: "text-links-box" }, { children: _jsxs("ul", Object.assign({ className: "nav-links" }, { children: [_jsx("li", Object.assign({ className: "nav-link-text" }, { children: _jsx(Link, Object.assign({ to: "/" }, { children: _jsx("p", { children: _jsx("strong", { children: "News" }) }) })) })), _jsx("li", Object.assign({ className: "nav-link-text" }, { children: _jsx(Link, Object.assign({ to: "/products" }, { children: _jsx("p", { children: "All sunglasses" }) })) })), _jsx("li", Object.assign({ className: "nav-link-text" }, { children: _jsx(Link, Object.assign({ to: "/" }, { children: _jsx("p", { children: "House of OutOn" }) })) }))] })) })), _jsx("div", Object.assign({ className: "icon-links-box" }, { children: _jsxs("ul", Object.assign({ className: "nav-links" }, { children: [_jsx("li", { children: _jsx("img", { className: "nav-icons", src: "/images/search-icon.png", alt: "" }) }), _jsx("li", { children: _jsx("img", { className: "nav-icons", src: "/images/shoppingbag.png", alt: "" }) })] })) }))] }))] })) }) }));
+}
+export default Navbar;
+//# sourceMappingURL=Navbar.js.map
