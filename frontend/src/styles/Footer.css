@@ -1,0 +1,73 @@
+/* Footer.css */
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 72px;
+    font-family: 'inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+}
+
+.logo {
+    height: 70px;
+    width: 98px;
+}
+
+.footer-container ul {
+    padding: 0;
+    list-style: none;
+}
+
+.social-icons {
+    display: flex;
+    gap: 50px;
+    font-size: 30px;
+    color: #464141;
+    margin-top: 10px;
+}
+
+.footer-container ul li {
+    margin-bottom: 8px;
+    border: none;
+}
+
+.subscribe-input {
+    border-bottom: 1px solid #000;
+    width: 300px;
+}
+
+.subscribe-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    font-family: 'inter';
+}
+
+@font-face {
+    font-family: 'inter';
+    src: url(../../public/fonts/Inter/static/Inter-Regular.ttf);
+}
+
+.email-input {
+    border: none;
+    padding: 0;
+    margin-right: 4px;
+}
+
+.subscribe-link {
+    color: #3b3c3d;
+    cursor: pointer;
+    font-weight: bold;
+}
