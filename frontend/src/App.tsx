@@ -5,7 +5,7 @@ import Navbar from './components/Navbar';
 import LandingPage from './views/LandingPage';
 import ProductView from './views/ProductView';
 import TryOnView from './views/TryOnView';
-import Footer from './components/Footer/Footer';
+import Footer from './components/Footer';
 
 function Root() {
   return (

@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import { Container, Row, Col } from 'react-bootstrap';
-import '../../styles/Footer.css';
+import { Row, Col } from 'react-bootstrap';
+import '../styles/Footer.css';
+import Tab from 'react-bootstrap/Tab';
 
 const Footer = () => {
   const [selectedItem, setSelectedItem] = useState<string | null>(null);
@@ -25,7 +26,7 @@ const Footer = () => {
 
   return (
     <footer id="footer">
-      <Container>
+      <Tab.Container>
         <Row>
           <Col xs={12} sm={6} md={3}>
             <div>
@@ -96,7 +97,7 @@ const Footer = () => {
             </div>
           </Col>
         </Row>
-      </Container>
+      </Tab.Container>
 
       {selectedItem && <Popup item={selectedItem} />}
     </footer>
