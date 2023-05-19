@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import LandingPage from './views/LandingPage';
 import ProductView from './views/ProductView';
 import TryOnView from './views/TryOnView';
+import Footer from './components/Footer/Footer';
 
 function Root() {
   return (
@@ -15,6 +16,9 @@ function Root() {
       <main>
         <Outlet />
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }
