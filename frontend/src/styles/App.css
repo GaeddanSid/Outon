@@ -36,46 +36,126 @@
     transform: rotate(360deg);
   }
 } */
-
-html {
-    height: 100%;
-}
-
-body {
-    margin: 0;
-    color: black;
-    background-size: 100%;
-    margin: 0;
-    padding: 0;
-    min-height: 100%;
-    height: fit-content;
-    position: relative;
-    background: #fffefd;
-}
-
-.view-divs {
-    height: fit-content;
-    min-height: 950px;
-    width: 100%;
-    padding: 0 0 0px 0;
-}
-
-a:link {
-    text-decoration: none;
-    color: black;
-}
-
-a:visited {
-    color: black;
+@font-face {
+  font-family: 'inter';
+  src: url(../../public/fonts/Inter/static/Inter-Regular.ttf);
 }
 
 @font-face {
-    font-family: 'inter';
-    src: url(../../public/fonts/Inter/static/Inter-Regular.ttf);
+  font-family: 'playfair';
+  src: url(../../public/fonts/Playfair_Display/static/PlayfairDisplay-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(../../public/fonts/Roboto/Roboto-Regular.ttf);
+}
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); */
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* fonts */
+  --font-inter: 'Inter';
+  --outon-button-text: 'Playfair';
+  --outon-paragraph-text-1: 'Roboto';
+
+  /* font sizes */
+  --outon-paragraph-text-1-size: 16px;
+  --outon-button-text-size: 18px;
+  --outon-h3-size: 48px;
+  --font-size-5xs: 8px;
+  --font-size-sm: 14px;
+  --font-size-99xl: 118px;
+  --outon-h2-size: 56px;
+  --font-size-109xl: 128px;
+
+  /* Colors */
+  --soft: #fffefd;
+  --sand: #ebe6e0;
+  --tobacco: #b68657;
+  --eucalyptus: #9dacaa;
+  --sunglow: #eee565;
+  --prune: #705d67;
+  --suave: #000;
+  --lilacs: #9f8ea2;
+  --sunglow-edge: #c9c698;
+
+  --button-bg: #b68657;
+  --button-text: #ffffff;
+
+  /* Gaps */
+  --gap-21xl: 40px;
+  --gap-base: 16px;
+  --gap-33xl: 52px;
+  --gap-61xl: 80px;
+  --gap-5xl: 24px;
+  --gap-29xl: 48px;
+  --gap-20xl: 39px;
+  --gap-9xl: 28px;
+  --gap-732xl: 751px;
+  --gap-205xl: 224px;
+  --gap-4xl: 23px;
+  --gap-smi: 13px;
+  --gap-152xl: 171px;
+  --gap-6xs: 7px;
+  --gap-47xl-4: 66.4px;
+  --gap-69xl: 88px;
+  --gap-13xl: 32px;
+  --gap-12xl: 31px;
+  --gap-5xs: 8px;
+  --gap-62xl-9: 81.9px;
+
+  /* Paddings */
+  --padding-6xs: 7px;
+  --padding-5xl: 24px;
+  --padding-lgi: 19px;
+  --padding-13xl: 32px;
+  --padding-7xl: 26px;
+  --padding-6xl: 25px;
+  --padding-125xl: 144px;
+  --padding-134xl: 153px;
+  --padding-3xs: 10px;
+  --padding-5xs: 8px;
+  --padding-25xl: 44px;
+  --padding-32xl: 51px;
+  --padding-2xs-1: 10.1px;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  color: black;
+  background-size: 100%;
+  padding: 0;
+  min-height: 100%;
+  height: fit-content;
+  position: relative;
+  background: #fffefd;
+}
+
+.view-divs {
+  height: fit-content;
+  min-height: 950px;
+  width: 100%;
+  padding: 0 0 20px 0;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: black;
 }
 
 .app {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }

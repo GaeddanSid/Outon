@@ -34,16 +34,16 @@ function Navbar() {
               <ul className="nav-links">
                 <li>
                   <img
-                    className="nav-icons"
+                    className="nav-icons search"
                     src="/images/search-icon.png"
-                    alt=""
+                    alt="Search"
                   />
                 </li>
                 <li>
                   <img
-                    className="nav-icons"
+                    className="nav-icons shoppingbag"
                     src="/images/shoppingbag.png"
-                    alt=""
+                    alt="Shoppingbag"
                   />
                 </li>
               </ul>

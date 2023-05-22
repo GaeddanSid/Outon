@@ -1,0 +1,375 @@
+/* .suns-out-shades-container {
+  position: relative;
+  line-height: 130px;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+} */
+
+.hero-section {
+  gap: var(--gap-13xl);
+  text-align: center;
+  font-size: var(--font-size-109xl);
+  color: var(--suave);
+  font-family: var(--outon-button-text);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 62px;
+  padding-right: 62px;
+}
+
+.hero-pic {
+  /* margin: 0px 62px 16px 62px; */
+  background-color: var(--color-linen-100);
+
+  width: 100%;
+  height: 754px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  background-size: cover;
+  background-image: url(/public/images/hero-section-icecream.jpg);
+}
+
+.slogan {
+  margin-top: 131px;
+  box-sizing: border-box;
+  background: #ebe6e059;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 44px 51px;
+  gap: 10px;
+
+  font-family: 'playfair';
+  font-size: --font-size-109xl;
+  font-weight: 500;
+  line-height: 130px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.suns-out-shade {
+  flex-basis: calc(
+    50% - 16px
+  ); /* Adjust flex-basis value based on your requirements */
+  margin: 8px; /* Add some spacing between shades */
+}
+
+/* .hero-text-container,
+.shop-the-collection {
+  position: relative;
+  letter-spacing: 0.03em;
+  display: inline-block;
+} */
+
+.hero-text-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-13xl);
+  font-size: var(--outon-paragraph-text-1-size);
+  font-family: var(--outon-paragraph-text-1);
+}
+
+.hero-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  text-align: center;
+  line-height: 21px;
+  width: 625px;
+}
+
+.shop-the-collection {
+  font-weight: 600;
+  width: fit-content;
+  height: 24px;
+  flex-shrink: 0;
+}
+.button {
+  background-color: var(--outon-soft);
+  border: 3px solid var(--suave);
+  box-sizing: border-box;
+  height: 48px;
+  /* overflow: hidden; */
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-6xs) var(--padding-5xl);
+  align-items: center;
+  justify-content: center;
+  font-size: var(--outon-button-text-size);
+  font-family: var(--outon-button-text);
+}
+
+/* .hero-section-landing-page {
+  gap: var(--gap-13xl);
+  text-align: center;
+  font-size: var(--font-size-109xl);
+  color: var(--suave);
+  font-family: var(--outon-button-text);
+  display: flex;
+} */
+
+.brands {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* margin-bottom: 216px;
+  margin-top: 216px; */
+  margin: 216px 207px 216px 207px;
+}
+
+.try-on-start-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: #ebe6e0;
+}
+
+/* .virtual-try-on {
+  display: flex;
+  flex-direction: column;
+  font-size: 56px;
+  font-weight: 500;
+  font-family: Playfair Display;
+  line-height: 67px;
+  letter-spacing: 0.04em;
+  text-align: left;
+} */
+
+.try-on-start-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fffefd;
+  width: 40%;
+  height: 520px;
+  margin: 41px;
+  /* position: relative; */
+  letter-spacing: 0.04em;
+  line-height: 67px;
+  font-weight: 500;
+  border-radius: 0px;
+  padding-top: 81px;
+  padding-bottom: 81px;
+}
+
+.small-text-try-on {
+  height: 355px;
+  width: 372px;
+  border-radius: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+}
+
+.try-on-start-pic {
+  width: 60%;
+  height: 520px;
+  object-fit: contain;
+  margin: 10px;
+}
+
+.our-virtual {
+  margin-top: 0;
+  font-family: 'Playfair';
+  font-size: var(--outon-h3-size);
+  font-weight: 500;
+  line-height: 67px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.elevate {
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  height: fit-content;
+  width: 340px;
+  margin-top: 20px;
+}
+
+.button4 {
+  background-color: var(--outon-soft);
+  height: 44px;
+  padding: 0 0 var(--padding-3xs);
+  box-sizing: border-box;
+  align-items: flex-start;
+  text-align: center;
+  font-size: var(--outon-button-text-size);
+}
+
+.button5 {
+  background-color: var(--color-linen-100);
+  border: 3px solid var(--suave);
+  box-sizing: border-box;
+  height: 44px;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-lgi) var(--padding-5xl);
+  align-items: center;
+  justify-content: center;
+}
+
+.our-virtual-try-on-container {
+  position: relative;
+  letter-spacing: 0.04em;
+  line-height: 67px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.elevate-your-style-container1 {
+  position: relative;
+  font-size: var(--outon-paragraph-text-1-size);
+  letter-spacing: 0.03em;
+  line-height: 21px;
+  font-family: var(--outon-paragraph-text-1);
+  display: inline-block;
+  width: 406px;
+}
+
+.our-virtual-try-on-parent {
+  width: 372px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-21xl);
+}
+
+.see-more {
+  position: relative;
+  letter-spacing: 0.03em;
+  font-weight: 600;
+}
+
+.button2 {
+  background-color: var(--color-linen-200);
+  border: 3px solid var(--suave);
+  box-sizing: border-box;
+  height: 44px;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-lgi) var(--padding-5xl);
+  align-items: center;
+  justify-content: center;
+}
+
+.button1,
+.frame-parent1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.button1 {
+  background-color: var(--outon-soft);
+  height: 44px;
+  padding: 0 0 var(--padding-3xs);
+  box-sizing: border-box;
+  align-items: flex-start;
+  text-align: center;
+  font-size: var(--outon-button-text-size);
+}
+
+.frame-parent1 {
+  position: absolute;
+  top: 0;
+  left: 9px;
+  align-items: center;
+  gap: var(--gap-13xl);
+}
+
+.virtual-try-on,
+.virtual-try-on-inner {
+  position: absolute;
+  top: 82.5px;
+  left: 0;
+  width: 390px;
+  height: 355px;
+}
+
+.virtual-try-on {
+  top: 0;
+  left: 32px;
+  width: 393px;
+  height: 520px;
+}
+
+.virtual-try-on-wrapper {
+  position: relative;
+  background-color: var(--outon-soft);
+  width: 457px;
+  height: 520px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.frame-wrapper1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.pexels-photo-by-lknur-elik {
+  object-fit: cover;
+}
+
+.pexels-photo-by-lknur-elik,
+.rectangle-div {
+  position: relative;
+  width: 603px;
+  height: 520px;
+}
+
+.frame-group {
+  position: absolute;
+  top: 104px;
+  left: 229px;
+  width: 1092px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-13xl);
+}
+
+.try-it-now-section-inner {
+  position: relative;
+  background-color: var(--outon-sand);
+  width: 1550px;
+  height: 728px;
+  overflow: hidden;
+  flex-shrink: 0;
+  text-align: left;
+  font-size: var(--outon-h2-size);
+  color: var(--suave);
+  font-family: var(--outon-button-text);
+}
