@@ -1,15 +1,15 @@
 import '../styles/SmallFeatures.css';
 
+import Sand from '../images/Small features 1_sand.jpg';
+import sustainability from '../images/Small features 1_artisan.jpg';
+import Shipping from '../images/Small features 1_free shipping.jpg';
+
 function Features1() {
   return (
     <>
       <div className="features-small">
         <div className="rectangle-parent">
-          <img
-            className="frame-child"
-            alt=""
-            src="\images\small-features-1-sand.jpg"
-          />
+          <img className="frame-child" alt="" src={Sand} />
           <div className="scratch-resistant-parent">
             <div className="scratch-resistant">Scratch resistant</div>
             <div className="our-scratch-resistant-frames">
@@ -19,11 +19,7 @@ function Features1() {
           </div>
         </div>
         <div className="rectangle-parent">
-          <img
-            className="frame-child"
-            alt=""
-            src="\images\small-features-1-artisan.jpg"
-          />
+          <img className="frame-child" alt="" src={sustainability} />
           <div className="scratch-resistant-parent">
             <div className="scratch-resistant">Handcrafted sustainability</div>
             <div className="our-scratch-resistant-frames">
@@ -34,11 +30,7 @@ function Features1() {
           </div>
         </div>
         <div className="rectangle-parent">
-          <img
-            className="frame-child"
-            alt=""
-            src="\images\small-features-1-free-shipping.jpg"
-          />
+          <img className="frame-child" alt="" src={Shipping} />
           <div className="scratch-resistant-parent">
             <div className="scratch-resistant">Always free shipping</div>
             <div className="our-scratch-resistant-frames">

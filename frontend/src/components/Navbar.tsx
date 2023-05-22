@@ -1,12 +1,16 @@
 import '../styles/Navbar.css';
 import { Link } from 'react-router-dom';
+import Logo from '../images/logo.png';
+import Search from '../images/search-icon.png';
+import Shoppingbag from '../images/shoppingbag.png';
+
 function Navbar() {
   return (
     <header>
       <nav>
         <div className="navbar-container">
           <Link to="/">
-            <img className="logo" src="/images/logo.png" alt="Logo" />
+            <img className="logo" src={Logo} alt="Logo" />
           </Link>
           <div className="nav-links-container">
             <div className="text-links-box">
@@ -33,16 +37,12 @@ function Navbar() {
             <div className="icon-links-box">
               <ul className="nav-links">
                 <li>
-                  <img
-                    className="nav-icons search"
-                    src="/images/search-icon.png"
-                    alt="Search"
-                  />
+                  <img className="nav-icons search" src={Search} alt="Search" />
                 </li>
                 <li>
                   <img
                     className="nav-icons shoppingbag"
-                    src="/images/shoppingbag.png"
+                    src={Shoppingbag}
                     alt="Shoppingbag"
                   />
                 </li>

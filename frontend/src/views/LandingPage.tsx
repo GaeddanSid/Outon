@@ -1,6 +1,16 @@
 import { Link } from 'react-router-dom';
 import '../styles/LandingPage.css';
 import SmallFeatures from '../components/SmallFeatures';
+import About from '../components/About';
+
+import Couple from '../images/tryon-start-block.png';
+
+import Vogue from '../images/Vogue.png';
+import Time from '../images/Time.png';
+import Elle from '../images/Elle.png';
+import Forbes from '../images/Forbes.png';
+import Bazar from '../images/Bazar.png';
+import Cosmo from '../images/cosmo.png';
 
 function landingpage() {
   return (
@@ -34,22 +44,22 @@ function landingpage() {
 
       <div className="brands">
         <div>
-          <img src="/images/Vogue.png" alt="Vogue" />
+          <img src={Vogue} alt="Vogue" />
         </div>
         <div>
-          <img src="/images/Elle.png" alt="Elle" />
+          <img src={Elle} alt="Elle" />
         </div>
         <div>
-          <img src="/images/Forbes.png" alt="Forbes" />
+          <img src={Forbes} alt="Forbes" />
         </div>
         <div>
-          <img src="/images/Bazar.png" alt="Bazaar" />
+          <img src={Bazar} alt="Bazaar" />
         </div>
         <div>
-          <img src="/images/cosmo.png" alt="Cosmopolitan" />
+          <img src={Cosmo} alt="Cosmopolitan" />
         </div>
         <div>
-          <img src="/images/Time.png" alt="Time" />
+          <img src={Time} alt="Time" />
         </div>
       </div>
 
@@ -79,10 +89,11 @@ function landingpage() {
         </div>
 
         <div className="try-on-start-pic">
-          <img src="\images\tryon-start-block.png" alt="try-on-couple" />
+          <img src={Couple} alt="try-on-couple" />
         </div>
       </div>
       <SmallFeatures />
+      <About />
     </div>
   );
 }

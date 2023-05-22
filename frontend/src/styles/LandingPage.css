@@ -35,7 +35,7 @@
   align-items: center;
 
   background-size: cover;
-  background-image: url(/public/images/hero-section-icecream.jpg);
+  background-image: url(../../src/images/hero-section-icecream.jpg);
 }
 
 .slogan {
@@ -361,7 +361,7 @@
   gap: var(--gap-13xl);
 }
 
-.try-it-now-section-inner {
+/* .try-it-now-section-inner {
   position: relative;
   background-color: var(--outon-sand);
   width: 1550px;
@@ -372,4 +372,4 @@
   font-size: var(--outon-h2-size);
   color: var(--suave);
   font-family: var(--outon-button-text);
-}
+} */
