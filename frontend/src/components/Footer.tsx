@@ -6,6 +6,7 @@ import { Row, Col } from 'react-bootstrap';
 import Modal from 'react-modal';
 import '../styles/Footer.css';
 import Tab from 'react-bootstrap/Tab';
+import logo from '../images/logo.png';
 
 const Footer: React.FC = () => {
   const [email, setEmail] = useState('');
@@ -40,7 +41,7 @@ const Footer: React.FC = () => {
           <Col xs={12} sm={6} md={3}>
             <div>
               <Link to="/">
-                <img className="logo" src="/images/logo.png" alt="Logo" />
+                <img className="logo" src={logo} alt="Logo" />
               </Link>
             </div>
           </Col>
