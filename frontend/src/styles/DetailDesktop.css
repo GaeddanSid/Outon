@@ -622,16 +622,17 @@
 .our-scratch-resistant-frames {
   font-family: var(--outon-paragraph-text-1);
   display: inline-block;
-  width: 220px;
+  /* width: 220px;
+   */
   height: 81px;
   flex-shrink: 0;
 }
-.features-small,
+/* .features-small,
 .scratch-resistant-parent {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-}
+} */
 .scratch-resistant-parent {
   flex-direction: column;
   gap: var(--gap-5xs);

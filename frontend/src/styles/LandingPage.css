@@ -33,8 +33,9 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-
+  background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   background-image: url(../../src/images/hero-section-icecream.jpg);
 }
 
@@ -44,7 +45,7 @@
   background: #ebe6e059;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   padding: 44px 51px;
   gap: 10px;
 
@@ -137,6 +138,10 @@
   height: 458px;
 }
 
+.brands-names {
+  margin-left: 81.9px;
+}
+
 .try-on-start-block {
   display: flex;
   flex-direction: row;
@@ -156,7 +161,8 @@
   letter-spacing: 0.04em;
   text-align: left;
 } */
-
+/* .couple-try-on {
+} */
 .try-on-start-text {
   display: flex;
   flex-direction: column;
@@ -186,10 +192,10 @@
 }
 
 .try-on-start-pic {
-  width: 60%;
+  /* width: 60%; */
   height: 520px;
   object-fit: contain;
-  margin: 10px;
+  margin-right: 41px;
 }
 
 .our-virtual {
@@ -236,6 +242,10 @@
   padding: var(--padding-lgi) var(--padding-5xl);
   align-items: center;
   justify-content: center;
+}
+
+.button5:hover {
+  background-color: #eee565;
 }
 
 .our-virtual-try-on-container {

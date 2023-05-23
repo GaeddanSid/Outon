@@ -1,10 +1,11 @@
 .features-small {
   display: flex;
+  justify-content: space-between;
   flex-direction: row;
   margin: 216px 72px;
 }
 .frame-child {
-  position: relative;
+  /* position: relative; */
   width: 150.2px;
   height: 116.49px;
   object-fit: cover;
@@ -21,7 +22,7 @@
 .our-scratch-resistant-frames {
   font-family: var(--outon-paragraph-text-1);
   display: inline-block;
-  width: 160px;
+  width: 180px;
   height: 81px;
   flex-shrink: 0;
 }

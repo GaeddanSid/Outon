@@ -1,5 +1,5 @@
 import { FunctionComponent, useCallback } from 'react';
-import '../styles/global.css';
+// import '../styles/global.css';
 import '../styles/DetailDesktop.css';
 
 import sustainability from '../images/About_substainability.jpg';

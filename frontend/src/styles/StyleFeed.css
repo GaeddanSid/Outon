@@ -99,9 +99,9 @@
   font-size: var(--outon-button-text-size);
 }
 .style-feed {
-  /* position: absolute; */
-  /* top: 72px;
-  left: 104.5px; */
+  position: absolute;
+  top: 72px;
+  left: 104.5px;
   flex-direction: column;
   justify-content: flex-start;
   gap: var(--gap-29xl);

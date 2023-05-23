@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Carousel } from 'react-bootstrap';
-import '../styles/global.css';
+// import '../styles/global.css';
 import '../styles/DetailDesktop.css';
 
 interface Product {

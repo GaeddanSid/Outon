@@ -4,12 +4,12 @@ import SmallFeatures from '../components/SmallFeatures';
 // import About from '../components/A'bout';
 // import Productcarousel from '../components/Productcarousel';
 import Couple from '../images/tryon-start-block.png';
-// import Stylefeed from '../components/StyleFeed';
+import Stylefeed from '../components/StyleFeed';
 import Vogue from '../images/Vogue.png';
 import Time from '../images/Time.png';
 import Elle from '../images/Elle.png';
 import Forbes from '../images/Forbes.png';
-import Bazar from '../images/Bazar.png';
+import Bazaar from '../images/Bazaar.png';
 import Cosmo from '../images/cosmo.png';
 
 function landingpage() {
@@ -18,8 +18,8 @@ function landingpage() {
       <div className="hero-section">
         <div className="hero-pic">
           <div className="slogan">
-            <p>Sun's out</p>
-            <p>shades on!</p>
+            <p>SUN'S OUT</p>
+            <p>SHADES ON</p>
           </div>
         </div>
         <div className="hero-text-parent">
@@ -43,22 +43,22 @@ function landingpage() {
       </div>
 
       <div className="brands">
-        <div>
+        <div className="brand-names">
           <img src={Vogue} alt="Vogue" />
         </div>
-        <div>
+        <div className="brand-names">
           <img src={Elle} alt="Elle" />
         </div>
-        <div>
+        <div className="brand-names">
           <img src={Forbes} alt="Forbes" />
         </div>
-        <div>
-          <img src={Bazar} alt="Bazaar" />
+        <div className="brand-names">
+          <img src={Bazaar} alt="Bazaar" />
         </div>
-        <div>
+        <div className="brand-names">
           <img src={Cosmo} alt="Cosmopolitan" />
         </div>
-        <div>
+        <div className="brand-names">
           <img src={Time} alt="Time" />
         </div>
       </div>
@@ -89,13 +89,13 @@ function landingpage() {
         </div>
 
         <div className="try-on-start-pic">
-          <img src={Couple} alt="try-on-couple" />
+          <img className="couple-try-on" src={Couple} alt="try-on-couple" />
         </div>
       </div>
       <SmallFeatures />
       {/* <Productcarousel /> */}
       {/* <About /> */}
-      {/* <Stylefeed /> */}
+      <Stylefeed />
     </div>
   );
 }
