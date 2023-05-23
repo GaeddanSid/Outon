@@ -1,3 +1,4 @@
+require('dotenv').config();
 import express from "express";
 import { Pool } from "pg";
 import cors from "cors";
@@ -16,11 +17,11 @@ app.use((req, res, next) => {
 });
 
 const pool = new Pool({
-  user: "kakswppo",
-  host: "balarama.db.elephantsql.com",
-  database: "kakswppo",
-  password: "s19uzg6SAcAwsM7G6Evb3WcAmTbmV7uJ",
-  port: 5432,
+  user: process.env.DB_USER,
+  host: process.env.DB_HOST,
+  database: process.env.DB_DATABASE,
+  password: process.env.DB_PASSWORD,
+  port: process.env.DB_PORT ? parseInt(process.env.DB_PORT, 10 ) : undefined,
 });
 
 app.get("/products", async (req, res) => {
