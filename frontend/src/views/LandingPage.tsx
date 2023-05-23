@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom';
 import '../styles/LandingPage.css';
 import SmallFeatures from '../components/SmallFeatures';
-import About from '../components/About';
-
+// import About from '../components/A'bout';
+// import Productcarousel from '../components/Productcarousel';
 import Couple from '../images/tryon-start-block.png';
-
+// import Stylefeed from '../components/StyleFeed';
 import Vogue from '../images/Vogue.png';
 import Time from '../images/Time.png';
 import Elle from '../images/Elle.png';
@@ -93,7 +93,9 @@ function landingpage() {
         </div>
       </div>
       <SmallFeatures />
-      <About />
+      {/* <Productcarousel /> */}
+      {/* <About /> */}
+      {/* <Stylefeed /> */}
     </div>
   );
 }

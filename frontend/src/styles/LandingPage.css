@@ -129,10 +129,12 @@
 .brands {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
-  /* margin-bottom: 216px;
-  margin-top: 216px; */
-  margin: 216px 207px 216px 207px;
+  margin-left: 200px;
+  margin-right: 200px;
+  /* margin: 216px 207px 216px 207px; */
+  height: 458px;
 }
 
 .try-on-start-block {
@@ -269,7 +271,7 @@
   font-weight: 600;
 }
 
-.button2 {
+/* .button2 {
   background-color: var(--color-linen-200);
   border: 3px solid var(--suave);
   box-sizing: border-box;
@@ -279,9 +281,9 @@
   padding: var(--padding-lgi) var(--padding-5xl);
   align-items: center;
   justify-content: center;
-}
+} */
 
-.button1,
+/* .button1,
 .frame-parent1 {
   display: flex;
   flex-direction: column;
@@ -296,60 +298,60 @@
   align-items: flex-start;
   text-align: center;
   font-size: var(--outon-button-text-size);
-}
+} */
 
-.frame-parent1 {
+/* .frame-parent1 {
   position: absolute;
   top: 0;
   left: 9px;
   align-items: center;
   gap: var(--gap-13xl);
-}
+} */
 
-.virtual-try-on,
+/* .virtual-try-on,
 .virtual-try-on-inner {
   position: absolute;
   top: 82.5px;
   left: 0;
   width: 390px;
   height: 355px;
-}
+} */
 
-.virtual-try-on {
+/* .virtual-try-on {
   top: 0;
   left: 32px;
   width: 393px;
   height: 520px;
-}
+} */
 
-.virtual-try-on-wrapper {
+/* .virtual-try-on-wrapper {
   position: relative;
   background-color: var(--outon-soft);
   width: 457px;
   height: 520px;
   overflow: hidden;
   flex-shrink: 0;
-}
+} */
 
-.frame-wrapper1 {
+/* .frame-wrapper1 {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
-}
+} */
 
-.pexels-photo-by-lknur-elik {
+/* .pexels-photo-by-lknur-elik {
   object-fit: cover;
-}
+} */
 
-.pexels-photo-by-lknur-elik,
+/* .pexels-photo-by-lknur-elik,
 .rectangle-div {
   position: relative;
   width: 603px;
   height: 520px;
-}
+} */
 
-.frame-group {
+/* .frame-group {
   position: absolute;
   top: 104px;
   left: 229px;
@@ -359,7 +361,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   gap: var(--gap-13xl);
-}
+} */
 
 /* .try-it-now-section-inner {
   position: relative;

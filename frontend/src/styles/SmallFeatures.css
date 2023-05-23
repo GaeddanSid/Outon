@@ -5,8 +5,8 @@
 }
 .frame-child {
   position: relative;
-  width: 209px;
-  height: 121px;
+  width: 150.2px;
+  height: 116.49px;
   object-fit: cover;
 }
 .our-scratch-resistant-frames,
@@ -21,17 +21,19 @@
 .our-scratch-resistant-frames {
   font-family: var(--outon-paragraph-text-1);
   display: inline-block;
-  width: 220px;
+  width: 160px;
   height: 81px;
   flex-shrink: 0;
 }
-.rectangle-parent,
+
 .scratch-resistant-parent {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   gap: var(--gap-5xs);
+  width: 160.79px;
+  height: 106.68px;
 }
 .rectangle-parent {
   display: flex;
@@ -41,10 +43,10 @@
 .look-and-feel {
   margin: 0;
 }
-.small-features-1 {
-  position: absolute;
+.small-features {
+  /* position: absolute;
   top: 2396.51px;
-  left: 72px;
+  left: 72px; */
   display: flex;
   flex-direction: row;
   align-items: flex-start;

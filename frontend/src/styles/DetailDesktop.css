@@ -95,8 +95,8 @@
 .frame-inner,
 .frame-item {
   position: relative;
-  width: 24px;
-  height: 12px;
+  /* width: 24px;
+  height: 12px; */
 }
 .frame-item {
   background-color: var(--color-dimgray);
@@ -417,7 +417,7 @@
   background-color: var(--outon-soft);
   border: 1.8px solid var(--suave);
   box-sizing: border-box;
-  width: 91px;
+  width: fit-content;
   height: 28.36px;
   display: flex;
   flex-direction: row;
