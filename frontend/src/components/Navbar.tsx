@@ -15,31 +15,23 @@ function Navbar() {
           <div className="nav-links-container">
             <div className="text-links-box">
               <ul className="nav-links">
-                <li className="nav-link-text">
-                  <Link to="/">
-                    <p>
-                      <strong>News</strong>
-                    </p>
-                  </Link>
+                <li className="news">
+                  <Link to="/">News</Link>
                 </li>
                 <li className="nav-link-text">
-                  <Link to="/products">
-                    <p>All sunglasses</p>
-                  </Link>
+                  <Link to="/products">All sunglasses</Link>
                 </li>
                 <li className="nav-link-text">
-                  <Link to="/">
-                    <p>House of OutOn</p>
-                  </Link>
+                  <Link to="/">House of OutOn</Link>
                 </li>
               </ul>
             </div>
             <div className="icon-links-box">
-              <ul className="nav-links">
-                <li>
+              <ul className="icons-ul">
+                <li className="nav-icons-li">
                   <img className="nav-icons search" src={Search} alt="Search" />
                 </li>
-                <li>
+                <li className="nav-icons-li">
                   <img
                     className="nav-icons shoppingbag"
                     src={Shoppingbag}

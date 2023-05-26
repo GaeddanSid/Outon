@@ -1,0 +1,77 @@
+.back-to-top {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* width: 40px; */
+  height: 100px;
+  margin-right: 70px;
+  cursor: pointer;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.back-to-top-button {
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1),
+    0px 2px 4px 0px rgba(0, 0, 0, 0.1), 0px 7px 7px 0px rgba(0, 0, 0, 0.09),
+    0px 16px 10px 0px rgba(0, 0, 0, 0.05), 0px 29px 12px 0px rgba(0, 0, 0, 0.01),
+    0px 46px 13px 0px rgba(0, 0, 0, 0);
+  /* transition: transform 0.3s ease-out; */
+}
+
+.back-to-top-img {
+  height: 16.14px;
+  width: 30px;
+}
+.back-to-top-button:hover {
+  animation: slideup 0.2s ease-in-out forwards;
+  background-color: var(--sunglow);
+}
+
+.back-to-top-button:not(:hover) {
+  animation: slidedown 0.2s backwards;
+}
+
+@keyframes slideup {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-7px);
+  }
+}
+
+@keyframes slidedown {
+  0% {
+    transform: translateY(-7px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* sticky i desktop, funkar inte i mobile? */
+
+/* .back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  top: auto;
+  z-index: 2;
+}
+
+.back-to-top-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+} */
