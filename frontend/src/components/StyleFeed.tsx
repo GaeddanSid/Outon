@@ -21,35 +21,75 @@ const StyleFeed: FunctionComponent = () => {
             <div className="style-feed1">STYLE FEED</div>
             <div className="frame-parent12">
               <div className="frame-parent13">
-                <img className="frame-child5" alt="" src={StyleFeedStuff} />
-                <div className="frame-wrapper3">
-                  <img className="frame-child6" alt="" src={StyleFeedShade} />
-                </div>
-                <img className="frame-child7" alt="" src={StyleFeedCatEye} />
                 <img
-                  className="skarmavbild-2023-05-19-kl-08"
+                  className="frame-child5 hover-effect"
+                  alt=""
+                  src={StyleFeedStuff}
+                />
+                <div className="frame-wrapper3">
+                  <img
+                    className="frame-child6 hover-effect"
+                    alt=""
+                    src={StyleFeedShade}
+                  />
+                </div>
+                <img
+                  className="frame-child7 hover-effect"
+                  alt=""
+                  src={StyleFeedCatEye}
+                />
+                <img
+                  className="skarmavbild-2023-05-19-kl-08 hover-effect"
                   alt=""
                   src={StyleFeedMany}
                 />
               </div>
               <div className="frame-parent14">
                 <div className="frame-parent12">
-                  <img className="frame-child8" alt="" src={StyleFeedChair} />
-                  <img className="frame-child8" alt="" src={StyleFeedPlant} />
+                  <img
+                    className="frame-child8 hover-effect"
+                    alt=""
+                    src={StyleFeedChair}
+                  />
+                  <img
+                    className="frame-child8 hover-effect"
+                    alt=""
+                    src={StyleFeedPlant}
+                  />
                 </div>
-                <img className="frame-child10" alt="" src={StyleFeedBirds} />
+                <img
+                  className="frame-child10 hover-effect"
+                  alt=""
+                  src={StyleFeedBirds}
+                />
                 <div className="frame-parent12">
-                  <img className="frame-child8" alt="" src={StyleFeedFashion} />
-                  <img className="frame-child8" alt="" src={StyleFeedMen} />
+                  <img
+                    className="frame-child8 hover-effect"
+                    alt=""
+                    src={StyleFeedFashion}
+                  />
+                  <img
+                    className="frame-child8 hover-effect"
+                    alt=""
+                    src={StyleFeedMen}
+                  />
                 </div>
                 <div className="frame-parent12">
-                  <img className="frame-child8" alt="" src={StyleFeedRound} />
-                  <img className="frame-child8" alt="" src={StyleFeedPlastic} />
+                  <img
+                    className="frame-child8 hover-effect"
+                    alt=""
+                    src={StyleFeedRound}
+                  />
+                  <img
+                    className="frame-child8 hover-effect"
+                    alt=""
+                    src={StyleFeedPlastic}
+                  />
                 </div>
               </div>
             </div>
-            <div className="button6">
-              <div className="see-more1">See more</div>
+            <div className="button6 yellow-hover">
+              <div className="see-more1 ">See more</div>
             </div>
           </div>
         </div>

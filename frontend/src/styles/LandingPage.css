@@ -116,6 +116,13 @@
   justify-content: center;
   font-size: var(--outon-button-text-size);
   font-family: var(--outon-button-text);
+  transition: box-shadow 0.3s;
+}
+
+.yellow-hover:hover {
+  background-color: #eee565;
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+  cursor: pointer;
 }
 
 /* .hero-section-landing-page {
@@ -148,7 +155,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  background: #ebe6e0;
+  background: var(--sand);
 }
 
 /* .virtual-try-on {
@@ -224,7 +231,7 @@
 
 .button4 {
   background-color: var(--outon-soft);
-  height: 44px;
+  height: 48px;
   padding: 0 0 var(--padding-3xs);
   box-sizing: border-box;
   align-items: flex-start;
@@ -236,7 +243,7 @@
   background-color: var(--color-linen-100);
   border: 3px solid var(--suave);
   box-sizing: border-box;
-  height: 44px;
+  height: 48px;
   display: flex;
   flex-direction: row;
   padding: var(--padding-lgi) var(--padding-5xl);
@@ -246,6 +253,7 @@
 
 .button5:hover {
   background-color: #eee565;
+  color: var(--suave);
 }
 
 .our-virtual-try-on-container {

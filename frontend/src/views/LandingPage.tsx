@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import '../styles/LandingPage.css';
 import SmallFeatures from '../components/SmallFeatures';
+import SmFeatures from '../components/SmFeatures2';
+import BackToTop from '../components/BackToTop';
 // import About from '../components/A'bout';
 // import Productcarousel from '../components/Productcarousel';
 import Couple from '../images/tryon-start-block.png';
@@ -36,7 +38,7 @@ function landingpage() {
               Discover timeless luxury and sustainability today.
             </p>
           </div>
-          <div className="button">
+          <div className="button yellow-hover">
             <div className="shop-the-collection">Shop the collection</div>
           </div>
         </div>
@@ -81,7 +83,7 @@ function landingpage() {
           </div>
           <Link to="/try-on">
             <div className="button4">
-              <div className="button5">
+              <div className="button5 yellow-hover">
                 <div className="see-more">Try it now</div>
               </div>
             </div>
@@ -93,9 +95,11 @@ function landingpage() {
         </div>
       </div>
       <SmallFeatures />
+      <SmFeatures />
       {/* <Productcarousel /> */}
       {/* <About /> */}
       <Stylefeed />
+      <BackToTop />
     </div>
   );
 }

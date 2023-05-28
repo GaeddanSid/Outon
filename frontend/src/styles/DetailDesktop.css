@@ -1,4 +1,4 @@
-.the-rio-rush {
+/* .the-rio-rush {
   position: relative;
   letter-spacing: 0.04em;
   font-weight: 500;
@@ -94,11 +94,11 @@
 .frame-child1,
 .frame-inner,
 .frame-item {
-  position: relative;
-  /* width: 24px;
+  position: relative; */
+/* width: 24px;
   height: 12px; */
-}
-.frame-item {
+/* } */
+/* .frame-item {
   background-color: var(--color-dimgray);
 }
 .frame-child1,
@@ -409,10 +409,10 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   font-weight: 500;
-}
-.button {
-  /* position: absolute; */
-  top: 273px;
+} */
+/* .button { */
+/* position: absolute; */
+/* top: 273px;
   left: 693px;
   background-color: var(--outon-soft);
   border: 1.8px solid var(--suave);
@@ -621,19 +621,19 @@
 }
 .our-scratch-resistant-frames {
   font-family: var(--outon-paragraph-text-1);
-  display: inline-block;
-  /* width: 220px;
+  display: inline-block; */
+/* width: 220px;
    */
-  height: 81px;
+/* height: 81px;
   flex-shrink: 0;
-}
+} */
 /* .features-small,
 .scratch-resistant-parent {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 } */
-.scratch-resistant-parent {
+/* .scratch-resistant-parent {
   flex-direction: column;
   gap: var(--gap-5xs);
 }
@@ -986,4 +986,4 @@
   font-size: var(--outon-h3-size);
   color: var(--suave);
   font-family: var(--outon-button-text);
-}
+} */
