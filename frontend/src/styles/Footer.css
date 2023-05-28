@@ -1,10 +1,5 @@
-@font-face {
-    font-family: 'inter';
-    src: url(../../public/fonts/Inter/static/Inter-Regular.ttf);
-}
-
 #footer {
-    background-color: #705D67;
+    background-color: #9F8EA2;
     position: relative;
 }
 
@@ -14,7 +9,6 @@
     justify-content: center;
     align-items: center;
     padding: 16px 72px;
-    font-family: 'inter';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -119,7 +113,7 @@
     align-items: center;
     margin-top: 10px;
     font-family: 'inter';
-    background-color: #705D67;
+    background-color: #9F8EA2;
 }
 
 .email-input {
@@ -133,6 +127,7 @@
     color: #000;
     transition: color 0.3s;
     font-weight: bolder;
+    cursor: pointer;
 }
 
 .subscribe-link:hover {
