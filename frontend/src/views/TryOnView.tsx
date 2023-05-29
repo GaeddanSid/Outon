@@ -95,7 +95,7 @@ const Phone = () => {
           style={{
             width: '375.1px',
             height: '299.7px',
-            margin: '30px 20px', // Uppdaterat värde för padding
+            margin: '30px 20px',
             boxShadow:
               '0 0 0 0 rgba(0, 0, 0, 0.1), 0 1.7px 3.4px 0 rgba(0, 0, 0, 0.1), 0 6px 6px 0 rgba(0, 0, 0, 0.09), 0 13.7px 8.6px 0 rgba(0, 0, 0, 0.05), 0 24.8px 10.3px 0 rgba(0, 0, 0, 0.01), 0 39.4px 11.1px 0 rgba(0, 0, 0, 0)',
           }}
@@ -106,7 +106,7 @@ const Phone = () => {
           style={{
             width: '375.1px',
             height: '299.7px',
-            margin: '30px 20px', // Uppdaterat värde för padding
+            margin: '30px 20px',
             boxShadow:
               '0 0 0 0 rgba(0, 0, 0, 0.1), 0 1.7px 3.4px 0 rgba(0, 0, 0, 0.1), 0 6px 6px 0 rgba(0, 0, 0, 0.09), 0 13.7px 8.6px 0 rgba(0, 0, 0, 0.05), 0 24.8px 10.3px 0 rgba(0, 0, 0, 0.01), 0 39.4px 11.1px 0 rgba(0, 0, 0, 0)',
           }}
@@ -117,7 +117,7 @@ const Phone = () => {
           style={{
             width: '375.1px',
             height: '299.7px',
-            margin: '30px 20px', // Uppdaterat värde för padding
+            margin: '30px 20px',
             boxShadow:
               '0 0 0 0 rgba(0, 0, 0, 0.1), 0 1.7px 3.4px 0 rgba(0, 0, 0, 0.1), 0 6px 6px 0 rgba(0, 0, 0, 0.09), 0 13.7px 8.6px 0 rgba(0, 0, 0, 0.05), 0 24.8px 10.3px 0 rgba(0, 0, 0, 0.01), 0 39.4px 11.1px 0 rgba(0, 0, 0, 0)',
           }}
@@ -130,7 +130,7 @@ const Phone = () => {
           style={{
             width: '375.1px',
             height: '299.7px',
-            margin: '30px 20px', // Uppdaterat värde för padding
+            margin: '30px 20px',
             boxShadow:
               '0 0 0 0 rgba(0, 0, 0, 0.1), 0 1.7px 3.4px 0 rgba(0, 0, 0, 0.1), 0 6px 6px 0 rgba(0, 0, 0, 0.09), 0 13.7px 8.6px 0 rgba(0, 0, 0, 0.05), 0 24.8px 10.3px 0 rgba(0, 0, 0, 0.01), 0 39.4px 11.1px 0 rgba(0, 0, 0, 0)',
           }}
@@ -141,7 +141,7 @@ const Phone = () => {
           style={{
             width: '375.1px',
             height: '299.7px',
-            margin: '30px 20px', // Uppdaterat värde för padding
+            margin: '30px 20px',
             boxShadow:
               '0 0 0 0 rgba(0, 0, 0, 0.1), 0 1.7px 3.4px 0 rgba(0, 0, 0, 0.1), 0 6px 6px 0 rgba(0, 0, 0, 0.09), 0 13.7px 8.6px 0 rgba(0, 0, 0, 0.05), 0 24.8px 10.3px 0 rgba(0, 0, 0, 0.01), 0 39.4px 11.1px 0 rgba(0, 0, 0, 0)',
           }}
@@ -152,7 +152,7 @@ const Phone = () => {
           style={{
             width: '375.1px',
             height: '299.7px',
-            margin: '30px 20px', // Uppdaterat värde för padding
+            margin: '30px 20px',
             boxShadow:
               '0 0 0 0 rgba(0, 0, 0, 0.1), 0 1.7px 3.4px 0 rgba(0, 0, 0, 0.1), 0 6px 6px 0 rgba(0, 0, 0, 0.09), 0 13.7px 8.6px 0 rgba(0, 0, 0, 0.05), 0 24.8px 10.3px 0 rgba(0, 0, 0, 0.01), 0 39.4px 11.1px 0 rgba(0, 0, 0, 0)',
           }}
