@@ -22,14 +22,15 @@ function Features2() {
           <img className="frame-child-2" alt="" src={prescription} />
           <div className="scratch-resistant-parent-2">
             <div className="scratch-resistant-2">
-              <p className="look-and-feel-2"> All frames available as</p>
-              <p className="look-and-feel-2"> prescription glasses</p>
+              <p className="look-and-feel-2">
+                All frames available as prescription glasses
+              </p>
+              {/* <p className="look-and-feel-2"> </p> */}
             </div>
             <div className="our-scratch-resistant-frames-2">
-              <p className="look-and-feel-2">Frames for fashion,</p>
-              <p className="look-and-feel-2"> lenses for function -</p>
               <p className="look-and-feel-2">
-                all styles fit for your prescription
+                Frames for fashion, lenses for function- all styles fit for your
+                prescription
               </p>
             </div>
           </div>
