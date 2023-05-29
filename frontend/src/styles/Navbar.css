@@ -184,7 +184,6 @@ header {
   transition: transform 0.4s ease-in-out;
 }
 
-/* Animation styles for the hamburger menu */
 .hamburger-menu.active .bar:nth-child(1) {
   transform: rotate(-45deg) translate(-5px, 6px);
 }
@@ -197,7 +196,10 @@ header {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
-/* Media query for screens 810px or under */
+.nav-logo-box {
+  order: 1;
+}
+
 @media screen and (max-width: 810px) {
   .hamburger-menu {
     display: flex;
@@ -206,5 +208,14 @@ header {
     align-items: flex-start;
     width: 40px;
     height: 30px;
+    order: 1;
+  }
+
+  .nav-logo-box {
+    order: 2;
+  }
+
+  .icon-links-box {
+    order: 3;
   }
 }

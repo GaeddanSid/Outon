@@ -27,15 +27,16 @@ function Navbar() {
     <header>
       <nav>
         <div className="navbar-container">
-          <Link to="/">
-            <img className="nav-logo" src={Logo} alt="Logo" />
-          </Link>
+          <div className="nav-logo-box">
+            <Link to="/">
+              <img className="nav-logo" src={Logo} alt="Logo" />
+            </Link>
+          </div>
           {screenWidth <= 810 ? (
             <div
               className={`hamburger-menu ${isMenuOpen ? 'active' : ''}`}
               onClick={toggleMenu}
             >
-              {' '}
               <div className="bar"></div>
               <div className="bar"></div>
               <div className="bar"></div>
@@ -72,23 +73,22 @@ function Navbar() {
             </ul>
           </div>
         </div>
+        {isMenuOpen && (
+          <div className="slide-in-menu">
+            <ul>
+              <li>
+                <Link to="/">News</Link>
+              </li>
+              <li>
+                <Link to="/products">All sunglasses</Link>
+              </li>
+              <li>
+                <Link to="/">House of OutOn</Link>
+              </li>
+            </ul>
+          </div>
+        )}
       </nav>
-      {/* Slide-in menu */}
-      {isMenuOpen && (
-        <div className="slide-in-menu">
-          <ul>
-            <li>
-              <Link to="/">News</Link>
-            </li>
-            <li>
-              <Link to="/products">All sunglasses</Link>
-            </li>
-            <li>
-              <Link to="/">House of OutOn</Link>
-            </li>
-          </ul>
-        </div>
-      )}
     </header>
   );
 }
