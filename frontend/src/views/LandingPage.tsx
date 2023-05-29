@@ -3,8 +3,9 @@ import '../styles/LandingPage.css';
 import SmallFeatures from '../components/SmallFeatures';
 import SmFeatures from '../components/SmFeatures2';
 import BackToTop from '../components/BackToTop';
-// import About from '../components/A'bout';
-// import Productcarousel from '../components/Productcarousel';
+
+import About from '../components/About';
+import Productcarousel from '../components/Productcarousel';
 import Couple from '../images/tryon-start-block.png';
 import Stylefeed from '../components/StyleFeed';
 import Vogue from '../images/Vogue.png';
@@ -35,7 +36,7 @@ function landingpage() {
               Discover timeless luxury and sustainability today.
             </p>
           </div>
-          <div className="button yellow-hover">
+          <div className="button-hero yellow-hover">
             <div className="shop-the-collection">Shop the collection</div>
           </div>
         </div>
@@ -94,9 +95,10 @@ function landingpage() {
         </div>
       </div>
       <SmallFeatures />
+      <Productcarousel />
+      <About />
       <SmFeatures />
-      {/* <Productcarousel /> */}
-      {/* <About /> */}
+      <Productcarousel />
       <Stylefeed />
       <BackToTop />
     </div>

@@ -132,7 +132,6 @@ header {
   margin-left: 29px;
 }
 
-
 .nav-links {
   list-style: none;
   display: flex;
@@ -192,10 +191,6 @@ header {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
-.nav-logo-box {
-  order: 1;
-}
-
 @media screen and (max-width: 810px) {
   .hamburger-menu {
     display: flex;
@@ -206,6 +201,9 @@ header {
     height: 30px;
     order: 1;
   }
+  .navbar-container {
+    padding: 16px 30px;
+  }
 
   .nav-logo-box {
     order: 2;
@@ -214,4 +212,7 @@ header {
   .icon-links-box {
     order: 3;
   }
+}
+
+@media screen and (max-width: 400px) {
 }

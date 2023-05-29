@@ -26,13 +26,13 @@ function Navbar() {
   return (
     <header>
       <nav>
-        <div className="navbar-container">
-          <div className="nav-logo-box">
-            <Link to="/">
-              <img className="nav-logo" src={Logo} alt="Logo" />
-            </Link>
-          </div>
-          {screenWidth <= 810 ? (
+        {screenWidth <= 810 ? (
+          <div className="navbar-container">
+            <div className="nav-logo-box">
+              <Link to="/">
+                <img className="nav-logo" src={Logo} alt="Logo" />
+              </Link>
+            </div>
             <div
               className={`hamburger-menu ${isMenuOpen ? 'active' : ''}`}
               onClick={toggleMenu}
@@ -41,7 +41,28 @@ function Navbar() {
               <div className="bar"></div>
               <div className="bar"></div>
             </div>
-          ) : (
+            <div className="icon-links-box">
+              <ul className="icons-ul">
+                <li className="nav-icons-li">
+                  <img className="nav-icons search" src={Search} alt="Search" />
+                </li>
+                <li className="nav-icons-li">
+                  <img
+                    className="nav-icons shoppingbag"
+                    src={Shoppingbag}
+                    alt="Shoppingbag"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+        ) : (
+          <div className="navbar-container">
+            <div className="nav-logo-box">
+              <Link to="/">
+                <img className="nav-logo" src={Logo} alt="Logo" />
+              </Link>
+            </div>
             <div className="nav-links-container">
               <div className="text-links-box">
                 <ul className="nav-links">
@@ -56,23 +77,28 @@ function Navbar() {
                   </li>
                 </ul>
               </div>
+              <div className="icon-links-box">
+                <ul className="icons-ul">
+                  <li className="nav-icons-li">
+                    <img
+                      className="nav-icons search"
+                      src={Search}
+                      alt="Search"
+                    />
+                  </li>
+                  <li className="nav-icons-li">
+                    <img
+                      className="nav-icons shoppingbag"
+                      src={Shoppingbag}
+                      alt="Shoppingbag"
+                    />
+                  </li>
+                </ul>
+              </div>
             </div>
-          )}
-          <div className="icon-links-box">
-            <ul className="icons-ul">
-              <li className="nav-icons-li">
-                <img className="nav-icons search" src={Search} alt="Search" />
-              </li>
-              <li className="nav-icons-li">
-                <img
-                  className="nav-icons shoppingbag"
-                  src={Shoppingbag}
-                  alt="Shoppingbag"
-                />
-              </li>
-            </ul>
           </div>
-        </div>
+        )}
+
         {isMenuOpen && (
           <div className="slide-in-menu">
             <ul>
