@@ -1,6 +1,5 @@
 import '../styles/global.css';
 import '../styles/About.css';
-
 import sustainability from '../images/About_substainability.jpg';
 import durability from '../images/About_durability.jpg';
 import artisans from '../images/About_artisans.jpg';

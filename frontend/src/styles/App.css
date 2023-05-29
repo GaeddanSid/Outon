@@ -36,6 +36,11 @@
     transform: rotate(360deg);
   }
 } */
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400&display=swap');
+
 @font-face {
   font-family: 'inter';
   src: url(../../public/fonts/Inter/static/Inter-Regular.ttf);
@@ -50,15 +55,13 @@
   font-family: 'Roboto';
   src: url(../../public/fonts/Roboto/Roboto-Regular.ttf);
 }
-body {
-  margin: 0;
-  line-height: normal;
-}
+
 :root {
   /* fonts */
   --font-inter: 'Inter';
   --outon-button-text: 'Playfair';
   --outon-paragraph-text-1: 'Roboto';
+  --font-helvetica-neue: 'Helvetica Neue';
 
   /* font sizes */
   --outon-paragraph-text-1-size: 16px;
@@ -132,9 +135,12 @@ body {
   background-size: 100%;
   padding: 0;
   min-height: 100%;
+  max-width: 100%;
   height: fit-content;
-  position: relative;
+  /* position: relative; */
   background: #fffefd;
+  line-height: normal;
+  overflow-x: hidden;
 }
 
 .view-divs {

@@ -1,15 +1,17 @@
 import { Link } from 'react-router-dom';
 import '../styles/LandingPage.css';
 import SmallFeatures from '../components/SmallFeatures';
-import About from '../components/About';
-
+import SmFeatures from '../components/SmFeatures2';
+import BackToTop from '../components/BackToTop';
+// import About from '../components/A'bout';
+// import Productcarousel from '../components/Productcarousel';
 import Couple from '../images/tryon-start-block.png';
-
+import Stylefeed from '../components/StyleFeed';
 import Vogue from '../images/Vogue.png';
 import Time from '../images/Time.png';
 import Elle from '../images/Elle.png';
 import Forbes from '../images/Forbes.png';
-import Bazar from '../images/Bazar.png';
+import Bazaar from '../images/Bazaar.png';
 import Cosmo from '../images/cosmo.png';
 
 function landingpage() {
@@ -18,70 +20,69 @@ function landingpage() {
       <div className="hero-section">
         <div className="hero-pic">
           <div className="slogan">
-            <p>Sun's out</p>
-            <p>shades on!</p>
+            <p>SUN'S OUT</p>
+            <p>SHADES ON</p>
           </div>
         </div>
         <div className="hero-text-parent">
           <div className="hero-text-container">
             <p className="hero-text">
               Elevate your style game with our exclusively refined and
-              sustainable
+              sustainable sunglasses, carefully handcrafted with
+              scratch-resistant glass.
             </p>
-            <p className="hero-text">
-              sunglasses, carefully handcrafted with scratch-resistant glass.
-            </p>
-            <p className="hero-text">&nbsp;</p>
             <p className="hero-text">
               Discover timeless luxury and sustainability today.
             </p>
           </div>
-          <div className="button">
+          <div className="button yellow-hover">
             <div className="shop-the-collection">Shop the collection</div>
           </div>
         </div>
       </div>
 
       <div className="brands">
-        <div>
+        <div className="brand-names">
           <img src={Vogue} alt="Vogue" />
         </div>
-        <div>
+        <div className="brand-names">
           <img src={Elle} alt="Elle" />
         </div>
-        <div>
+        <div className="brand-names">
           <img src={Forbes} alt="Forbes" />
         </div>
-        <div>
-          <img src={Bazar} alt="Bazaar" />
+        <div className="brand-names">
+          <img src={Bazaar} alt="Bazaar" />
         </div>
-        <div>
+        <div className="brand-names">
           <img src={Cosmo} alt="Cosmopolitan" />
         </div>
-        <div>
+        <div className="brand-names">
           <img src={Time} alt="Time" />
         </div>
       </div>
 
       <div className="try-on-start-block">
         <div className="try-on-start-text">
-          <p className="our-virtual">OUR VIRTUAL</p>
-          <p className="our-virtual">TRY-ON!</p>
+          <div className="try-on-text-inner">
+            <p className="our-virtual">OUR VIRTUAL TRY-ON!</p>
+            {/* <p className="our-virtual"></p> */}
 
-          <div className="small-text-try-on">
-            <p className="elevate">
-              Elevate your style game with Outon's exclusively refined and
-              sustainable sunglasses. Carefully handcrafted with
-              scratch-resistant glass.
-            </p>
-            {/* <p className="elevate">&nbsp;</p> */}
-            <p className="elevate">
-              Discover timeless luxury and sustainability today!
-            </p>
+            <div className="small-text-try-on">
+              <p className="elevate">
+                Elevate your style game with Outon's exclusively refined and
+                sustainable sunglasses. Carefully handcrafted with
+                scratch-resistant glass.
+              </p>
+              {/* <p className="elevate">&nbsp;</p> */}
+              <p className="elevate">
+                Discover timeless luxury and sustainability today!
+              </p>
+            </div>
           </div>
           <Link to="/try-on">
             <div className="button4">
-              <div className="button5">
+              <div className="button5 yellow-hover">
                 <div className="see-more">Try it now</div>
               </div>
             </div>
@@ -89,11 +90,15 @@ function landingpage() {
         </div>
 
         <div className="try-on-start-pic">
-          <img src={Couple} alt="try-on-couple" />
+          <img className="couple-try-on" src={Couple} alt="try-on-couple" />
         </div>
       </div>
       <SmallFeatures />
-      <About />
+      <SmFeatures />
+      {/* <Productcarousel /> */}
+      {/* <About /> */}
+      <Stylefeed />
+      <BackToTop />
     </div>
   );
 }

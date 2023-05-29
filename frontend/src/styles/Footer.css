@@ -1,28 +1,82 @@
-/* Footer.css */
+#footer {
+    background-color: #9F8EA2;
+    position: relative;
+}
 
 .footer-container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     padding: 16px 72px;
-    font-family: 'inter';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     letter-spacing: 0.03em;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+    color: #000;
+}
+
+.footer-container i:hover {
+    color: #c9c6d7;
+    cursor: pointer;
+}
+
+.footer-line {
+    width: 110%;
+    height: 2px;
     background-color: #000;
-    color: #fff;
+}
+
+.footer-text {
+    margin-top: 10px;
+}
+
+.subscribe-popup-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.subscribe-popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.centered-popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    text-align: center;
+}
+
+.invalid {
+    border: 1px solid red;
 }
 
 .logo {
     height: 70px;
-    width: 98px;
+    width: 100px;
+    margin-left: 25%;
+    margin-top: 10%;
+    color: #000;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+}
+
+.email-input::placeholder {
+    color: black;
 }
 
 .footer-container ul {
@@ -32,10 +86,16 @@
 
 .social-icons {
     display: flex;
-    gap: 50px;
+    gap: 30px;
     font-size: 30px;
-    color: #464141;
+    color: #010000;
     margin-top: 10px;
+    padding-left: 10%;
+}
+
+.social-icons i:hover {
+    color: #c9c6d7;
+    cursor: pointer;
 }
 
 .footer-container ul li {
@@ -44,7 +104,7 @@
 }
 
 .subscribe-input {
-    border-bottom: 1px solid #000;
+    border-bottom: 3px solid #000;
     width: 300px;
 }
 
@@ -53,21 +113,32 @@
     align-items: center;
     margin-top: 10px;
     font-family: 'inter';
-}
-
-@font-face {
-    font-family: 'inter';
-    src: url(../../public/fonts/Inter/static/Inter-Regular.ttf);
+    background-color: #9F8EA2;
 }
 
 .email-input {
     border: none;
     padding: 0;
     margin-right: 4px;
+    background: transparent;
 }
 
 .subscribe-link {
-    color: #3b3c3d;
+    color: #000;
+    transition: color 0.3s;
+    font-weight: bolder;
     cursor: pointer;
-    font-weight: bold;
+}
+
+.subscribe-link:hover {
+    color: #fff;
+}
+
+.list-unstyled li a {
+    color: #000;
+    transition: color 0.3s;
+}
+
+.list-unstyled li a:hover {
+    color: #fff;
 }
