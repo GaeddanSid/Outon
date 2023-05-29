@@ -8,42 +8,43 @@ body {
 }
 :root {
   /* fonts */
-  --font-inter: Inter;
-  --outon-paragraph-text-1: Roboto;
+  --outon-card-product-colour: Roboto;
   --outon-button-text: "Playfair Display";
-  --font-helvetica-neue: "Helvetica Neue";
+  --outon-paragraph-text-1: Roboto;
 
   /* font sizes */
   --font-size-sm: 14px;
   --outon-button-text-size: 18px;
+  --outon-card-product-colour-size: 16px;
+  --font-size-29xl: 48px;
   --outon-paragraph-text-1-size: 16px;
-  --outon-h2-size: 56px;
-  --outon-h3-size: 48px;
-  --outon-mobile-h2-size: 24px;
+  --outon-outon-h2-size: 56px;
+  --font-size-sm: 14px;
 
   /* Colors */
-  --outon-soft: #fffefd;
   --suave: #000;
   --outon-sand: #ebe6e0;
+  --outon-soft: #fffefd;
   --color-dimgray: #5a505a;
+  --color-violet: #fd8ae6;
+  --color-deepskyblue: #66adec;
+  --color-burlywood: #d8b47d;
 
   /* Gaps */
-  --gap-9xl: 28px;
-  --gap-6xs: 7px;
-  --gap-69xl: 88px;
-  --gap-21xl: 40px;
-  --gap-13xl: 32px;
-  --gap-5xl: 24px;
-  --gap-5xs: 8px;
-  --gap-base: 16px;
+  --gap-44xl: 63px;
   --gap-29xl: 48px;
+  --gap-5xs: 8px;
   --gap-9xs: 4px;
+  --gap-2xs: 11px;
+  --gap-5xl: 24px;
+  --gap-base: 16px;
+  --gap-21xl: 40px;
 
   /* Paddings */
-  --padding-6xl: 25px;
-  --padding-3xs: 10px;
-  --padding-5xl: 24px;
-  --padding-5xs: 8px;
   --padding-base: 16px;
+  --padding-55xl: 74px;
+  --padding-mini: 15px;
+  --padding-5xs: 8px;
   --padding-21xl: 40px;
+  --padding-mini-3: 14.3px;
 }

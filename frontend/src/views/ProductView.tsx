@@ -1,16 +1,20 @@
-import DetailDesktop from '../components/DetailDesktop';
 import About from '../components/About';
 import Productcarousel from '../components/Productcarousel';
-import TestFetch from '../components/TestFetch';
+import ProductDetails from '../components/ProductDetails';
+import SmallFeatures from '../components/SmallFeatures';
+
+import '../styles/ProductView.css'
 
 function product() {
 
   return (
-    <div className="view-divs">
-      <TestFetch />
-      <DetailDesktop />
-      <About />
+    <div className="">
+
+      <ProductDetails />
       <Productcarousel />
+      <SmallFeatures />
+      <About />
+
     </div>
   );
 }
