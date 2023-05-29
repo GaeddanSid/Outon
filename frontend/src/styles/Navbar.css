@@ -11,7 +11,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 16px 72px;
-  gap: 8px;
   font-family: 'inter';
   font-style: normal;
   font-weight: 400;
@@ -170,4 +169,42 @@ header {
 .nav-icons:hover {
   transform: scale(1.2);
   cursor: pointer;
+}
+
+.hamburger-menu {
+  display: flex;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 1.5px;
+  background-color: #000;
+  margin: 2px;
+  transition: transform 0.4s ease-in-out;
+}
+
+/* Animation styles for the hamburger menu */
+.hamburger-menu.active .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger-menu.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-menu.active .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Media query for screens 810px or under */
+@media screen and (max-width: 810px) {
+  .hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 40px;
+    height: 30px;
+  }
 }

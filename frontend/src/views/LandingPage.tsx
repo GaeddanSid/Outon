@@ -28,12 +28,9 @@ function landingpage() {
           <div className="hero-text-container">
             <p className="hero-text">
               Elevate your style game with our exclusively refined and
-              sustainable
+              sustainable sunglasses, carefully handcrafted with
+              scratch-resistant glass.
             </p>
-            <p className="hero-text">
-              sunglasses, carefully handcrafted with scratch-resistant glass.
-            </p>
-            <p className="hero-text">&nbsp;</p>
             <p className="hero-text">
               Discover timeless luxury and sustainability today.
             </p>
@@ -67,19 +64,21 @@ function landingpage() {
 
       <div className="try-on-start-block">
         <div className="try-on-start-text">
-          <p className="our-virtual">OUR VIRTUAL</p>
-          <p className="our-virtual">TRY-ON!</p>
+          <div className="try-on-text-inner">
+            <p className="our-virtual">OUR VIRTUAL TRY-ON!</p>
+            {/* <p className="our-virtual"></p> */}
 
-          <div className="small-text-try-on">
-            <p className="elevate">
-              Elevate your style game with Outon's exclusively refined and
-              sustainable sunglasses. Carefully handcrafted with
-              scratch-resistant glass.
-            </p>
-            {/* <p className="elevate">&nbsp;</p> */}
-            <p className="elevate">
-              Discover timeless luxury and sustainability today!
-            </p>
+            <div className="small-text-try-on">
+              <p className="elevate">
+                Elevate your style game with Outon's exclusively refined and
+                sustainable sunglasses. Carefully handcrafted with
+                scratch-resistant glass.
+              </p>
+              {/* <p className="elevate">&nbsp;</p> */}
+              <p className="elevate">
+                Discover timeless luxury and sustainability today!
+              </p>
+            </div>
           </div>
           <Link to="/try-on">
             <div className="button4">
