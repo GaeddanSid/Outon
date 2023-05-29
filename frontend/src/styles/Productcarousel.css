@@ -1,0 +1,157 @@
+.carousel-item {
+  margin-top: 20px;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  color: #fff;
+}
+
+.carousel-caption h5 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.carousel-caption p {
+  font-size: 14px;
+}
+
+.the-rio-rush {
+height: 64px;
+
+
+font-family: 'Playfair Display';
+font-style: normal;
+font-weight: 500;
+font-size: 48px;
+line-height: 64px;
+
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #000000;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.carousel-2 {
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 10px;
+gap: 52px;
+margin-bottom: 218px;
+margin-top: 218px;
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.carousel-2 .carousel-control-prev,
+.carousel-2 .carousel-control-next {
+  width: 80px;
+  height: 80px;
+  background-color: #FFFEFD;
+  border-radius: 50%;
+  position: absolute;
+  top: 38%;
+  transform: translateY(-50%);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0px 29px 12px rgba(0, 0, 0, 0.01), 0px 16px 10px rgba(0, 0, 0, 0.05), 0px 7px 7px rgba(0, 0, 0, 0.09), 0px 2px 4px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-2 .carousel-control-prev:hover,
+.carousel-2 .carousel-control-next:hover {
+background-color: #EEE565;
+}
+
+.carousel-2 .carousel-control-prev::before,
+.carousel-2 .carousel-control-next::before {
+  content: "";
+  width: 35px;
+  height: 35px;
+  border-left: 2px solid black;
+  border-top: 2px solid black;
+  transform: rotate(-45deg);
+}
+
+.carousel-2 .carousel-control-next::before {
+  transform: rotate(135deg);
+}
+
+.d-flex {
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 37.5px;
+
+}
+
+.product-item {
+  margin-left: 20px;
+}
+
+.find {
+  box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 7px 24px;
+gap: 10px;
+
+width: 208px;
+height: 48px;
+
+/* Outon/Soft
+
+Background
+*/
+background: #FFFEFD;
+border: 3px solid #000000;
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.find:hover {
+  background-color: #EEE565;
+}
+
+.d-block {
+
+filter: drop-shadow(0px 29px 12px rgba(0, 0, 0, 0.01)) drop-shadow(0px 16px 10px rgba(0, 0, 0, 0.05)) drop-shadow(0px 7px 7px rgba(0, 0, 0, 0.09)) drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.1)) drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.1));
+
+}
+
+.d-block:hover {
+  transition: ease-in-out;
+}
+
+
+@media screen and (max-width: 610px) {
+
+  .the-rio-rush{
+    font-size: 38px;
+  line-height: 34px;
+  }
+
+}
