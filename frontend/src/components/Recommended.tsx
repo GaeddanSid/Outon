@@ -28,7 +28,7 @@ interface ProductCarouselProps {
   onProductClick: (product: Product) => void;
 }
 
-function Productcarousel({ onProductClick }: ProductCarouselProps) {
+function Productcarousel2({ onProductClick }: ProductCarouselProps) {
   const [products, setProducts] = useState<Product[]>([]);
   // const [productImages, setProductImages] = useState<string[]>([]);
   const [selectedProduct, setSelectedProduct] = useState<number[]>([]);
@@ -83,7 +83,7 @@ function Productcarousel({ onProductClick }: ProductCarouselProps) {
 
   return (
     <div className="carousel-2">
-      <div className="the-rio-rush">SEE THE WORLD THROUGH OUR GLASSES</div>
+      <div className="the-rio-rush">RECOMMENDED FOR YOU</div>
       <Carousel
         interval={null} // Ingen auto snurr
         slide={true} // Visa flera samtidigt
@@ -120,11 +120,10 @@ function Productcarousel({ onProductClick }: ProductCarouselProps) {
         )}
       </Carousel>
       <Link to="/All-sunglasses">
-        {' '}
-        <button className="find">Shop the collection</button>
+        <button className="find">Find what you love</button>
       </Link>
     </div>
   );
 }
 
-export default Productcarousel;
+export default Productcarousel2;

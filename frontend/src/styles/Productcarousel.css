@@ -26,25 +26,24 @@
 }
 
 .the-rio-rush {
-height: 64px;
+  height: 64px;
 
-font-family: 'Playfair Display';
-font-style: normal;
-font-weight: 500;
-font-size: 48px;
-line-height: 64px;
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 64px;
 
-text-align: center;
-letter-spacing: 0.04em;
+  text-align: center;
+  letter-spacing: 0.04em;
 
-color: #000000;
+  color: #000000;
 
+  /* Inside auto layout */
 
-/* Inside auto layout */
-
-flex: none;
-order: 0;
-flex-grow: 0;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 .product-item {
@@ -59,24 +58,24 @@ flex-grow: 0;
 }
 
 .carousel-2 {
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 10px;
-gap: 52px;
-margin-bottom: 218px;
-margin-top: 218px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  gap: 52px;
+  margin-bottom: 218px;
+  margin-top: 218px;
 
-flex: none;
-order: 1;
-flex-grow: 0;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 
 .carousel-2 .carousel-control-prev,
 .carousel-2 .carousel-control-next {
   width: 80px;
   height: 80px;
-  background-color: #FFFEFD;
+  background-color: #fffefd;
   border-radius: 50%;
   position: absolute;
   top: 38%;
@@ -100,7 +99,7 @@ flex-grow: 0;
 
 .carousel-2 .carousel-control-prev::before,
 .carousel-2 .carousel-control-next::before {
-  content: "";
+  content: '';
   width: 20px;
   height: 20px;
   border-left: 2px solid black;
@@ -110,74 +109,69 @@ flex-grow: 0;
 
 .carousel-2 .carousel-control-next::before {
   transform: rotate(135deg);
-
 }
 
 .carousel-2 .carousel-control-prev:hover,
 .carousel-2 .carousel-control-next:hover {
-background-color: #EEE565;
+  background-color: #eee565;
 }
-
 
 .d-flex {
-display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 0px;
-gap: 37.5px;
-
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 37.5px;
 }
-
 
 .find {
   box-sizing: border-box;
 
-/* Auto layout */
+  /* Auto layout */
 
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-padding: 7px 24px;
-gap: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 24px;
+  gap: 10px;
+  font-family: var(--outon-button-text);
+  width: 208px;
+  height: 48px;
 
-width: 208px;
-height: 48px;
-
-/* Outon/Soft
+  /* Outon/Soft
 
 Background
 */
-background: #FFFEFD;
-border: 3px solid #000000;
+  background: #fffefd;
+  border: 3px solid #000000;
 
-/* Inside auto layout */
+  /* Inside auto layout */
 
-flex: none;
-order: 1;
-flex-grow: 0;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 
 .find:hover {
-  background-color: #EEE565;
+  background-color: #eee565;
 }
 
 .d-block {
-
-filter: drop-shadow(0px 29px 12px rgba(0, 0, 0, 0.01)) drop-shadow(0px 16px 10px rgba(0, 0, 0, 0.05)) drop-shadow(0px 7px 7px rgba(0, 0, 0, 0.09)) drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.1)) drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.1));
-
+  filter: drop-shadow(0px 29px 12px rgba(0, 0, 0, 0.01))
+    drop-shadow(0px 16px 10px rgba(0, 0, 0, 0.05))
+    drop-shadow(0px 7px 7px rgba(0, 0, 0, 0.09))
+    drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.1))
+    drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.1));
 }
 
 .d-block:hover {
   transition: ease-in-out;
 }
 
-
 @media screen and (max-width: 610px) {
-
-  .the-rio-rush{
+  .the-rio-rush {
     font-size: 38px;
-  line-height: 34px;
+    line-height: 34px;
   }
-
 }

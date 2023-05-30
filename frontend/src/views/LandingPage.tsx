@@ -6,6 +6,8 @@ import BackToTop from '../components/BackToTop';
 
 import About from '../components/About';
 import Productcarousel from '../components/Productcarousel';
+
+import Productcarousel2 from '../components/Recommended';
 import Couple from '../images/tryon-start-block.png';
 import Stylefeed from '../components/StyleFeed';
 import Vogue from '../images/Vogue.png';
@@ -74,7 +76,9 @@ function landingpage() {
             </p>
           </div>
           <div className="button-hero yellow-hover">
-            <div className="shop-the-collection">Shop the collection</div>
+            <Link to="/All-sunglasses">
+              <div className="shop-the-collection">Shop the collection</div>
+            </Link>
           </div>
         </div>
       </div>
@@ -137,7 +141,7 @@ function landingpage() {
         <About />
       </div>
       <SmFeatures />
-      <Productcarousel onProductClick={handleProductClick} />
+      <Productcarousel2 onProductClick={handleProductClick} />
       <Stylefeed />
       <BackToTop />
     </div>

@@ -106,7 +106,7 @@
 }
 
 .buttonseespecs:hover {
-  background-color: #eee565;
+  background-color: var(--eucalyptus);
 }
 
 .discover-the-craftsmanship {
@@ -138,11 +138,12 @@
 .about-section {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  padding: 144px 153px;
+  align-items: center;
+  justify-content: center;
+  /* padding: 144px 153px; */
   gap: 10px;
   margin-bottom: 44px;
-
+  height: 1517px;
   width: 100vw;
 
   background: #ebe6e0;
