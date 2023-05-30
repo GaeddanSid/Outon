@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PolaroidGallery from './PolaroidGallery';
 import photo1 from '../images/polaroid-manhattanmoon-purple-black-above-smile.jpeg';
-
+import WebcamImage from '../components/Screenshot';
 import '../styles/Phone.css';
 import { Camera, Reply, Person, Trash } from 'react-bootstrap-icons';
 
@@ -17,8 +17,9 @@ const PhoneHeader = () => {
       <div className="phone">
         <div className="screen">
           <div className="carousel-container">
-            <img src={photo1} alt="Phone Screen" className="phone-screen" />
-            <PolaroidGallery />
+            <WebcamImage />
+            {/* <img src={photo1} alt="Phone Screen" className="phone-screen" />
+            <PolaroidGallery /> */}
           </div>
 
           <div className={`hidden-box ${showButtons ? 'show' : ''}`}>
