@@ -22,6 +22,7 @@
     "react-router-dom": "^6.11.2",
     "react-scripts": "^5.0.1",
     "react-three-fiber": "^6.0.13",
+    "react-webcam": "^7.1.0",
     "scroll": "^3.0.1",
     "three": "^0.152.2",
     "vr": "^0.2.0",

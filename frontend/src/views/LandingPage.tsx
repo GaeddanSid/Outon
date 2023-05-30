@@ -14,6 +14,8 @@ import Elle from '../images/Elle.png';
 import Forbes from '../images/Forbes.png';
 import Bazaar from '../images/Bazaar.png';
 import Cosmo from '../images/cosmo.png';
+import Camera from '../components/Camera';
+import WebcamImage from '../components/Screenshot';
 import { useState } from 'react';
 
 interface Product {

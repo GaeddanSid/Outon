@@ -1,13 +1,9 @@
-footer {
-    width: 100%;
-}
-
 .footer {
     background-color: #9f8ea2;
     position: relative;
     padding: 32px 0px 26px;
     gap: 100px;
-    width: 1520px;
+    width: 100vw;
     height: 235px;
 }
 
@@ -24,14 +20,13 @@ footer {
     letter-spacing: 0.03em;
     color: #000;
     height: 60px;
-    background-color: #9f8ea2;
 }
 
-.row {
+
+/* .row {
     padding-top: 40px;
     padding-bottom: 40px;
-    background-color: #9f8ea2;
-}
+  } */
 
 .footer-container i:hover {
     color: #c9c6d7;
