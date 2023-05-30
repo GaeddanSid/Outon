@@ -40,7 +40,7 @@ const PolaroidGallery = () => {
             <div className="logoo-container">
               <img src={logo} alt="Logo" />
             </div>
-            <div className="product-name">{`Produktnamn ${index + 1}`}</div>
+            <div className="product-name">The Sydney Splendour</div>
             <div className="text-field"></div>
           </div>
         </div>
@@ -63,10 +63,10 @@ const PolaroidGallery = () => {
             width: 233.2px;
             height: 236.6px;
             padding: 10.3px;
-
             background: #d9d9d9;
             position: relative;
             border: 10.2882px solid #FFFFFF;
+            box-shadow: 0px 23px 14px rgba(100, 50, 0, 0.02), 0px 10px 10px rgba(100, 50, 0, 0.03), 0px 3px 6px rgba(100, 50, 0, 0.03), 0px 0px 0px rgba(100, 50, 0, 0.03);
           }
 
           .polaroiid-item img {
@@ -87,7 +87,7 @@ const PolaroidGallery = () => {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: flex-end;
+            align-items: flex-start;
             padding: 10px;
           }
 
@@ -100,19 +100,17 @@ const PolaroidGallery = () => {
             padding: 5px;
           }
 
-
           .logoo-container img {
             position: absolute;
             left: 2.8%;
             right: 24.16%;
             top: 42.35%;
             bottom: 0.12%;
-
-
           }
 
           .product-name {
             text-align: right;
+            padding-left: 35px; /* Justera detta värde för önskat avstånd från vänsterkanten */
           }
 
           .text-field {
