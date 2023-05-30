@@ -132,7 +132,6 @@ header {
   margin-left: 29px;
 }
 
-
 .nav-links {
   list-style: none;
   display: flex;
@@ -180,7 +179,6 @@ header {
   transition: transform 0.4s ease-in-out;
 }
 
-/* Animation styles for the hamburger menu */
 .hamburger-menu.active .bar:nth-child(1) {
   transform: rotate(-45deg) translate(-5px, 6px);
 }
@@ -193,7 +191,6 @@ header {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
-/* Media query for screens 810px or under */
 @media screen and (max-width: 810px) {
   .hamburger-menu {
     display: flex;
@@ -202,5 +199,20 @@ header {
     align-items: flex-start;
     width: 40px;
     height: 30px;
+    order: 1;
   }
+  .navbar-container {
+    padding: 16px 30px;
+  }
+
+  .nav-logo-box {
+    order: 2;
+  }
+
+  .icon-links-box {
+    order: 3;
+  }
+}
+
+@media screen and (max-width: 400px) {
 }

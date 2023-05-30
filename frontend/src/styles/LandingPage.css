@@ -107,7 +107,7 @@
   height: 24px;
   flex-shrink: 0;
 }
-.button {
+.button-hero {
   background-color: var(--outon-soft);
   border: 3px solid var(--suave);
   box-sizing: border-box;
@@ -307,6 +307,11 @@
   position: relative;
   letter-spacing: 0.03em;
   font-weight: 600;
+  font-family: 'playfair';
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
 }
 
 @media screen and (max-width: 990px) {
