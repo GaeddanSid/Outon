@@ -36,6 +36,7 @@ const defaultProduct: Product = {
 };
 
 function product() {
+
   const [selectedProduct, setSelectedProduct] = useState<Product>(defaultProduct);
 
   const handleProductClick = (product: Product) => {
