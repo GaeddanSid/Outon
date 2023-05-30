@@ -126,7 +126,6 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border: solid 14.7px #705d67;
 }
 
 .round-button svg,

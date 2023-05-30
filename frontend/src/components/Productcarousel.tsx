@@ -23,9 +23,14 @@ interface Product {
   image3: string;
 }
 
-function Productcarousel() {
+interface ProductCarouselProps {
+  onProductClick: (product: Product) => void;
+}
+
+function Productcarousel({ onProductClick }: ProductCarouselProps) {
   const [products, setProducts] = useState<Product[]>([]);
   // const [productImages, setProductImages] = useState<string[]>([]);
+  const [selectedProduct, setSelectedProduct] = useState<number[]>([]);
 
   useEffect(() => {
     fetchProducts();
@@ -62,6 +67,21 @@ function Productcarousel() {
     }
   }
 
+    // Shuffle array using Fisher-Yates algorithm
+    const shuffleArray = (array: any[]) => {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+      return array;
+    };
+
+    const getFourRandomProducts = () => {
+      const shuffledProducts = shuffleArray(products);
+      return shuffledProducts.slice(0, 4);
+    };
+
+
   return (
       <div className="carousel-2">
         <div className="the-rio-rush">SEE THE WORLD THROUGH OUR GLASSES</div>
@@ -70,21 +90,21 @@ function Productcarousel() {
                   slide={true} // Visa flera samtidigt
                   indicators={false}
         >
-          {products.map((product: Product,) => (
-            <Carousel.Item key={product.id}>
-              <div className='d-flex'>
-              {Array.from(Array(4).keys()).map((index) => (
-                  <div key={index} className="product-item">
+          {Array.from({ length: Math.ceil(products.length / 4) }).map((_, index) => (
+            <Carousel.Item key={index}>
+              <div className='d-flex w-100'>
+
+              {getFourRandomProducts().map((product: Product) => (
+                <div key={product.id} className="product-item" onClick={() => onProductClick(product)}>
               <img
-                className="d-block w-100"
+                className="d-block hover-effect"
                 src = {getImagePath(product.image)}
                 alt={product.name}
               />
               <div className='product-info'>
-
                 <h3>{product.name}</h3>
-                <p>{product.color}</p>
-                <p><strong>$</strong>{product.price}</p>
+                <p className='product-text'>{product.color}</p>
+                <p className='product-text'><strong>$</strong>{product.price}</p>
                 </div>
                 </div>
                 ))}

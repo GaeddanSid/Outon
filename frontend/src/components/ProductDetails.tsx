@@ -1,13 +1,32 @@
 import { useEffect, useState } from "react";
+import { BsPlus, BsX, BsCheck2 } from 'react-icons/bs';
 
-import rio2 from '../images/Product_Rio2.png';
 import rio1 from '../images/Product_Rio1.png';
+import rio2 from '../images/Product_Rio2.png';
 import rio3 from '../images/Product_Rio3.png';
-import { Image } from "react-bootstrap";
+
+import nairobii1 from '../images/Product_Nairobi1.png'
+import nairobii2 from '../images/Product_Nairobi2.png'
+import nairobii3 from '../images/Product_Nairobi3.png'
+
+import tokyo1 from '../images/Product_Tokyo1.png'
+import tokyo2 from '../images/Product_Tokyo2.png'
+import tokyo3 from '../images/Product_Tokyo3.png'
+
+import manhattan1 from '../images/Product_Manhattan1.png'
+import manhattan2 from '../images/Product_Manhattan2.png'
+import manhattan3 from '../images/Product_Manhattan3.png'
+
+
+import berlin1 from '../images/Product_Berlin1.png'
+import berlin2 from '../images/Product_Berlin2.png'
+import berlin3 from '../images/Product_Berlin3.png'
+
+import pink1 from '../images/SS_Pink_1.png'
+import pink2 from '../images/SS_Pink_2.png'
+import pink3 from '../images/SS_Pink_3.png'
 
 import '../styles/ProductDetails.css'
-import Productcarousel from "./Productcarousel";
-import SmallFeatures from "./SmallFeatures";
 
 interface Product {
   id: number;
@@ -22,10 +41,18 @@ interface Product {
   image2: string;
   image3: string;
 }
+interface ProductDetailProps {
+  product: Product;
+}
 
-function ProductDetails () {
+function ProductDetails ({ product }: ProductDetailProps) {
 
   const [products, setProducts] = useState<Product[]>([]);
+  const [isDescriptionVisible, setIsDescriptionVisible] = useState(false);
+
+  const toggleDescription = () => {
+    setIsDescriptionVisible(!isDescriptionVisible);
+  };
 
   useEffect(() => {
     fetchProducts();
@@ -43,29 +70,102 @@ function ProductDetails () {
   };
 
 
+  const getImagePath = (image: string) => {
+    switch (product.name) {
+      case 'Rio Rush':
+        switch (image) {
+          case 'image1':
+            return rio1;
+          case 'image2':
+            return rio2;
+          case 'image3':
+            return rio3;
+          default:
+            return '';
+        }
+      case 'Nairobi Nights':
+        switch (image) {
+          case 'image1':
+            return nairobii1;
+          case 'image2':
+            return nairobii2;
+          case 'image3':
+            return nairobii3;
+          default:
+            return '';
+        }
+      case 'Tokyo Twilight':
+        switch (image) {
+          case 'image1':
+            return tokyo1;
+          case 'image2':
+            return tokyo2;
+          case 'image3':
+            return tokyo3;
+          default:
+            return '';
+        }
+      case 'Manhattan Moon':
+        switch (image) {
+          case 'image1':
+            return manhattan1;
+          case 'image2':
+            return manhattan2;
+          case 'image3':
+            return manhattan3
+            default:
+              return '';
+          }
+        case 'Berlin Beat':
+          switch (image) {
+            case 'image1':
+              return berlin1;
+            case 'image2':
+              return berlin2;
+            case 'image3':
+              return berlin3;
+            default:
+              return '';
+          }
+        case 'Sydney Splendid':
+          switch (image) {
+            case 'image1':
+              return pink1;
+            case 'image2':
+              return pink2;
+            case 'image3':
+              return pink3;
+            default:
+              return '';
+          }
+        default:
+          return '';
+      }
+    };
+
   return (
     <div className="productdetail">
       <div className="productimage">
         <img
-          className="skarmavbild-2023-05-09-kl-14"
-          alt=""
-          src={rio1}
+          className="skarmavbild-2023-05-09-kl-14 hover-effect"
+          alt={product.name}
+          src={getImagePath('image1')}
         />
         <div className="skarmavbild-2023-05-09-kl-14-parent">
           <img
-            className="skarmavbild-2023-05-09-kl-141"
+            className="skarmavbild-2023-05-09-kl-141 hover-effect"
             alt=""
-            src={rio1}
+            src={getImagePath('image1')}
           />
           <img
-            className="skarmavbild-2023-05-09-kl-141"
+            className="skarmavbild-2023-05-09-kl-141 hover-effect"
             alt=""
-            src={rio2}
+            src={getImagePath('image2')}
           />
           <img
-            className="skarmavbild-2023-05-09-kl-141"
+            className="skarmavbild-2023-05-09-kl-141 hover-effect"
             alt=""
-            src={rio3}
+            src={getImagePath('image3')}
           />
         </div>
         <div className="button">
@@ -75,14 +175,14 @@ function ProductDetails () {
       <div className="cardprojectdetail">
         <div className="project-info">
           <div className="the-rio-rush-wrapper">
-            <div className="the-rio-rush">Rio Rush</div>
+            <div className="the-rio-rush">{product.name}</div>
           </div>
           <div className="outon-eyewear-wrapper">
             <div className="outon-eyewear">Outon Eyewear</div>
           </div>
 
           <div className="outon-eyewear-wrapper">
-            <b className="outon-eyewear">€ 140</b>
+            <b className="outon-eyewear">€ {product.price}</b>
           </div>
 
             <div className="table">
@@ -118,16 +218,27 @@ function ProductDetails () {
                 </div>
               </div>
               <div className="description">
-                <div className="descriptonoption">
+                <div className="descriptonoption" onClick={toggleDescription}>
+                {isDescriptionVisible ? '' : ''}
                   <div className="descriptionheader">
-                    <div className="s">Description</div>
+
+                      {isDescriptionVisible ? (
+                        <div>
+                        <div className="s">Description</div>
+                        <div className="product-description">{product.description}</div>
+                        </div>
+
+
+                      ) : (<div className="s">Description</div>
+                      )}
+
                   </div>
                   <div className="expand">
-                    <img
-                      className="radio-button-checked"
-                      alt=""
-                      src="/pluslg.svg"
-                    />
+                    {isDescriptionVisible ?  (
+                      <BsX onClick={toggleDescription} />
+                    ) : ( <BsPlus onClick={toggleDescription} />
+                    )}
+
                   </div>
                 </div>
               </div>
@@ -138,27 +249,15 @@ function ProductDetails () {
         <div className="tinypromises">
           <div className="s-parent">
             <div className="icoutline-done-parent">
-              <img
-                className="icoutline-done-icon"
-                alt=""
-                src="/icoutlinedone.svg"
-              />
+            <BsCheck2 />
               <div className="uvauvb-protection">100% UVA+UVB protection</div>
             </div>
             <div className="icoutline-done-parent">
-              <img
-                className="icoutline-done-icon"
-                alt=""
-                src="/icoutlinedone1.svg"
-              />
+            <BsCheck2 />
               <div className="uvauvb-protection">Recycled materials</div>
             </div>
             <div className="icoutline-done-parent">
-              <img
-                className="icoutline-done-icon"
-                alt=""
-                src="/icoutlinedone1.svg"
-              />
+            <BsCheck2 />
               <div className="uvauvb-protection">100% scratchfree</div>
             </div>
           </div>

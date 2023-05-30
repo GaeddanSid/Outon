@@ -26,14 +26,14 @@ function About() {
                   <button className="buttonseespecs">Explore our sustainable promise</button>
               </div>
               <img
-                className="pic-about-substainability-icon"
+                className="pic-about-substainability-icon hover-effect"
                 alt=""
                 src={sustainability}
               />
             </div>
             <div className="sustainabilitypicture">
               <img
-                className="pic-about-substainability-icon"
+                className="pic-about-substainability-icon hover-effect"
                 alt=""
                 src={durability}
               />
@@ -74,7 +74,7 @@ function About() {
                 <button className="buttonseespecs">Discover the craftsmanship</button>
               </div>
               <img
-                className="pic-about-substainability-icon"
+                className="pic-about-substainability-icon hover-effect"
                 alt=""
                 src={artisans}
               />
