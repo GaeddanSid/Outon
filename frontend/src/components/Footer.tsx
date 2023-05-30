@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
   };
 
   return (
-    <footer id="footer">
+    <footer className="footer">
       <Tab.Container>
         <Row>
           <Col xs={12} sm={6} md={3}>
@@ -160,8 +160,8 @@ const Footer: React.FC = () => {
         <h3>Thank you for subscribing!</h3>
         <button onClick={handleClosePopup}>Close</button>
       </Modal>
+      <div className="footer-line"></div>
       <div className="footer-container">
-        <div className="footer-line"></div>
         <span className="footer-text">
           &copy; 2023 Outon company, all rights reserved
         </span>

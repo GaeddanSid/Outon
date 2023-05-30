@@ -81,7 +81,7 @@ function landingpage() {
               </p>
             </div>
           </div>
-          <Link to="/try-on">
+          <Link to="/All-sunglasses">
             <div className="button4">
               <div className="button5 yellow-hover">
                 <div className="see-more">Try it now</div>
@@ -96,7 +96,9 @@ function landingpage() {
       </div>
       <SmallFeatures />
       <Productcarousel />
-      <About />
+      <div id="about">
+        <About />
+      </div>
       <SmFeatures />
       <Productcarousel />
       <Stylefeed />

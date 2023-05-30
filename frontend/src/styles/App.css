@@ -42,11 +42,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400&display=swap');
 
 @font-face {
-  font-family: 'inter';
-  src: url(../../public/fonts/Inter/static/Inter-Regular.ttf);
-}
-
-@font-face {
   font-family: 'playfair';
   src: url(../../public/fonts/Playfair_Display/static/PlayfairDisplay-Medium.ttf);
 }
@@ -58,7 +53,6 @@
 
 :root {
   /* fonts */
-  --font-inter: 'Inter';
   --outon-button-text: 'Playfair';
   --outon-paragraph-text-1: 'Roboto';
   --font-helvetica-neue: 'Helvetica Neue';

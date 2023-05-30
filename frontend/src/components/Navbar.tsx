@@ -1,5 +1,6 @@
 import '../styles/Navbar.css';
 import React, { useState, useEffect } from 'react';
+// import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 import { Link } from 'react-router-dom';
 import Logo from '../images/logo.png';
 import Search from '../images/search-icon.png';
@@ -47,11 +48,13 @@ function Navbar() {
                   <img className="nav-icons search" src={Search} alt="Search" />
                 </li>
                 <li className="nav-icons-li">
-                  <img
-                    className="nav-icons shoppingbag"
-                    src={Shoppingbag}
-                    alt="Shoppingbag"
-                  />
+                  <Link to="/Product-details">
+                    <img
+                      className="nav-icons shoppingbag"
+                      src={Shoppingbag}
+                      alt="Shoppingbag"
+                    />
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -70,10 +73,10 @@ function Navbar() {
                     <Link to="/">News</Link>
                   </li>
                   <li className="nav-link-text">
-                    <Link to="/products">All sunglasses</Link>
+                    <Link to="/All-sunglasses">All sunglasses</Link>
                   </li>
                   <li className="nav-link-text">
-                    <Link to="/">House of OutOn</Link>
+                    <Link to="/about">House of OutOn</Link>
                   </li>
                 </ul>
               </div>
@@ -87,11 +90,13 @@ function Navbar() {
                     />
                   </li>
                   <li className="nav-icons-li">
-                    <img
-                      className="nav-icons shoppingbag"
-                      src={Shoppingbag}
-                      alt="Shoppingbag"
-                    />
+                    <Link to="/Product-details">
+                      <img
+                        className="nav-icons shoppingbag"
+                        src={Shoppingbag}
+                        alt="Shoppingbag"
+                      />
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -106,10 +111,10 @@ function Navbar() {
                 <Link to="/">News</Link>
               </li>
               <li>
-                <Link to="/products">All sunglasses</Link>
+                <Link to="/All-sunglasses">All sunglasses</Link>
               </li>
               <li>
-                <Link to="/">House of OutOn</Link>
+                <Link to="/about">House of OutOn</Link>
               </li>
             </ul>
           </div>

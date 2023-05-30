@@ -6,6 +6,7 @@ import LandingPage from './views/LandingPage';
 import ProductView from './views/ProductView';
 import TryOnView from './views/TryOnView';
 import Footer from './components/Footer';
+import About from './components/About';
 
 function Root() {
   return (
@@ -28,8 +29,9 @@ function App() {
     {
       children: [
         { element: <LandingPage />, path: '/' },
-        { element: <ProductView />, path: '/Products' },
-        { element: <TryOnView />, path: '/try-on' },
+        { element: <About />, path: '/about' },
+        { element: <ProductView />, path: '/Product-details' },
+        { element: <TryOnView />, path: '/All-sunglasses' },
       ],
       element: <Root />,
     },

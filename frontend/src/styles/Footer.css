@@ -1,144 +1,154 @@
-#footer {
-    background-color: #9F8EA2;
-    position: relative;
+footer {
+  width: 100%;
+}
+
+.footer {
+  background-color: #9f8ea2;
+  position: relative;
 }
 
 .footer-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 16px 72px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 0.03em;
-    color: #000;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-start; */
+  align-items: center;
+  padding: 0 72px 0 72px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  color: #000;
+  height: 60px;
+}
+
+.row {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .footer-container i:hover {
-    color: #c9c6d7;
-    cursor: pointer;
+  color: #c9c6d7;
+  cursor: pointer;
 }
 
 .footer-line {
-    width: 110%;
-    height: 2px;
-    background-color: #000;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
 }
 
 .footer-text {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .subscribe-popup-overlay {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
 }
 
 .subscribe-popup {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: white;
-    padding: 20px;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .centered-popup {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .popup-content {
-    text-align: center;
+  text-align: center;
 }
 
 .invalid {
-    border: 1px solid red;
+  border: 1px solid red;
 }
 
 .logo {
-    height: 70px;
-    width: 100px;
-    margin-left: 25%;
-    margin-top: 10%;
-    color: #000;
-    left: 0px;
-    top: 0px;
-    border-radius: 0px;
+  height: 110px;
+  width: 153.69px;
+  margin-left: 25%;
+  /* margin-top: 10%; */
+  color: #000;
+  left: 0px;
+  top: 0px;
+  border-radius: 0px;
 }
 
 .email-input::placeholder {
-    color: black;
+  color: black;
 }
 
 .footer-container ul {
-    padding: 0;
-    list-style: none;
+  padding: 0;
+  list-style: none;
 }
 
 .social-icons {
-    display: flex;
-    gap: 30px;
-    font-size: 30px;
-    color: #010000;
-    margin-top: 10px;
-    padding-left: 10%;
+  display: flex;
+  gap: 30px;
+  font-size: 21px;
+  color: #010000;
+  margin-top: 10px;
+  padding-left: 10%;
 }
 
 .social-icons i:hover {
-    color: #c9c6d7;
-    cursor: pointer;
+  color: #c9c6d7;
+  cursor: pointer;
 }
 
 .footer-container ul li {
-    margin-bottom: 8px;
-    border: none;
+  margin-bottom: 8px;
+  border: none;
 }
 
 .subscribe-input {
-    border-bottom: 3px solid #000;
-    width: 300px;
+  border-bottom: 1px solid #000;
+  width: 300px;
 }
 
 .subscribe-container {
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-    font-family: 'inter';
-    background-color: #9F8EA2;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  font-family: 'Roboto';
+  background-color: #9f8ea2;
 }
 
 .email-input {
-    border: none;
-    padding: 0;
-    margin-right: 4px;
-    background: transparent;
+  border: none;
+  padding: 0;
+  margin-right: 4px;
+  background: transparent;
 }
 
 .subscribe-link {
-    color: #000;
-    transition: color 0.3s;
-    font-weight: bolder;
-    cursor: pointer;
+  color: #000;
+  transition: color 0.3s;
+  /* font-weight: bolder; */
+  cursor: pointer;
 }
 
 .subscribe-link:hover {
-    color: #fff;
+  color: #fff;
 }
 
 .list-unstyled li a {
-    color: #000;
-    transition: color 0.3s;
+  color: #000;
+  transition: color 0.3s;
 }
 
 .list-unstyled li a:hover {
-    color: #fff;
+  color: #fff;
 }
