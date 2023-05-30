@@ -45,6 +45,27 @@
     color: #000;
 } */
 
+.beeauty-teext {
+  width: 598px;
+  height: 84px;
+}
+
+.beeauty-line {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+.container {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 .phone {
   position: relative;
   width: 450px;
@@ -59,13 +80,17 @@
     23.8px 156.1px 63.3px 0 rgba(0, 0, 0, 0.01),
     36.2px 244.3px 69px 0 rgba(0, 0, 0, 0);
   background-color: rgb(108, 94, 94);
-  margin-right: 88px;
+  margin-right: 50px;
   margin-top: 90px;
   padding: 20px;
   -webkit-border-radius: 42.8px;
   -moz-border-radius: 42.8px;
   -ms-border-radius: 42.8px;
   -o-border-radius: 42.8px;
+  box-shadow: 0px 2.2625px 1.13125px rgba(0, 0, 0, 0.01),
+    0px 1.13125px 1.13125px rgba(0, 0, 0, 0.05),
+    0px 1.13125px 1.13125px rgba(0, 0, 0, 0.09), 0px 0px 0px rgba(0, 0, 0, 0.1),
+    0px 0px 0px rgba(0, 0, 0, 0.1);
 }
 
 /* .bottom-images {
@@ -93,6 +118,40 @@
     -o-border-radius: 42.8px;
 } */
 
+/* .carousel {
+    display: flex;
+    width: 300%;
+    height: 100%;
+    transition: transform 0.5s;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -ms-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
+} */
+
+/* Carousel i telefonen */
+
+.phoneScreen-container {
+  position: relative;
+  width: 452.5px;
+  height: 528.29px;
+  border: 14.7062px solid #705d67;
+  box-shadow: inset 9.29158px -9.29158px 37.1663px 9.29158px rgba(240, 240, 240, 0.5);
+  filter: drop-shadow(0px 3.71663px 3.71663px rgba(0, 0, 0, 0.25))
+    drop-shadow(0px 52.6252px 14.8723px rgba(240, 240, 240, 0.01))
+    drop-shadow(0px 33.1768px 13.7283px rgba(240, 240, 240, 0.01))
+    drop-shadow(0px 18.3044px 11.4403px rgba(240, 240, 240, 0.05))
+    drop-shadow(0px 8.00818px 8.00818px rgba(240, 240, 240, 0.09))
+    drop-shadow(0px 2.28805px 4.5761px rgba(240, 240, 240, 0.1));
+  border-radius: 42.9875px;
+  -webkit-filter: drop-shadow(0px 3.71663px 3.71663px rgba(0, 0, 0, 0.25))
+    drop-shadow(0px 52.6252px 14.8723px rgba(240, 240, 240, 0.01))
+    drop-shadow(0px 33.1768px 13.7283px rgba(240, 240, 240, 0.01))
+    drop-shadow(0px 18.3044px 11.4403px rgba(240, 240, 240, 0.05))
+    drop-shadow(0px 8.00818px 8.00818px rgba(240, 240, 240, 0.09))
+    drop-shadow(0px 2.28805px 4.5761px rgba(240, 240, 240, 0.1));
+}
+
 .screen {
   width: 100%;
   height: 80%;
@@ -115,28 +174,15 @@
   -o-border-radius: 10px;
 }
 
-/* .carousel {
-    display: flex;
-    width: 300%;
-    height: 100%;
-    transition: transform 0.5s;
-    -webkit-transition: transform 0.5s;
-    -moz-transition: transform 0.5s;
-    -ms-transition: transform 0.5s;
-    -o-transition: transform 0.5s;
-} */
-
-/* Carousel i telefonen */
-
-.carousel img {
+.phone-screen {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border: solid 14.7px #705d67;
 }
 
-.round-button svg,
-.camera-button svg {
+/* slut carusel */
+
+.round-button svg {
   width: 20px;
   height: 20px;
   color: #0a0707;
@@ -179,52 +225,69 @@
     -o-transform: translate(-50%, -50%);
 } */
 
+/* Telefon knappara */
+
+.camera-button svg {
+  color: #fff;
+  width: 66.8px;
+  height: 65px;
+}
+
+.hidden-box {
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.hidden-box.show {
+  opacity: 1;
+}
+
+.half-circle {
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.half-circle.show {
+  opacity: 1;
+}
+
+.container {
+  position: relative;
+}
+
+.screen {
+  position: relative;
+}
+
 .buttons {
   display: flex;
   justify-content: center;
   position: absolute;
-  bottom: -10px;
+  bottom: 1px;
   left: 50%;
   transform: translateX(-50%);
   margin-bottom: 40px;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
+  color: #fff;
 }
 
 .half-circle {
-  width: 255.7px;
-  height: 122.2px;
-  flex-grow: 0;
-  margin: 0 0 27.7px;
-  padding: 14.7px 26.3px 26.3px 24.9px;
-  border: solid 1.1px rgba(0, 0, 0, 0.1);
-  background-color: rgba(217, 217, 217, 0.5);
+  width: 220px;
+  height: 70px;
   display: flex;
   justify-content: space-between;
   position: relative;
+  background: rgba(217, 217, 217, 0.5);
   border-radius: 169.688px 169.688px 0px 0px;
+  transition: margin-bottom 0.4s ease;
+  -webkit-transition: margin-bottom 0.4s ease;
+  -moz-transition: margin-bottom 0.4s ease;
+  -ms-transition: margin-bottom 0.4s ease;
+  -o-transition: margin-bottom 0.4s ease;
   -webkit-border-radius: 169.688px 169.688px 0px 0px;
   -moz-border-radius: 169.688px 169.688px 0px 0px;
   -ms-border-radius: 169.688px 169.688px 0px 0px;
   -o-border-radius: 169.688px 169.688px 0px 0px;
 }
-
-/* .half-circle {
-    display: flex;
-    justify-content: space-between;
-    width: 150px;
-    height: 70px;
-    padding: 2px;
-    position: relative;
-    background: rgba(217, 217, 217, 0.5);
-    border-radius: 169.688px 169.688px 0px 0px;
-    -webkit-border-radius: 169.688px 169.688px 0px 0px;
-    -moz-border-radius: 169.688px 169.688px 0px 0px;
-    -ms-border-radius: 169.688px 169.688px 0px 0px;
-    -o-border-radius: 169.688px 169.688px 0px 0px;
-} */
 
 .round-button {
   display: flex;
@@ -235,10 +298,12 @@
   background-color: #ccc;
   border-radius: 50%;
   margin-top: 20px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+  transition: background-color 0.3s ease;
+  -webkit-transition: background-color 0.3s ease;
+  -moz-transition: background-color 0.3s ease;
+  -ms-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  color: #fff;
 }
 
 .camera-button {
@@ -247,29 +312,39 @@
   justify-content: center;
   width: 70px;
   height: 60px;
-  background-color: #ccc;
+  flex-grow: 0;
+  margin: 84.8px 95px 0 93.9px;
+  padding: 14.7px 15.9px 14.1px 17px;
+  transform: rotate(-90.29deg);
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.6), 0 1.2px 2.4px 0 rgba(0, 0, 0, 0.59),
+    0 4.2px 4.2px 0 rgba(0, 0, 0, 0.51), 0 9px 5.4px 0 rgba(0, 0, 0, 0.3),
+    0 16.3px 6.6px 0 rgba(0, 0, 0, 0.09), 0 25.3px 7.2px 0 rgba(0, 0, 0, 0.01);
+  background-color: #705d67;
   border-radius: 50%;
   margin-left: auto;
   margin-right: auto;
   position: absolute;
-  bottom: -1px;
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
-  background: #705d67;
-  box-shadow: 0px 25.2987px 7.22821px rgba(0, 0, 0, 0.01),
-    0px 16.2635px 6.62586px rgba(0, 0, 0, 0.09),
-    0px 9.03526px 5.42116px rgba(0, 0, 0, 0.3),
-    0px 4.21646px 4.21646px rgba(0, 0, 0, 0.51),
-    0px 1.2047px 2.4094px rgba(0, 0, 0, 0.59), 0px 0px 0px rgba(0, 0, 0, 0.6);
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
+  transition: transform 0.3s ease;
+  border: none;
+  outline: none;
 }
+
+.camera-button.show {
+  transform: translateX(-50%) translateY(-75px);
+  -webkit-transform: translateX(-50%) translateY(-75px);
+  -moz-transform: translateX(-50%) translateY(-75px);
+  -ms-transform: translateX(-50%) translateY(-75px);
+  -o-transform: translateX(-50%) translateY(-75px);
+}
+
+.half-circle.show {
+  margin-bottom: 70px;
+}
+
+/* slut */
 
 /* .subtext {
     height: 84px;
@@ -341,66 +416,32 @@
     0 53.6px 22.2px 0 rgba(0, 0, 0, 0.01), 0 84.9px 24px 0 rgba(0, 0, 0, 0);
 }
 
-/* 6 bilderna */
-
-.photo-contaiiner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 1315px;
-  align-items: center;
-  gap: 54px;
-  padding: 0;
-}
-
-.title {
-  width: 648px;
-  height: 52px;
-  flex-grow: 0;
-  font-family: PlayfairDisplay;
-  font-size: 43.5px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.2;
-  letter-spacing: 1.74px;
-  text-align: center;
-  color: #000;
-}
-
-/* .photo-contaiiner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 1315px;
-    height: 1001.5px;
-} */
-
-/* #photo-container {
-    text-align: center;
-} */
-
-.photo-row1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 54px;
-}
-
-.photo-row1 .photo {
-  width: 200px;
-  height: 200px;
-}
+/* 6 foton */
 
 #my-custom-heading {
-  flex-grow: 0;
-  font-family: PlayfairDisplay;
-  font-size: 43.5px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.2;
-  letter-spacing: 1.74px;
   text-align: center;
-  color: #000;
+  padding-top: 150px;
+  margin: 20px 0;
+  /* Justera margin-värdet för att placera texten närmare bilderna */
+}
+
+.phone-images-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 10px 0;
+  /* Justera margin-värdet för att placera bilderna närmare texten */
+}
+
+.phone-image {
+  margin: 20px;
+  /* Uppdaterar margin för att skapa avstånd mellan komponenterna */
+}
+
+.phone-image img {
+  width: 375.1px;
+  height: 299.7px;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1), 0 1.7px 3.4px 0 rgba(0, 0, 0, 0.1),
+    0 6px 6px 0 rgba(0, 0, 0, 0.09), 0 13.7px 8.6px 0 rgba(0, 0, 0, 0.05),
+    0 24.8px 10.3px 0 rgba(0, 0, 0, 0.01), 0 39.4px 11.1px 0 rgba(0, 0, 0, 0);
 }

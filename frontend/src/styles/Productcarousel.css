@@ -17,9 +17,16 @@
   font-size: 14px;
 }
 
+.product-info {
+  margin-top: 24px;
+}
+
+.product-text {
+  margin: 0;
+}
+
 .the-rio-rush {
 height: 64px;
-
 
 font-family: 'Playfair Display';
 font-style: normal;
@@ -38,6 +45,17 @@ color: #000000;
 flex: none;
 order: 0;
 flex-grow: 0;
+}
+
+.product-item {
+  width: 80%;
+  height: 80%;
+}
+
+.product-item img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
 
 .carousel-2 {
@@ -68,19 +86,23 @@ flex-grow: 0;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  box-shadow: 0px 29px 12px rgba(0, 0, 0, 0.01), 0px 16px 10px rgba(0, 0, 0, 0.05), 0px 7px 7px rgba(0, 0, 0, 0.09), 0px 2px 4px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+  /* box-shadow: 0px 29px 12px rgba(0, 0, 0, 0.01), 0px 16px 10px rgba(0, 0, 0, 0.05), 0px 7px 7px rgba(0, 0, 0, 0.09), 0px 2px 4px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1); */
 }
 
-.carousel-2 .carousel-control-prev:hover,
-.carousel-2 .carousel-control-next:hover {
-background-color: #EEE565;
+.carousel-2 .carousel-control-prev {
+  left: 0px;
+}
+
+.carousel-2 .carousel-control-next {
+  right: 0px;
 }
 
 .carousel-2 .carousel-control-prev::before,
 .carousel-2 .carousel-control-next::before {
   content: "";
-  width: 35px;
-  height: 35px;
+  width: 20px;
+  height: 20px;
   border-left: 2px solid black;
   border-top: 2px solid black;
   transform: rotate(-45deg);
@@ -88,7 +110,14 @@ background-color: #EEE565;
 
 .carousel-2 .carousel-control-next::before {
   transform: rotate(135deg);
+
 }
+
+.carousel-2 .carousel-control-prev:hover,
+.carousel-2 .carousel-control-next:hover {
+background-color: #EEE565;
+}
+
 
 .d-flex {
 display: flex;
@@ -99,9 +128,6 @@ gap: 37.5px;
 
 }
 
-.product-item {
-  margin-left: 20px;
-}
 
 .find {
   box-sizing: border-box;

@@ -209,7 +209,6 @@
   align-items: center;
 }
 .expand {
-  width: 181.5px;
   padding: var(--padding-5xs) 0 var(--padding-5xs) var(--padding-21xl);
   box-sizing: border-box;
   justify-content: flex-end;
@@ -229,6 +228,11 @@
   padding: var(--padding-mini) 0;
   align-items: center;
   justify-content: center;
+}
+
+.product-description{
+  margin-top: 20px;
+  width: 300px;
 }
 .table {
   width: 363px;
@@ -366,4 +370,12 @@ border: 3px solid #000000;
 flex: none;
 order: 1;
 flex-grow: 0;
+}
+
+.hover-effect {
+  transition: transform 0.2s ease-in-out;
+}
+
+.hover-effect:hover {
+  transform: scale(1.1);
 }

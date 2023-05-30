@@ -14,8 +14,45 @@ import Elle from '../images/Elle.png';
 import Forbes from '../images/Forbes.png';
 import Bazaar from '../images/Bazaar.png';
 import Cosmo from '../images/cosmo.png';
+import { useState } from 'react';
+
+interface Product {
+  id: number;
+  name: string;
+  type: string;
+  price: number;
+  size: string;
+  color: string;
+  description: string;
+  details: string;
+  image: string;
+  image2: string;
+  image3: string;
+}
+
+const defaultProduct: Product = {
+  id: 6,
+  name: 'Berlin Beat',
+  type: '',
+  price: 170,
+  size: 'S/M',
+  color: 'Shell/Tan smoke',
+  description:
+    'A frame with a classic character that suits your everyday style. Made with 100% Portuguese acetate. Available in x different colors and two different sizes.',
+  details: '',
+  image: 'Product_Berlin1.png',
+  image2: 'Product_Berlin2.png',
+  image3: 'Product_Berlin3.png',
+};
 
 function landingpage() {
+  const [selectedProduct, setSelectedProduct] =
+    useState<Product>(defaultProduct);
+
+  const handleProductClick = (product: Product) => {
+    setSelectedProduct(product);
+  };
+
   return (
     <div className="view-divs">
       <div className="hero-section">
@@ -95,12 +132,12 @@ function landingpage() {
         </div>
       </div>
       <SmallFeatures />
-      <Productcarousel />
+      <Productcarousel onProductClick={handleProductClick} />
       <div id="about">
         <About />
       </div>
       <SmFeatures />
-      <Productcarousel />
+      <Productcarousel onProductClick={handleProductClick} />
       <Stylefeed />
       <BackToTop />
     </div>
