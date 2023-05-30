@@ -106,7 +106,7 @@
 }
 
 .buttonseespecs:hover {
-  background-color: #EEE565;
+  background-color: #eee565;
 }
 
 .discover-the-craftsmanship {
@@ -123,12 +123,10 @@
   align-items: center;
   padding: 0px;
   gap: 88px;
-
 }
 .aboutinnerframe {
-
   padding: 72px 72px;
-  background-color: #FFFEFD;
+  background-color: #fffefd;
 
   /* Inside auto layout */
 
@@ -147,14 +145,14 @@
 
   width: 100vw;
 
-  background: #EBE6E0;
+  background: #ebe6e0;
 
   flex: none;
   order: 3;
   flex-grow: 0;
 
   text-align: left;
-  font-size: var(--outon-outon-h2-size);
+  font-size: var(--outon-h2-size);
   color: var(--suave);
   font-family: var(--outon-button-text);
 }

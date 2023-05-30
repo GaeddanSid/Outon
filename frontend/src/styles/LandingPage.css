@@ -49,7 +49,7 @@
   padding: 44px 51px;
   gap: 10px;
 
-  font-family: 'playfair';
+  font-family: 'playfair display';
   font-size: var(--font-size-109xl);
   font-weight: 500;
   line-height: 130px;
@@ -224,7 +224,7 @@
 
 .our-virtual {
   margin-top: 0;
-  font-family: 'Playfair';
+  font-family: 'Playfair display';
   font-size: var(--outon-h3-size);
   font-weight: 500;
   line-height: 60px;
@@ -307,7 +307,7 @@
   position: relative;
   letter-spacing: 0.03em;
   font-weight: 600;
-  font-family: 'playfair';
+  font-family: 'playfair display';
   font-size: 18px;
   font-weight: 600;
   line-height: 24px;

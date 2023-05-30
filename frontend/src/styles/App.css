@@ -36,13 +36,11 @@
     transform: rotate(360deg);
   }
 } */
-/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400&display=swap');
 
 @font-face {
-  font-family: 'playfair';
+  font-family: 'playfair display';
   src: url(../../public/fonts/Playfair_Display/static/PlayfairDisplay-Medium.ttf);
 }
 
@@ -53,9 +51,9 @@
 
 :root {
   /* fonts */
-  --outon-button-text: 'Playfair';
+  --outon-card-product-colour: Roboto;
+  --outon-button-text: 'Playfair display';
   --outon-paragraph-text-1: 'Roboto';
-  --font-helvetica-neue: 'Helvetica Neue';
 
   /* font sizes */
   --outon-paragraph-text-1-size: 16px;
@@ -77,6 +75,14 @@
   --suave: #000;
   --lilacs: #9f8ea2;
   --sunglow-edge: #c9c698;
+
+  /* Colors */
+  --outon-sand: #ebe6e0;
+  --outon-soft: #fffefd;
+  --color-dimgray: #5a505a;
+  --color-violet: #fd8ae6;
+  --color-deepskyblue: #66adec;
+  --color-burlywood: #d8b47d;
 
   --button-bg: #b68657;
   --button-text: #ffffff;
