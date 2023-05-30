@@ -184,7 +184,7 @@ header {
 }
 
 .hamburger-menu.active .bar:nth-child(2) {
-  opacity: 0;
+  transform: rotate(-90deg) translate(0px, 10px);
 }
 
 .hamburger-menu.active .bar:nth-child(3) {
@@ -211,6 +211,31 @@ header {
 
   .icon-links-box {
     order: 3;
+  }
+
+  .slide-in-menu {
+    /* animation: slidedown 3s normal; */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
+
+  .slide-in-menu.open {
+    max-height: 100px;
+  }
+
+  /* @keyframes slidedown {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-20px);
+    }
+  } */
+
+  .slide-in-menu ul {
+    list-style: none;
+    padding: 10px;
   }
 }
 

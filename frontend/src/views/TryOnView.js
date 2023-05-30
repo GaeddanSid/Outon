@@ -17,7 +17,7 @@ const defaultProduct = {
     details: '',
     image: 'Product_Berlin1.png',
     image2: 'Product_Berlin2.png',
-    image3: 'Product_Berlin3.png'
+    image3: 'Product_Berlin3.png',
 };
 const TryOnView = () => {
     const [selectedProduct, setSelectedProduct] = useState(defaultProduct);

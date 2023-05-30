@@ -46,8 +46,10 @@ const PhoneHeader = () => {
         <div className="beeauty-teext">
           <p className="beeauty-line">
             Beauty is in the eye of the beholder or as we like to say, OutOn the
-            eyes of the beholder! Style yourself like the gorgeous sunshine
-            cosmonaut that you are!
+            eyes of the beholder!
+          </p>
+          <p className="beeauty-line">
+            Style yourself like the gorgeous sunshine cosmonaut that you are!
           </p>
         </div>
         <div className="circle-row">

@@ -32,19 +32,25 @@ const PolaroidGallery = () => {
   ];
 
   return (
-    <div className="polaroid-contaiiner">
-      {images.map((image, index) => (
-        <div className="polaroiid-item" key={index}>
-          <img src={image} alt={`Photo ${index + 1}`} />
-          <div className="teext-contaiiner">
-            <div className="logoo-container">
-              <img src={logo} alt="Logo" />
+    <div>
+      <div className="polaroid-contaiiner">
+        {images.map((image, index) => (
+          <div className="polaroiid-item" key={index}>
+            <img src={image} alt={`Photo ${index + 1}`} />
+            <div className="teext-contaiiner">
+              <div className="logoo-container">
+                <img src={logo} alt="Logo" />
+              </div>
+              <div className="product-name">The Sydney Splendour</div>
+              <div className="text-field"></div>
             </div>
-            <div className="product-name">The Sydney Splendour</div>
-            <div className="text-field"></div>
           </div>
+        ))}
+        <div>
+          <button id="sendButton">Send Favorites</button>
         </div>
-      ))}
+        <div id="popup">Your photos have been sent!</div>
+      </div>
       <style>
         {`
   .logoo-container {

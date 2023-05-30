@@ -9,7 +9,7 @@ const videoConstraints = {
 
 function Camera() {
   return (
-    <div className="App">
+    <div className="camera">
       <Webcam
         imageSmoothing={true}
         screenshotFormat="image/webp"

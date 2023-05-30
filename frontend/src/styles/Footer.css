@@ -4,7 +4,8 @@
   padding: 44px 60px 0px 0;
   gap: 100px;
   width: 100vw;
-  height: 235px;
+  min-height: 235px;
+  height: fit-content;
 }
 
 .footer-container {

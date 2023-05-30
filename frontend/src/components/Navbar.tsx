@@ -105,7 +105,7 @@ function Navbar() {
         )}
 
         {isMenuOpen && (
-          <div className="slide-in-menu">
+          <div className={`slide-in-menu ${isMenuOpen ? 'open' : ''}`}>
             <ul>
               <li>
                 <Link to="/">News</Link>

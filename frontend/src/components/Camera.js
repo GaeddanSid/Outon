@@ -6,7 +6,7 @@ const videoConstraints = {
     facingMode: { exact: 'environment' },
 };
 function Camera() {
-    return (_jsx("div", Object.assign({ className: "App" }, { children: _jsx(Webcam, { imageSmoothing: true, screenshotFormat: "image/webp", mirrored: true, width: 480, height: 720, videoConstraints: videoConstraints }) })));
+    return (_jsx("div", Object.assign({ className: "camera" }, { children: _jsx(Webcam, { imageSmoothing: true, screenshotFormat: "image/webp", mirrored: true, width: 480, height: 720, videoConstraints: videoConstraints }) })));
 }
 export default Camera;
 //# sourceMappingURL=Camera.js.map
