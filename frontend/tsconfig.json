@@ -17,14 +17,6 @@
     "isolatedModules": true,
     "jsx": "react-jsx"
   },
-  "include": [
-    "src",
-    "dist/App.js",
-    "dist/TryOnView.js",
-    "dist/ProductView.js",
-    "dist/LandingPage.js",
-    "dist/Navbar.js",
-    "src/index.js"
-  ],
-  "exclude": ["node_modules", "build", "dist"]
+  "include": ["src"],
+  "exclude": ["node_modules", "build"]
 }
