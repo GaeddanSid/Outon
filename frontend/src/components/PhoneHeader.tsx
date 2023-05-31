@@ -2,7 +2,12 @@ import React, { useState } from 'react';
 
 import WebcamImage from '../components/Screenshot';
 import '../styles/Phone.css';
-import { Camera, Person, Trash } from 'react-bootstrap-icons';
+import {
+  Camera,
+  PersonCheck,
+  Trash,
+  BootstrapReboot,
+} from 'react-bootstrap-icons';
 
 const PhoneHeader = () => {
   const [showButtons, setShowButtons] = useState(false);
@@ -26,13 +31,14 @@ const PhoneHeader = () => {
         </div>
         <div className="buttons">
           <div className={`half-circle ${showButtons ? 'show' : ''}`}>
-            <div className="round-button">
-              <i className="bi bi-bootstrap-reboot"></i>
+            <div className="round-button retake-icon">
+              <BootstrapReboot />
+              {/* <i className=" retake bi bi-bootstrap-reboot"></i> */}
             </div>
             <div className="round-button person-icon">
-              <Person />
+              <PersonCheck />
             </div>
-            <div className="round-button">
+            <div className="round-button trash-icon">
               <Trash />
             </div>
           </div>

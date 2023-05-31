@@ -120,7 +120,6 @@ function Productcarousel({ onProductClick }: ProductCarouselProps) {
         )}
       </Carousel>
       <Link to="/All-sunglasses">
-        {' '}
         <button className="find">Shop the collection</button>
       </Link>
     </div>

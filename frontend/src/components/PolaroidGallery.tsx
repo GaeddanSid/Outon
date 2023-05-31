@@ -42,7 +42,7 @@ const PolaroidGallery = () => {
                 <img src={logo} alt="Logo" />
               </div>
               <div className="product-name">The Sydney Splendour</div>
-              <div className="text-field"></div>
+              {/* <div className="text-field"></div> */}
             </div>
           </div>
         ))}

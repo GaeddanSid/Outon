@@ -49,7 +49,7 @@
   padding: 44px 51px;
   gap: 10px;
 
-  font-family: 'playfair display';
+  font-family: 'Playfair display';
   font-size: var(--font-size-109xl);
   font-weight: 500;
   line-height: 130px;
@@ -65,11 +65,15 @@
 }
 
 /* .hero-text-container,
-.shop-the-collection {
+/* .shop-the-collection {
   position: relative;
   letter-spacing: 0.03em;
   display: inline-block;
 } */
+.shop-the-collection {
+  text-decoration: none;
+  color: black;
+}
 
 .hero-text-parent {
   display: flex;
@@ -308,7 +312,7 @@
   position: relative;
   letter-spacing: 0.03em;
   font-weight: 600;
-  font-family: 'playfair display';
+  font-family: 'Playfair display';
   font-size: 18px;
   font-weight: 600;
   line-height: 24px;
