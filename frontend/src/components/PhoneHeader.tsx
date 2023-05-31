@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
-
+import photo1 from '../images/polaroid-manhattanmoon-purple-black-above-smile.jpeg';
 import WebcamImage from '../components/Screenshot';
+import { FiCameraOff } from 'react-icons/fi';
+import { BiPowerOff } from 'react-icons/bi';
+
 import '../styles/Phone.css';
 import {
   Camera,
@@ -11,19 +14,26 @@ import {
 
 const PhoneHeader = () => {
   const [showButtons, setShowButtons] = useState(false);
+  const [isCameraOn, setIsCameraOn] = useState(false);
 
   const handleCameraButtonClick = () => {
     setShowButtons(!showButtons);
+    setIsCameraOn((prevIsCameraOn) => !prevIsCameraOn);
   };
+
+  // const toggleCamera = () => {
+  //   setIsCameraOn((previsCameraOn) => !previsCameraOn);
+  // };
 
   return (
     <div className="container">
       <div className="phone">
         <div className="screen">
           <div className="carousel-container">
-            <WebcamImage />
-            {/* <img src={photo1} alt="Phone Screen" className="phone-screen" />
-            <PolaroidGallery /> */}
+            {!isCameraOn && (
+              <img src={photo1} alt="Phone Screen" className="phone-screen" />
+            )}
+            {isCameraOn && <WebcamImage />} {/* <PolaroidGallery /> */}
           </div>
           <div className={`hidden-box ${showButtons ? 'show' : ''}`}>
             <div className="hidden-content">{/* Phone content */}</div>
@@ -43,8 +53,13 @@ const PhoneHeader = () => {
             </div>
           </div>
         </div>
-        <div className="camera-button" onClick={handleCameraButtonClick}>
+        <div className="camera-button">
           <Camera size={24} />
+        </div>
+        <div className="on-off-container">
+          <div className="on-off" onClick={handleCameraButtonClick}>
+            {isCameraOn ? <FiCameraOff /> : <BiPowerOff size={32} />}
+          </div>
         </div>
       </div>
       <div className="text-container">
