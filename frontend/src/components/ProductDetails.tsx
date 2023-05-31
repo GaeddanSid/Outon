@@ -169,13 +169,13 @@ function ProductDetails ({ product }: ProductDetailProps) {
           />
         </div>
         <div className="button">
-          <div className="">Virtual try-on</div>
+          <div className="virtual-try-on">Virtual try-on</div>
         </div>
       </div>
       <div className="cardprojectdetail">
         <div className="project-info">
           <div className="the-rio-rush-wrapper">
-            <div className="the-rio-rush">{product.name}</div>
+            <div className="the-rio-rush2">{product.name}</div>
           </div>
           <div className="outon-eyewear-wrapper">
             <div className="outon-eyewear">Outon Eyewear</div>
@@ -187,7 +187,7 @@ function ProductDetails ({ product }: ProductDetailProps) {
 
             <div className="table">
               <div className="sizeoptions">
-                <label htmlFor="size">Size</label>
+                <div className="s">Size</div>
                 <div className="options">
                   <label htmlFor="S/M">S/M</label>
                   <input type="checkbox" name="S/M" value="S/M" />
@@ -202,7 +202,7 @@ function ProductDetails ({ product }: ProductDetailProps) {
                 </div>
                 <div className="options">
                   <div className="optionscolors">
-                    <div className="project-info">
+                    <div className="option2">
                       <div className="option1color1" />
                       <div className="option1color2" />
                     </div>

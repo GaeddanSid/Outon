@@ -1,14 +1,24 @@
 .features-small {
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
   flex-direction: row;
+  margin: 216px 72px; */
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 216px 72px;
 }
 .frame-child {
   /* position: relative; */
-  width: 150.2px;
+  /* width: 150.2px;
   height: 116.49px;
-  object-fit: cover;
+  object-fit: cover; */
+
+  flex-shrink: 0;
+  width: 150px;
+  height: 116,49px;
 }
 .our-scratch-resistant-frames,
 .scratch-resistant {
@@ -37,9 +47,17 @@
   height: 106.68px;
 }
 .rectangle-parent {
-  display: flex;
+  /* display: flex;
   flex-direction: row;
-  gap: var(--gap-5xl);
+  gap: var(--gap-5xl); */
+
+  flex: 1 1 200px;
+  max-width: 495px;
+  height: 116px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
 }
 .look-and-feel {
   margin: 0;
@@ -57,4 +75,27 @@
   font-size: var(--outon-paragraph-text-1-size);
   color: var(--suave);
   font-family: var(--outon-button-text);
+}
+
+.middle {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 500px) {
+  .features-small {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .rectangle-parent {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .middle {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
 }

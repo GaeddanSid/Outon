@@ -171,7 +171,32 @@ Background
 
 @media screen and (max-width: 610px) {
   .the-rio-rush {
-    font-size: 38px;
-    line-height: 34px;
+    font-size: 32px;
+    line-height: 28px;
+  }
+
+  .carousel-2 {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 510px) {
+
+  .the-rio-rush {
+    font-size: 24px;
+    line-height: 18px;
+  }
+  .carousel.slide {
+    width: 90%;
+    margin: auto;
+  }
+  /* .carousel-inner {
+    width: 60%;
+    margin: auto;
+  } */
+
+  .carousel-item {
+    width: 80%;
   }
 }

@@ -18,7 +18,7 @@ function Features1() {
             </div>
           </div>
         </div>
-        <div className="rectangle-parent">
+        <div className="rectangle-parent middle">
           <img className="frame-child" alt="" src={sustainability} />
           <div className="scratch-resistant-parent">
             <div className="scratch-resistant">Handcrafted sustainability</div>

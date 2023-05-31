@@ -1,7 +1,8 @@
 .skarmavbild-2023-05-09-kl-14 {
   position: relative;
-  width: 791px;
+  width: 100%;
   height: 584px;
+  margin-right: 24px;
   object-fit: cover;
   z-index: 0;
 }
@@ -20,6 +21,7 @@
   z-index: 1;
 }
 .virtual-try-on {
+  font-family: playfair-display;
   position: relative;
   letter-spacing: 0.03em;
   font-weight: 600;
@@ -33,7 +35,7 @@
   margin: 0 !important;
   position: absolute;
   top: 7.03px;
-  left: 574px;
+  left: 80%;
   background-color: var(--outon-soft);
   border: 2.7px solid var(--suave);
   box-sizing: border-box;
@@ -53,7 +55,7 @@
   position: relative;
   gap: var(--gap-29xl);
 }
-.the-rio-rush {
+.the-rio-rush2 {
   position: relative;
   letter-spacing: 0.04em;
   font-weight: 500;
@@ -144,6 +146,7 @@
   border-bottom: 0.5px solid var(--suave);
   padding: var(--padding-mini) 0;
   justify-content: center;
+  height: 68px
 }
 .color {
   flex: 1;
@@ -187,6 +190,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   gap: var(--gap-2xs);
+  gap: 11px;
 }
 .coloroptions {
   align-self: stretch;
@@ -194,6 +198,7 @@
   padding: var(--padding-mini) 0;
   align-items: center;
   justify-content: center;
+  height: 70px;
 }
 .descriptionheader {
   width: 181.5px;
@@ -228,6 +233,8 @@
   padding: var(--padding-mini) 0;
   align-items: center;
   justify-content: center;
+  /* height: 68px; */
+  min-height: 68px;
 }
 
 .product-description{
@@ -250,12 +257,13 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  width: 80%;
 }
 .buttonadd-to-bag {
   background-color: var(--suave);
   border: 3px solid var(--suave);
   box-sizing: border-box;
-  width: 363px;
+  width: 80%;
   height: 48px;
   display: flex;
   flex-direction: row;
@@ -378,4 +386,36 @@ flex-grow: 0;
 
 .hover-effect:hover {
   transform: scale(1.1);
+}
+
+@media screen and (max-width: 1180px ) {
+
+.s-parent {
+  display: flex;
+  flex-direction: column;
+}
+
+}
+
+@media screen and (max-width: 870px ) {
+
+  .productimage img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .skarmavbild-2023-05-09-kl-14-parent img {
+    max-width: 100%;
+    height: auto;
+  }
+
+
+  @media screen and (max-width: 760px) {
+    .skarmavbild-2023-05-09-kl-14-parent {
+      display: flex;
+      flex-direction: column;
+    }
+
+  }
+
 }
