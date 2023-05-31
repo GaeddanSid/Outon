@@ -7,14 +7,14 @@ function WebcamImage() {
   const webcamRef = useRef<Webcam>(null);
 
   const videoConstraints = {
-    width: 240,
-    height: 320,
+    width: 430,
+    height: 720,
     facingMode: 'user',
   };
 
-  const toggleCamera = () => {
-    setCameraOn((prevCameraOn) => !prevCameraOn);
-  };
+  // const toggleCamera = () => {
+  //   setCameraOn((prevCameraOn) => !prevCameraOn);
+  // };
 
   const capture = useCallback(() => {
     const imageSrc = webcamRef.current?.getScreenshot();
@@ -22,14 +22,14 @@ function WebcamImage() {
   }, []);
 
   return (
-    <div className="Container">
+    <div className="video-container">
       {cameraOn && (
         <>
           <Webcam
             audio={false}
             mirrored={true}
-            width={440}
-            height={440}
+            width={430}
+            height={720}
             ref={webcamRef}
             screenshotFormat="image/jpeg"
             videoConstraints={videoConstraints}
@@ -37,15 +37,21 @@ function WebcamImage() {
           <button onClick={capture}>Capture photo</button>
         </>
       )}
-      <button onClick={toggleCamera}>
-        {cameraOn ? 'Turn Off Camera' : 'Turn On Camera'}
-      </button>
+
       {img !== null && (
         <>
           <img src={img} alt="screenshot" />
           <button onClick={() => setImg(null)}>Retake</button>
         </>
       )}
+      <style>
+        {`
+  video {
+    width:550px;
+    height:fit-content;
+  }
+`}
+      </style>
     </div>
   );
 }

@@ -36,11 +36,11 @@
     transform: rotate(360deg);
   }
 } */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); */
 
 @font-face {
-  font-family: 'playfair display';
+  font-family: 'Playfair display';
   src: url(../../public/fonts/Playfair_Display/static/PlayfairDisplay-Medium.ttf);
 }
 
@@ -138,9 +138,16 @@ body {
   max-width: 100%;
   height: fit-content;
   /* position: relative; */
-  background: #fffefd;
+  background: var(--outon-soft);
   line-height: normal;
   overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'playfair display';
 }
 
 .view-divs {

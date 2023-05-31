@@ -4,8 +4,9 @@ import BackToTop from '../components/BackToTop';
 import Productcarousel from '../components/Productcarousel';
 import ProductDetails from '../components/ProductDetails';
 import SmallFeatures from '../components/SmallFeatures';
+// import { useParams } from 'react-router-dom';
 
-import '../styles/ProductView.css'
+import '../styles/ProductView.css';
 
 interface Product {
   id: number;
@@ -28,16 +29,19 @@ const defaultProduct: Product = {
   price: 170,
   size: 'S/M',
   color: 'Shell/Tan smoke',
-  description: 'A frame with a classic character that suits your everyday style. Made with 100% Portuguese acetate. Available in x different colors and two different sizes.',
+  description:
+    'A frame with a classic character that suits your everyday style. Made with 100% Portuguese acetate. Available in x different colors and two different sizes.',
   details: '',
   image: 'Product_Berlin1.png',
   image2: 'Product_Berlin2.png',
-  image3: 'Product_Berlin3.png'
+  image3: 'Product_Berlin3.png',
 };
 
 function product() {
+  // const { id } = useParams();
 
-  const [selectedProduct, setSelectedProduct] = useState<Product>(defaultProduct);
+  const [selectedProduct, setSelectedProduct] =
+    useState<Product>(defaultProduct);
 
   const handleProductClick = (product: Product) => {
     setSelectedProduct(product);
@@ -46,11 +50,10 @@ function product() {
   return (
     <div className="">
       <ProductDetails product={selectedProduct} />
-      <Productcarousel onProductClick={handleProductClick}/>
+      <Productcarousel onProductClick={handleProductClick} />
       <SmallFeatures />
       <About />
       <BackToTop />
-
     </div>
   );
 }
