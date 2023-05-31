@@ -77,6 +77,9 @@
   font-family: var(--outon-button-text);
 }
 
+.middle {
+  flex-direction: row-reverse;
+}
 
 @media (max-width: 500px) {
   .features-small {
