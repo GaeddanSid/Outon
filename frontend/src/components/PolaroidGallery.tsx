@@ -1,7 +1,10 @@
-import React from 'react';
-import '../styles/Phone.css';
+import React, { useState } from 'react';
+// import { FaHeart } from 'react-icons/fa';
+import '../styles/PolaroidGallery.css';
+
+import Heart from '../images/heart-empty.png';
+import HeartFill from '../images/heart-fill.png';
 import logo from '../images/logo.png';
-// Importera dina egna foton
 import photo1 from '../images/polaroid-manhattanmoon-purple-black-above-smile.jpeg';
 import photo2 from '../images/polaroid-manhattanmoon-purple-black-right-below.jpeg';
 import photo3 from '../images/polaroid-manhattanmoon-purple-black-left.jpeg';
@@ -31,12 +34,55 @@ const PolaroidGallery = () => {
     photo12,
   ];
 
+  const [selectedFavorites, setSelectedFavorites] = useState<number[]>([]);
+  const [showPopup, setShowPopup] = useState(false);
+  const [showBagPopup, setShowBagPopup] = useState(false);
+
+  const handleSelect = (index: number) => {
+    const isSelected = selectedFavorites.includes(index);
+    if (isSelected) {
+      setSelectedFavorites(selectedFavorites.filter((fav) => fav !== index));
+    } else {
+      setSelectedFavorites([...selectedFavorites, index]);
+    }
+  };
+
+  const handleSendMyFaves = () => {
+    if (selectedFavorites.length > 0) {
+      setSelectedFavorites([]);
+      setShowPopup(true);
+      setTimeout(() => {
+        setShowPopup(false);
+      }, 3000);
+    } else {
+      setShowPopup(false);
+    }
+  };
+
+  const handleGetMyShades = () => {
+    setShowBagPopup(true);
+    setTimeout(() => {
+      setShowBagPopup(false);
+    }, 3000);
+  };
+
   return (
     <div>
       <div className="polaroid-contaiiner">
         {images.map((image, index) => (
           <div className="polaroiid-item" key={index}>
-            <img src={image} alt={`Photo ${index + 1}`} />
+            <img
+              className="img-polaroid"
+              src={image}
+              alt={`Photo ${index + 1}`}
+            />
+            <div onClick={() => handleSelect(index)}>
+              {selectedFavorites.includes(index) ? (
+                <img className="heart" src={HeartFill} alt="Empty Heart" />
+              ) : (
+                <img className="heart" src={Heart} alt="Filled Heart" />
+              )}
+            </div>
             <div className="teext-contaiiner">
               <div className="logoo-container">
                 <img src={logo} alt="Logo" />
@@ -46,11 +92,25 @@ const PolaroidGallery = () => {
             </div>
           </div>
         ))}
-        <div>
-          <button id="sendButton">Send Favorites</button>
-        </div>
-        <div id="popup">Your photos have been sent!</div>
       </div>
+      <div className="button-container-p">
+        <div className="button6 yellow-hover send-button">
+          <div className="see-more1" onClick={handleSendMyFaves}>
+            Email me my{' '}
+            <img className="heart-email" src={HeartFill} alt="Empty Heart" />
+          </div>
+        </div>
+
+        <div className="button-get-shades yellow-hover send-button">
+          <div className="button-get-shades-inner" onClick={handleGetMyShades}>
+            Get my shades
+          </div>
+        </div>
+
+        {showPopup && <div className="popup">Your photos have been sent!</div>}
+        {showBagPopup && <div className="popup">Added to bag!</div>}
+      </div>
+
       <style>
         {`
   .logoo-container {
@@ -91,7 +151,7 @@ const PolaroidGallery = () => {
 
           }
 
-          .polaroiid-item img {
+          .polaroiid-item .img-polaroid {
             width: 100%;
             height: 100%;
             object-fit: cover;

@@ -110,6 +110,11 @@
   /* border-radius: 44.5039px; */
 }
 /* slut telefon */
+
+.screenshot {
+  position: relative;
+}
+
 /* KNAPPARNA TILL TELEFONEN */
 
 .round-button svg {
@@ -208,6 +213,7 @@
   margin-right: 20px;
   margin-top: 10px;
   transition: background-color 0.3s ease;
+  cursor: pointer;
 }
 
 .person-icon {
@@ -293,6 +299,7 @@
   left: 50%;
   transform: translateX(-50%);
   transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 .camera-button.show {
@@ -410,4 +417,15 @@
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1), 0 1.7px 3.4px 0 rgba(0, 0, 0, 0.1),
     0 6px 6px 0 rgba(0, 0, 0, 0.09), 0 13.7px 8.6px 0 rgba(0, 0, 0, 0.05),
     0 24.8px 10.3px 0 rgba(0, 0, 0, 0.01), 0 39.4px 11.1px 0 rgba(0, 0, 0, 0);
+}
+
+video {
+  width: 550px;
+  height: fit-content;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
