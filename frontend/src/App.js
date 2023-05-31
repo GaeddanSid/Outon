@@ -17,6 +17,7 @@ function App() {
                 { element: _jsx(LandingPage, {}), path: '/' },
                 { element: _jsx(About, {}), path: '/about' },
                 { element: _jsx(ProductView, {}), path: '/Product-details' },
+                { element: _jsx(ProductView, {}), path: '/Product-details/:id' },
                 { element: _jsx(TryOnView, {}), path: '/All-sunglasses' },
             ],
             element: _jsx(Root, {}),

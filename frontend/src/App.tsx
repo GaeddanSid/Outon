@@ -31,6 +31,7 @@ function App() {
         { element: <LandingPage />, path: '/' },
         { element: <About />, path: '/about' },
         { element: <ProductView />, path: '/Product-details' },
+        { element: <ProductView />, path: '/Product-details/:id' },
         { element: <TryOnView />, path: '/All-sunglasses' },
       ],
       element: <Root />,

@@ -5,6 +5,7 @@ import BackToTop from '../components/BackToTop';
 import Productcarousel from '../components/Productcarousel';
 import ProductDetails from '../components/ProductDetails';
 import SmallFeatures from '../components/SmallFeatures';
+// import { useParams } from 'react-router-dom';
 import '../styles/ProductView.css';
 const defaultProduct = {
     id: 6,
@@ -17,9 +18,10 @@ const defaultProduct = {
     details: '',
     image: 'Product_Berlin1.png',
     image2: 'Product_Berlin2.png',
-    image3: 'Product_Berlin3.png'
+    image3: 'Product_Berlin3.png',
 };
 function product() {
+    // const { id } = useParams();
     const [selectedProduct, setSelectedProduct] = useState(defaultProduct);
     const handleProductClick = (product) => {
         setSelectedProduct(product);

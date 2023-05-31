@@ -63,13 +63,13 @@ const PhoneHeader = () => {
             className="circle circle-selfie"
             style={{ backgroundColor: '#eee565' }}
           >
-            Selfie time
+            <p className="circle-info-text">Selfie time</p>
           </div>
           <div
             className="circle circle-shades"
             style={{ backgroundColor: '#EBE6E0' }}
           >
-            Select shades
+            <p className="circle-info-text"> Select shades</p>
           </div>
         </div>
         <div className="circle-row">
@@ -77,13 +77,13 @@ const PhoneHeader = () => {
             className="circle circle-shot"
             style={{ backgroundColor: '#9DACAA' }}
           >
-            Snap a shot
+            <p className="circle-info-text"> Snap a shot</p>
           </div>
           <div
             className="circle circle-inbox"
             style={{ backgroundColor: '#9F8EA2' }}
           >
-            Send to inbox
+            <p className="circle-info-text"> Send to inbox</p>
           </div>
         </div>
       </div>

@@ -133,6 +133,11 @@
   background-color: #eee565;
 } */
 
+.circle-info-text {
+  width: 100px;
+  margin: 0;
+}
+
 .camera-button svg {
   color: #9d9696;
   width: 66.8px;
