@@ -1,4 +1,5 @@
-require('dotenv').config();
+import * as dotenv from "dotenv";
+// require("dotenv").config();
 import express from "express";
 import { Pool } from "pg";
 import cors from "cors";
@@ -6,6 +7,7 @@ import cors from "cors";
 const app = express();
 const port = 8080;
 
+dotenv.config();
 app.use(express.json());
 app.use(cors());
 
@@ -21,7 +23,7 @@ const pool = new Pool({
   host: process.env.DB_HOST,
   database: process.env.DB_DATABASE,
   password: process.env.DB_PASSWORD,
-  port: process.env.DB_PORT ? parseInt(process.env.DB_PORT, 10 ) : undefined,
+  port: process.env.DB_PORT ? parseInt(process.env.DB_PORT, 10) : undefined,
 });
 
 app.get("/products", async (req, res) => {
@@ -31,6 +33,44 @@ app.get("/products", async (req, res) => {
   } catch (error) {
     console.error("Cannot find data from database", error);
     res.status(404).json({ error: "Something went wrong..." });
+  }
+});
+
+app.post("/login", async (req, res) => {
+  const { email, password } = req.body;
+
+  try {
+    const result = await pool.query(
+      "SELECT * FROM users WHERE email = $1 AND password = $2",
+      [email, password]
+    );
+    if (result.rows.length === 0) {
+      res.status(401).json({ error: "Invalid credentials" });
+    } else {
+      res.json(result.rows[0]);
+    }
+  } catch (error) {
+    console.error("Cannot login user", error);
+    res.status(500).json({ error: "Something went wrong..." });
+  }
+});
+
+app.get("/products/:id", async (req, res) => {
+  const productId = req.params.id;
+  console.log(productId);
+
+  try {
+    const result = await pool.query("SELECT * FROM products WHERE id = $1", [
+      productId,
+    ]);
+    if (result.rows.length === 0) {
+      res.status(404).json({ error: "Product not found" });
+    } else {
+      res.json(result.rows[0]);
+    }
+  } catch (error) {
+    console.error("Cannot find data from database", error);
+    res.status(500).json({ error: "Something went wrong..." });
   }
 });
 
