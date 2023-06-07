@@ -25,7 +25,6 @@ interface Product {
 function ProductDetailPage() {
   const { id } = useParams<{ id: string }>();
   const [product, setProduct] = useState<Product | null>(null);
-  console.log(id);
 
   useEffect(() => {
     fetchProduct();
@@ -33,7 +32,7 @@ function ProductDetailPage() {
 
   const fetchProduct = async () => {
     try {
-      const response = await fetch(`http://localhost:8080/products/${id}`);
+      const response = await fetch(`/products/${id}`);
       const jsonData: Product = await response.json();
       console.log('Fetched product: ', jsonData);
       setProduct(jsonData);

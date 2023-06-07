@@ -9,7 +9,7 @@ const Register: React.FC = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:8080/register', {
+      const response = await axios.post('/register', {
         email,
         password,
       });

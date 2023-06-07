@@ -38,7 +38,7 @@ function Productcarousel({ onProductClick }: ProductCarouselProps) {
 
   const fetchProducts = async () => {
     try {
-      const response = await fetch('http://localhost:8080/products');
+      const response = await fetch('/products');
       const jsonData: Product[] = await response.json();
       console.log('Fetched: ', jsonData);
       setProducts(jsonData);

@@ -51,7 +51,6 @@ function ProductDetails({ product }: ProductDetailProps) {
   const { id } = useParams<{ id: string }>();
   const [products, setProducts] = useState<Product[]>([]);
   const [isDescriptionVisible, setIsDescriptionVisible] = useState(false);
-  console.log(id);
   const toggleDescription = () => {
     setIsDescriptionVisible(!isDescriptionVisible);
   };
@@ -72,7 +71,7 @@ function ProductDetails({ product }: ProductDetailProps) {
 
   const fetchProducts = async () => {
     try {
-      const response = await fetch('http://localhost:8080/products/');
+      const response = await fetch('/products');
       const jsonData: Product[] = await response.json();
       console.log('Fetched: ', jsonData);
       setProducts(jsonData);
