@@ -100,7 +100,7 @@ function Productcarousel({ onProductClick }: ProductCarouselProps) {
                   >
                     <Link
                       key={product.id}
-                      to={`/Product-details/${product.id}`}
+                      to={`/Product-details/${product.id}#top`}
                     >
                       <img
                         className="d-block hover-effect"

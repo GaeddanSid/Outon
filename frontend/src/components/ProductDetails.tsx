@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { BsPlus, BsX, BsCheck2 } from 'react-icons/bs';
+import { useLocation } from 'react-router-dom';
 
 import rio1 from '../images/Product_Rio1.png';
 import rio2 from '../images/Product_Rio2.png';
@@ -54,6 +55,16 @@ function ProductDetails({ product }: ProductDetailProps) {
   const toggleDescription = () => {
     setIsDescriptionVisible(!isDescriptionVisible);
   };
+
+  const location = useLocation();
+
+  useEffect(() => {
+    const anchor = location.hash.replace('#', '');
+    const element = document.getElementById(anchor);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, [location]);
 
   useEffect(() => {
     fetchProducts();
@@ -145,6 +156,7 @@ function ProductDetails({ product }: ProductDetailProps) {
 
   return (
     <div className="productdetail">
+      <a id="top"></a>
       <div className="productimage">
         <img
           className="skarmavbild-2023-05-09-kl-14 hover-effect"
