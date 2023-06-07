@@ -68,22 +68,6 @@ app.get("/products", (req, res) => __awaiter(void 0, void 0, void 0, function* (
         res.status(404).json({ error: "Something went wrong..." });
     }
 }));
-app.post("/login", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
-    const { email, password } = req.body;
-    try {
-        const result = yield pool.query("SELECT * FROM users WHERE email = $1 AND password = $2", [email, password]);
-        if (result.rows.length === 0) {
-            res.status(401).json({ error: "Invalid credentials" });
-        }
-        else {
-            res.json(result.rows[0]);
-        }
-    }
-    catch (error) {
-        console.error("Cannot login user", error);
-        res.status(500).json({ error: "Something went wrong..." });
-    }
-}));
 app.get("/products/:id", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const productId = req.params.id;
     console.log(productId);
@@ -100,6 +84,32 @@ app.get("/products/:id", (req, res) => __awaiter(void 0, void 0, void 0, functio
     }
     catch (error) {
         console.error("Cannot find data from database", error);
+        res.status(500).json({ error: "Something went wrong..." });
+    }
+}));
+app.get("/users", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    try {
+        const result = yield pool.query("SELECT * FROM users");
+        res.json(result.rows);
+    }
+    catch (error) {
+        console.error("Cannot retrieve users", error);
+        res.status(500).json({ error: "Something went wrong..." });
+    }
+}));
+app.post("/register", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    const { email, password } = req.body;
+    try {
+        const emailExists = yield pool.query("SELECT * FROM users WHERE email = $1", [email]);
+        if (emailExists.rows.length > 0) {
+            res.status(400).json({ error: "Email already exists" });
+            return;
+        }
+        const result = yield pool.query("INSERT INTO users (email, password) VALUES ($1, $2) RETURNING *", [email, password]);
+        res.json(result.rows[0]);
+    }
+    catch (error) {
+        console.error("Cannot register user", error);
         res.status(500).json({ error: "Something went wrong..." });
     }
 }));
