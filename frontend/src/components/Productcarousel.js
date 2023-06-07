@@ -22,7 +22,6 @@ import '../styles/Productcarousel.css';
 function Productcarousel({ onProductClick }) {
     const [products, setProducts] = useState([]);
     // const [productImages, setProductImages] = useState<string[]>([]);
-    const [selectedProduct, setSelectedProduct] = useState([]);
     useEffect(() => {
         fetchProducts();
     }, []);

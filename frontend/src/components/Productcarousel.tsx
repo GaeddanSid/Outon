@@ -31,7 +31,7 @@ interface ProductCarouselProps {
 function Productcarousel({ onProductClick }: ProductCarouselProps) {
   const [products, setProducts] = useState<Product[]>([]);
   // const [productImages, setProductImages] = useState<string[]>([]);
-  const [selectedProduct, setSelectedProduct] = useState<number[]>([]);
+
   useEffect(() => {
     fetchProducts();
   }, []);

@@ -1,5 +1,4 @@
 import photo1 from '../images/polaroid-manhattanmoon-purple-black-above-smile.jpeg';
-// import WebcamImage from '../components/Screenshot';
 import { FiCameraOff } from 'react-icons/fi';
 import { BiPowerOff } from 'react-icons/bi';
 import Webcam from 'react-webcam';
@@ -115,32 +114,34 @@ const PhoneHeader = () => {
             Style yourself like the gorgeous sunshine cosmonaut that you are!
           </p>
         </div>
-        <div className="circle-row">
-          <div
-            className="circle circle-selfie"
-            style={{ backgroundColor: '#eee565' }}
-          >
-            <p className="circle-info-text">Selfie time</p>
+        <div className="circle-container">
+          <div className="circle-row">
+            <div
+              className="circle circle-selfie"
+              style={{ backgroundColor: '#eee565' }}
+            >
+              <p className="circle-info-text">Selfie time</p>
+            </div>
+            <div
+              className="circle circle-shades"
+              style={{ backgroundColor: '#EBE6E0' }}
+            >
+              <p className="circle-info-text"> Select shades</p>
+            </div>
           </div>
-          <div
-            className="circle circle-shades"
-            style={{ backgroundColor: '#EBE6E0' }}
-          >
-            <p className="circle-info-text"> Select shades</p>
-          </div>
-        </div>
-        <div className="circle-row">
-          <div
-            className="circle circle-shot"
-            style={{ backgroundColor: '#9DACAA' }}
-          >
-            <p className="circle-info-text"> Snap a shot</p>
-          </div>
-          <div
-            className="circle circle-inbox"
-            style={{ backgroundColor: '#9F8EA2' }}
-          >
-            <p className="circle-info-text"> Send to inbox</p>
+          <div className="circle-row">
+            <div
+              className="circle circle-shot"
+              style={{ backgroundColor: '#9DACAA' }}
+            >
+              <p className="circle-info-text"> Snap a shot</p>
+            </div>
+            <div
+              className="circle circle-inbox"
+              style={{ backgroundColor: '#9F8EA2' }}
+            >
+              <p className="circle-info-text"> Send to inbox</p>
+            </div>
           </div>
         </div>
       </div>

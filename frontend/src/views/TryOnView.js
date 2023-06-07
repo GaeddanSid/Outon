@@ -24,7 +24,7 @@ const TryOnView = () => {
     const handleProductClick = (product) => {
         setSelectedProduct(product);
     };
-    return (_jsxs("div", { children: [_jsx(PhoneHeader, {}), _jsx(PhoneImages, {}), _jsx(PolaroidGallery, {}), _jsx(SmFeatures, {}), _jsx(Productcarousel, { onProductClick: handleProductClick }), _jsx(BackToTop, {})] }));
+    return (_jsxs("div", Object.assign({ className: "view-divs" }, { children: [_jsx(PhoneHeader, {}), _jsx(PhoneImages, {}), _jsx(PolaroidGallery, {}), _jsx(SmFeatures, {}), _jsx(Productcarousel, { onProductClick: handleProductClick }), _jsx(BackToTop, {})] })));
 };
 export default TryOnView;
 //# sourceMappingURL=TryOnView.js.map

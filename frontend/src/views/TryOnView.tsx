@@ -44,7 +44,7 @@ const TryOnView = () => {
   };
 
   return (
-    <div>
+    <div className="view-divs">
       <PhoneHeader />
       <PhoneImages />
       <PolaroidGallery />

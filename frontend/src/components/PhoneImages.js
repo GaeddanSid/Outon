@@ -9,6 +9,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/Phone.css';
 import Image1 from '../images/Product_Manhattan1.png';
 import Image2 from '../images/Product_Berlin1.png';
@@ -32,7 +33,7 @@ const PhoneImages = () => {
             console.error('No response from database', error);
         }
     });
-    return (_jsxs("div", { children: [_jsx("h2", Object.assign({ id: "my-custom-heading" }, { children: "Find your perfect shades" })), _jsx("div", Object.assign({ className: "phone-images-container" }, { children: products.map((product, index) => (_jsxs("div", Object.assign({ className: "phone-image" }, { children: [getImageByIndex(index) && (_jsx("img", { src: getImageByIndex(index), alt: `Image ${index + 1}` })), _jsx("p", { children: product.name }), _jsxs("p", { children: ["$", product.price] })] }), index))) })), _jsx("div", { style: { marginBottom: '150px' } })] }));
+    return (_jsxs("div", { children: [_jsx("h2", Object.assign({ id: "my-custom-heading" }, { children: "Find your perfect shades" })), _jsx("div", Object.assign({ className: "phone-images-container" }, { children: products.map((product, index) => (_jsxs("div", Object.assign({ className: "phone-image" }, { children: [getImageByIndex(index) && (_jsx(Link, Object.assign({ to: `/Product-details/${product.id}` }, { children: _jsx("img", { src: getImageByIndex(index), alt: `Image ${index + 1}` }) }), product.id)), _jsx("p", Object.assign({ className: "product-card" }, { children: product.name })), _jsx("p", Object.assign({ className: "product-card" }, { children: product.color })), _jsxs("p", Object.assign({ className: "product-card" }, { children: ["$", product.price] }))] }), index))) })), _jsx("div", { style: { marginBottom: '150px' } })] }));
 };
 const getImageByIndex = (index) => {
     switch (index) {

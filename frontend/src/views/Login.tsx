@@ -1,33 +1,34 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-const Login: React.FC = () => {
-  const [username, setUsername] = useState('');
+const Register: React.FC = () => {
+  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleLogin = async (e: React.FormEvent) => {
+  const handleRegister = async (e: React.FormEvent) => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:8080/login', {
-        username,
+      const response = await axios.post('http://localhost:8080/register', {
+        email,
         password,
       });
 
-      console.log('Login successful:', response.data);
+      console.log('Registration successful:', response.data);
     } catch (error) {
-      console.error('Login failed:', error);
+      console.error('Registration failed:', error);
     }
   };
 
   return (
     <div className="view-divs">
-      <form onSubmit={handleLogin}>
+      <form onSubmit={handleRegister}>
+        <h3>Register account</h3>
         <input
           type="text"
-          placeholder="Username"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
+          placeholder="Email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
           required
         />
         <input
@@ -37,10 +38,10 @@ const Login: React.FC = () => {
           onChange={(e) => setPassword(e.target.value)}
           required
         />
-        <button type="submit">Login</button>
+        <button type="submit">Create account</button>
       </form>
     </div>
   );
 };
 
-export default Login;
+export default Register;

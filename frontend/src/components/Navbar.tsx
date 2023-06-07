@@ -93,13 +93,11 @@ function Navbar() {
                     />
                   </li>
                   <li className="nav-icons-li">
-                    <Link to="/Product-details">
-                      <img
-                        className="nav-icons shoppingbag"
-                        src={Shoppingbag}
-                        alt="Shoppingbag"
-                      />
-                    </Link>
+                    <img
+                      className="nav-icons shoppingbag"
+                      src={Shoppingbag}
+                      alt="Shoppingbag"
+                    />
                   </li>
                 </ul>
               </div>

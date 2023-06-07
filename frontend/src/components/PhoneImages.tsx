@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+
 import '../styles/Phone.css';
 import Image1 from '../images/Product_Manhattan1.png';
 import Image2 from '../images/Product_Berlin1.png';
@@ -8,7 +10,9 @@ import Image4 from '../images/SS_Pink_2.png';
 import Image6 from '../images/Product_Tokyo1.png';
 
 interface Product {
+  id: number;
   name: string;
+  color: string;
   price: number;
 }
 
@@ -38,10 +42,13 @@ const PhoneImages = () => {
         {products.map((product, index) => (
           <div className="phone-image" key={index}>
             {getImageByIndex(index) && (
-              <img src={getImageByIndex(index)} alt={`Image ${index + 1}`} />
+              <Link key={product.id} to={`/Product-details/${product.id}`}>
+                <img src={getImageByIndex(index)} alt={`Image ${index + 1}`} />
+              </Link>
             )}
-            <p>{product.name}</p>
-            <p>${product.price}</p>
+            <p className="product-card">{product.name}</p>
+            <p className="product-card">{product.color}</p>
+            <p className="product-card">${product.price}</p>
           </div>
         ))}
       </div>
