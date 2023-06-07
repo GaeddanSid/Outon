@@ -98,6 +98,7 @@
 }
 .s {
   position: relative;
+  width: auto;
   letter-spacing: 0.04em;
   line-height: 135.52%;
   opacity: 0.7;
@@ -239,7 +240,7 @@
 
 .product-description{
   margin-top: 20px;
-  width: 300px;
+  width: 100%;
 }
 .table {
   width: 363px;

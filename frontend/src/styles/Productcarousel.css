@@ -39,8 +39,6 @@
 
   color: #000000;
 
-  /* Inside auto layout */
-
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -86,9 +84,10 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: background-color 0.3s;
-  /* box-shadow: 0px 29px 12px rgba(0, 0, 0, 0.01), 0px 16px 10px rgba(0, 0, 0, 0.05), 0px 7px 7px rgba(0, 0, 0, 0.09), 0px 2px 4px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1); */
+  /* transition: background-color 0.3s; */
+  box-shadow: 0px 29px 12px rgba(0, 0, 0, 0.01), 0px 16px 10px rgba(0, 0, 0, 0.05), 0px 7px 7px rgba(0, 0, 0, 0.09), 0px 2px 4px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
 }
+
 
 .carousel-2 .carousel-control-prev {
   left: 0px;
@@ -117,6 +116,11 @@
   background-color: #eee565;
 }
 
+.carousel-2 .carousel-control-prev:hover::before,
+.carousel-2 .carousel-control-next:hover::before {
+  content: none;
+}
+
 .d-flex {
   display: flex;
   flex-direction: row;
@@ -128,8 +132,6 @@
 .find {
   box-sizing: border-box;
 
-  /* Auto layout */
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -140,14 +142,8 @@
   width: 208px;
   height: 48px;
 
-  /* Outon/Soft
-
-Background
-*/
   background: #fffefd;
   border: 3px solid #000000;
-
-  /* Inside auto layout */
 
   flex: none;
   order: 1;
@@ -170,33 +166,25 @@ Background
   transition: ease-in-out;
 }
 
-@media screen and (max-width: 610px) {
+@media screen and (max-width: 625px) {
   .the-rio-rush {
     font-size: 32px;
     line-height: 28px;
   }
 
-  .carousel-2 {
-    width: 90%;
-    margin: auto;
+  .d-flex {
+    flex-wrap: wrap;
+    justify-content: center;
   }
+
+  .product-item {
+    width: 50%;
+  }
+
+  .carousel-2 .carousel-control-prev,
+  .carousel-2 .carousel-control-next {
+  width: 50px;
+  height: 50px;
+
 }
-
-@media screen and (max-width: 510px) {
-  .the-rio-rush {
-    font-size: 24px;
-    line-height: 18px;
-  }
-  .carousel.slide {
-    width: 90%;
-    margin: auto;
-  }
-  /* .carousel-inner {
-    width: 60%;
-    margin: auto;
-  } */
-
-  .carousel-item {
-    width: 80%;
-  }
 }
