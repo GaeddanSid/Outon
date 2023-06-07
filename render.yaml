@@ -1,0 +1,12 @@
+services:
+  - name: frontend
+    env:
+      - KEY=value # Ange eventuella miljövariabler som behövs för frontend
+    buildCommand: cd frontend && npm install && npm run build
+    startCommand: cd frontend && npm run start
+
+  - name: backend
+    env:
+      - KEY=value # Ange eventuella miljövariabler som behövs för backend
+    buildCommand: npm install
+    startCommand: npm run start
