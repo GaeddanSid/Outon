@@ -3,6 +3,7 @@ import * as dotenv from "dotenv";
 import express from "express";
 import { Pool } from "pg";
 import cors from "cors";
+import path from "path";
 
 const app = express();
 const port = 8080;
@@ -94,6 +95,8 @@ app.post("/register", async (req, res) => {
 app.get("/", (req, res) => {
   res.status(200).send("Testar testar!");
 });
+
+app.use(express.static(path.join(__dirname, "public")))
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
