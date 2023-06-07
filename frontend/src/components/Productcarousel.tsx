@@ -32,7 +32,6 @@ function Productcarousel({ onProductClick }: ProductCarouselProps) {
   const [products, setProducts] = useState<Product[]>([]);
   // const [productImages, setProductImages] = useState<string[]>([]);
   const [selectedProduct, setSelectedProduct] = useState<number[]>([]);
-
   useEffect(() => {
     fetchProducts();
   }, []);
@@ -99,19 +98,24 @@ function Productcarousel({ onProductClick }: ProductCarouselProps) {
                     className="product-item"
                     onClick={() => onProductClick(product)}
                   >
-                    <img
-                      className="d-block hover-effect"
-                      src={getImagePath(product.image)}
-                      alt={product.name}
-                    />
-                    <div className="product-info">
-                      <h3>{product.name}</h3>
-                      <p className="product-text">{product.color}</p>
-                      <p className="product-text">
-                        <strong>$</strong>
-                        {product.price}
-                      </p>
-                    </div>
+                    <Link
+                      key={product.id}
+                      to={`/Product-details/${product.id}`}
+                    >
+                      <img
+                        className="d-block hover-effect"
+                        src={getImagePath(product.image)}
+                        alt={product.name}
+                      />
+                      <div className="product-info">
+                        <h3>{product.name}</h3>
+                        <p className="product-text">{product.color}</p>
+                        <p className="product-text">
+                          <strong>$</strong>
+                          {product.price}
+                        </p>
+                      </div>
+                    </Link>
                   </div>
                 ))}
               </div>

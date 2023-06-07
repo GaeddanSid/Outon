@@ -7,6 +7,7 @@ import ProductView from './views/ProductView';
 import TryOnView from './views/TryOnView';
 import Footer from './components/Footer';
 import About from './components/About';
+import Login from './views/Login';
 function Root() {
     return (_jsxs("div", Object.assign({ className: "app" }, { children: [_jsx("header", Object.assign({ className: "app-header" }, { children: _jsx(Navbar, {}) })), _jsx("main", { children: _jsx(Outlet, {}) }), _jsx("footer", { children: _jsx(Footer, {}) })] })));
 }
@@ -19,6 +20,7 @@ function App() {
                 { element: _jsx(ProductView, {}), path: '/Product-details' },
                 { element: _jsx(ProductView, {}), path: '/Product-details/:id' },
                 { element: _jsx(TryOnView, {}), path: '/All-sunglasses' },
+                { element: _jsx(Login, {}), path: '/Login' },
             ],
             element: _jsx(Root, {}),
         },

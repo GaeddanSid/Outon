@@ -11,90 +11,182 @@ import StyleFeedBirds from '../images/Stylefeed_birds.jpg';
 import StyleFeedChair from '../images/Stylefeed_chair.jpg';
 import StyleFeedPlant from '../images/Stylefeed_plant.jpg';
 
-import { FunctionComponent } from 'react';
+import { FunctionComponent, useState, useEffect } from 'react';
+
 const StyleFeed: FunctionComponent = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 1180);
+    };
+
+    window.addEventListener('resize', handleResize);
+    handleResize();
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
-    <div className="style-feed-section-inner">
-      <div className="frame-wrapper2">
-        <div className="style-feed-wrapper">
-          <div className="style-feed">
-            <div className="style-feed1">STYLE FEED</div>
-            <div className="frame-parent12">
-              <div className="frame-parent13">
-                <img
-                  className="frame-child5 hover-effect"
-                  alt=""
-                  src={StyleFeedStuff}
-                />
-                <div className="frame-wrapper3">
-                  <img
-                    className="frame-child6 hover-effect"
-                    alt=""
-                    src={StyleFeedShade}
-                  />
+    <>
+      {!isMobile && (
+        <div className="style-feed-section-inner">
+          <div className="frame-wrapper2">
+            <div className="style-feed-wrapper">
+              <div className="style-feed">
+                <div className="style-feed1">STYLE FEED</div>
+                <div className="frame-parent12">
+                  <div className="frame-parent13">
+                    <img
+                      className="frame-child5 hover-effect"
+                      alt=""
+                      src={StyleFeedStuff}
+                    />
+                    <div className="frame-wrapper3">
+                      <img
+                        className="frame-child6 hover-effect"
+                        alt=""
+                        src={StyleFeedShade}
+                      />
+                    </div>
+                    <img
+                      className="frame-child7 hover-effect"
+                      alt=""
+                      src={StyleFeedCatEye}
+                    />
+                    <img
+                      className="skarmavbild-2023-05-19-kl-08 hover-effect"
+                      alt=""
+                      src={StyleFeedMany}
+                    />
+                  </div>
+                  <div className="frame-parent14">
+                    <div className="frame-parent12">
+                      <img
+                        className="frame-child8 hover-effect"
+                        alt=""
+                        src={StyleFeedChair}
+                      />
+                      <img
+                        className="frame-child8 hover-effect"
+                        alt=""
+                        src={StyleFeedPlant}
+                      />
+                    </div>
+                    <img
+                      className="frame-child10 hover-effect"
+                      alt=""
+                      src={StyleFeedBirds}
+                    />
+                    <div className="frame-parent12">
+                      <img
+                        className="frame-child8 hover-effect"
+                        alt=""
+                        src={StyleFeedFashion}
+                      />
+                      <img
+                        className="frame-child8 hover-effect"
+                        alt=""
+                        src={StyleFeedMen}
+                      />
+                    </div>
+                    <div className="frame-parent12">
+                      <img
+                        className="frame-child8 hover-effect"
+                        alt=""
+                        src={StyleFeedRound}
+                      />
+                      <img
+                        className="frame-child8 hover-effect"
+                        alt=""
+                        src={StyleFeedPlastic}
+                      />
+                    </div>
+                  </div>
                 </div>
-                <img
-                  className="frame-child7 hover-effect"
-                  alt=""
-                  src={StyleFeedCatEye}
-                />
-                <img
-                  className="skarmavbild-2023-05-19-kl-08 hover-effect"
-                  alt=""
-                  src={StyleFeedMany}
-                />
+                <div className="button6 yellow-hover">
+                  <div className="see-more1 ">See more</div>
+                </div>
               </div>
-              <div className="frame-parent14">
-                <div className="frame-parent12">
+            </div>
+          </div>
+        </div>
+      )}
+
+      {isMobile && (
+        <div className="style-feed-section-inner-mobile">
+          <div className="frame-wrapper-mobile">
+            <div className="style-feed-wrapper-mobile">
+              <div className="style-feed-mobile">
+                <div className="style-feed1-mobile">STYLE FEED</div>
+                <div className="style-feed-grid-mobile">
                   <img
-                    className="frame-child8 hover-effect"
+                    className="frame-child5-mobile hover-effect-style"
                     alt=""
-                    src={StyleFeedChair}
+                    src={StyleFeedCatEye}
                   />
                   <img
-                    className="frame-child8 hover-effect"
-                    alt=""
-                    src={StyleFeedPlant}
-                  />
-                </div>
-                <img
-                  className="frame-child10 hover-effect"
-                  alt=""
-                  src={StyleFeedBirds}
-                />
-                <div className="frame-parent12">
-                  <img
-                    className="frame-child8 hover-effect"
+                    className="frame-child6-mobile hover-effect-style"
                     alt=""
                     src={StyleFeedFashion}
                   />
                   <img
-                    className="frame-child8 hover-effect"
+                    className="frame-child7-mobile hover-effect-style"
                     alt=""
-                    src={StyleFeedMen}
+                    src={StyleFeedShade}
                   />
-                </div>
-                <div className="frame-parent12">
                   <img
-                    className="frame-child8 hover-effect"
+                    className="stylefeedMany-mobile hover-effect-style"
+                    alt=""
+                    src={StyleFeedChair}
+                  />
+                  <img
+                    className="frame-child8-mobile hover-effect-style"
+                    alt=""
+                    src={StyleFeedPlant}
+                  />
+                  <img
+                    className="frame-child8-mobile hover-effect-style"
+                    alt=""
+                    src={StyleFeedBirds}
+                  />
+                  <img
+                    className="frame-child10-mobile hover-effect-style"
                     alt=""
                     src={StyleFeedRound}
                   />
                   <img
-                    className="frame-child8 hover-effect"
+                    className="frame-child8-mobile hover-effect-style"
+                    alt=""
+                    src={StyleFeedMany}
+                  />
+                  <img
+                    className="frame-child8-mobile hover-effect-style"
+                    alt=""
+                    src={StyleFeedMen}
+                  />
+                  <img
+                    className="frame-child8-mobile hover-effect-style"
+                    alt=""
+                    src={StyleFeedRound}
+                  />
+                  <img
+                    className="frame-child8-mobile hover-effect-style"
                     alt=""
                     src={StyleFeedPlastic}
                   />
                 </div>
+                <div className="button6 yellow-hover">
+                  <div className="see-more1">See more</div>
+                </div>
               </div>
-            </div>
-            <div className="button6 yellow-hover">
-              <div className="see-more1 ">See more</div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      )}
+    </>
   );
 };
 

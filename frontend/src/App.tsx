@@ -7,6 +7,7 @@ import ProductView from './views/ProductView';
 import TryOnView from './views/TryOnView';
 import Footer from './components/Footer';
 import About from './components/About';
+import Login from './views/Login';
 
 function Root() {
   return (
@@ -33,6 +34,7 @@ function App() {
         { element: <ProductView />, path: '/Product-details' },
         { element: <ProductView />, path: '/Product-details/:id' },
         { element: <TryOnView />, path: '/All-sunglasses' },
+        { element: <Login />, path: '/Login' },
       ],
       element: <Root />,
     },

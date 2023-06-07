@@ -78,6 +78,9 @@ function Navbar() {
                   <li className="nav-link-text">
                     <Link to="/about">House of OutOn</Link>
                   </li>
+                  <li>
+                    <Link to="/Login"> Login</Link>
+                  </li>
                 </ul>
               </div>
               <div className="icon-links-box">

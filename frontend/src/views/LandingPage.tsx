@@ -71,7 +71,7 @@ function landingpage() {
               sustainable sunglasses, carefully handcrafted with
               scratch-resistant glass.
             </p>
-            <p className="hero-text">
+            <p className="hero-text hide-in-mobile">
               Discover timeless luxury and sustainability today.
             </p>
           </div>
@@ -83,24 +83,25 @@ function landingpage() {
         </div>
       </div>
 
-      <div className="brands">
+      <div className="brands ">
         <div className="brand-names">
-          <img src={Vogue} alt="Vogue" />
+          <img className="brand-img" src={Vogue} alt="Vogue" />
         </div>
         <div className="brand-names">
-          <img src={Elle} alt="Elle" />
+          <img className="brand-img" src={Elle} alt="Elle" />
         </div>
         <div className="brand-names">
-          <img src={Forbes} alt="Forbes" />
+          <img className="brand-img" src={Forbes} alt="Forbes" />
+        </div>
+
+        <div className="brand-names">
+          <img className="brand-img" src={Bazaar} alt="Bazaar" />
         </div>
         <div className="brand-names">
-          <img src={Bazaar} alt="Bazaar" />
+          <img className="brand-img" src={Cosmo} alt="Cosmopolitan" />
         </div>
         <div className="brand-names">
-          <img src={Cosmo} alt="Cosmopolitan" />
-        </div>
-        <div className="brand-names">
-          <img src={Time} alt="Time" />
+          <img className="brand-img" src={Time} alt="Time" />
         </div>
       </div>
 
@@ -110,14 +111,15 @@ function landingpage() {
             <p className="our-virtual">OUR VIRTUAL TRY-ON!</p>
             {/* <p className="our-virtual"></p> */}
 
-            <div className="small-text-try-on">
-              <p className="elevate">
+            <div className="small-text-try-on ">
+              <p className="hide-in-desktop-try">We present our new feature!</p>
+              <p className="elevate hide-in-mobile-try">
                 Elevate your style game with Outon's exclusively refined and
                 sustainable sunglasses. Carefully handcrafted with
                 scratch-resistant glass.
               </p>
               {/* <p className="elevate">&nbsp;</p> */}
-              <p className="elevate">
+              <p className="elevate hide-in-mobile-try">
                 Discover timeless luxury and sustainability today!
               </p>
             </div>

@@ -1,32 +1,32 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 import { BsPlus, BsX, BsCheck2 } from 'react-icons/bs';
 
 import rio1 from '../images/Product_Rio1.png';
 import rio2 from '../images/Product_Rio2.png';
 import rio3 from '../images/Product_Rio3.png';
 
-import nairobii1 from '../images/Product_Nairobi1.png'
-import nairobii2 from '../images/Product_Nairobi2.png'
-import nairobii3 from '../images/Product_Nairobi3.png'
+import nairobii1 from '../images/Product_Nairobi1.png';
+import nairobii2 from '../images/Product_Nairobi2.png';
+import nairobii3 from '../images/Product_Nairobi3.png';
 
-import tokyo1 from '../images/Product_Tokyo1.png'
-import tokyo2 from '../images/Product_Tokyo2.png'
-import tokyo3 from '../images/Product_Tokyo3.png'
+import tokyo1 from '../images/Product_Tokyo1.png';
+import tokyo2 from '../images/Product_Tokyo2.png';
+import tokyo3 from '../images/Product_Tokyo3.png';
 
-import manhattan1 from '../images/Product_Manhattan1.png'
-import manhattan2 from '../images/Product_Manhattan2.png'
-import manhattan3 from '../images/Product_Manhattan3.png'
+import manhattan1 from '../images/Product_Manhattan1.png';
+import manhattan2 from '../images/Product_Manhattan2.png';
+import manhattan3 from '../images/Product_Manhattan3.png';
 
+import berlin1 from '../images/Product_Berlin1.png';
+import berlin2 from '../images/Product_Berlin2.png';
+import berlin3 from '../images/Product_Berlin3.png';
 
-import berlin1 from '../images/Product_Berlin1.png'
-import berlin2 from '../images/Product_Berlin2.png'
-import berlin3 from '../images/Product_Berlin3.png'
+import pink1 from '../images/SS_Pink_1.png';
+import pink2 from '../images/SS_Pink_2.png';
+import pink3 from '../images/SS_Pink_3.png';
 
-import pink1 from '../images/SS_Pink_1.png'
-import pink2 from '../images/SS_Pink_2.png'
-import pink3 from '../images/SS_Pink_3.png'
-
-import '../styles/ProductDetails.css'
+import '../styles/ProductDetails.css';
 
 interface Product {
   id: number;
@@ -41,26 +41,27 @@ interface Product {
   image2: string;
   image3: string;
 }
+
 interface ProductDetailProps {
   product: Product;
 }
 
-function ProductDetails ({ product }: ProductDetailProps) {
-
+function ProductDetails({ product }: ProductDetailProps) {
+  const { id } = useParams<{ id: string }>();
   const [products, setProducts] = useState<Product[]>([]);
   const [isDescriptionVisible, setIsDescriptionVisible] = useState(false);
-
+  console.log(id);
   const toggleDescription = () => {
     setIsDescriptionVisible(!isDescriptionVisible);
   };
 
   useEffect(() => {
     fetchProducts();
-  }, []);
+  }, [id]);
 
   const fetchProducts = async () => {
     try {
-      const response = await fetch('http://localhost:8080/products');
+      const response = await fetch('http://localhost:8080/products/');
       const jsonData: Product[] = await response.json();
       console.log('Fetched: ', jsonData);
       setProducts(jsonData);
@@ -68,7 +69,6 @@ function ProductDetails ({ product }: ProductDetailProps) {
       console.error('No response from database', error);
     }
   };
-
 
   const getImagePath = (image: string) => {
     switch (product.name) {
@@ -112,36 +112,36 @@ function ProductDetails ({ product }: ProductDetailProps) {
           case 'image2':
             return manhattan2;
           case 'image3':
-            return manhattan3
-            default:
-              return '';
-          }
-        case 'Berlin Beat':
-          switch (image) {
-            case 'image1':
-              return berlin1;
-            case 'image2':
-              return berlin2;
-            case 'image3':
-              return berlin3;
-            default:
-              return '';
-          }
-        case 'Sydney Splendid':
-          switch (image) {
-            case 'image1':
-              return pink1;
-            case 'image2':
-              return pink2;
-            case 'image3':
-              return pink3;
-            default:
-              return '';
-          }
-        default:
-          return '';
-      }
-    };
+            return manhattan3;
+          default:
+            return '';
+        }
+      case 'Berlin Beat':
+        switch (image) {
+          case 'image1':
+            return berlin1;
+          case 'image2':
+            return berlin2;
+          case 'image3':
+            return berlin3;
+          default:
+            return '';
+        }
+      case 'Sydney Splendid':
+        switch (image) {
+          case 'image1':
+            return pink1;
+          case 'image2':
+            return pink2;
+          case 'image3':
+            return pink3;
+          default:
+            return '';
+        }
+      default:
+        return '';
+    }
+  };
 
   return (
     <div className="productdetail">
@@ -185,88 +185,84 @@ function ProductDetails ({ product }: ProductDetailProps) {
             <b className="outon-eyewear">€ {product.price}</b>
           </div>
 
-            <div className="table">
-              <div className="sizeoptions">
-                <div className="s">Size</div>
-                <div className="options">
-                  <label htmlFor="S/M">S/M</label>
-                  <input type="checkbox" name="S/M" value="S/M" />
-                  <label htmlFor="M/L">M/L</label>
-                  <input type="checkbox" name="M/L" value="M/L" />
-                </div>
+          <div className="table">
+            <div className="sizeoptions">
+              <div className="s">Size</div>
+              <div className="options">
+                <label htmlFor="S/M">S/M</label>
+                <input type="checkbox" name="S/M" value="S/M" />
+                <label htmlFor="M/L">M/L</label>
+                <input type="checkbox" name="M/L" value="M/L" />
               </div>
+            </div>
 
-              <div className="coloroptions">
-                <div className="color">
-                  <div className="s">Color</div>
-                </div>
-                <div className="options">
-                  <div className="optionscolors">
-                    <div className="option2">
-                      <div className="option1color1" />
-                      <div className="option1color2" />
-                    </div>
-                    <div className="option2">
-                      <div className="option2color1" />
-                      <div className="option1color2" />
-                    </div>
-                    <div className="option2">
-                      <div className="option3color1" />
-                      <div className="option1color2" />
-                    </div>
-                  </div>
-                </div>
+            <div className="coloroptions">
+              <div className="color">
+                <div className="s">Color</div>
               </div>
-              <div className="description">
-                <div className="descriptonoption" onClick={toggleDescription}>
-                {isDescriptionVisible ? '' : ''}
-                  <div className="descriptionheader">
-
-                      {isDescriptionVisible ? (
-                        <div>
-                        <div className="s">Description</div>
-                        <div className="product-description">{product.description}</div>
-                        </div>
-
-
-                      ) : (<div className="s">Description</div>
-                      )}
-
+              <div className="options">
+                <div className="optionscolors">
+                  <div className="option2">
+                    <div className="option1color1" />
+                    <div className="option1color2" />
                   </div>
-                  <div className="expand">
-                    {isDescriptionVisible ?  (
-                      <BsX onClick={toggleDescription} />
-                    ) : ( <BsPlus onClick={toggleDescription} />
-                    )}
-
+                  <div className="option2">
+                    <div className="option2color1" />
+                    <div className="option1color2" />
+                  </div>
+                  <div className="option2">
+                    <div className="option3color1" />
+                    <div className="option1color2" />
                   </div>
                 </div>
               </div>
             </div>
-
+            <div className="description">
+              <div className="descriptonoption" onClick={toggleDescription}>
+                {isDescriptionVisible ? '' : ''}
+                <div className="descriptionheader">
+                  {isDescriptionVisible ? (
+                    <div>
+                      <div className="s">Description</div>
+                      <div className="product-description">
+                        {product.description}
+                      </div>
+                    </div>
+                  ) : (
+                    <div className="s">Description</div>
+                  )}
+                </div>
+                <div className="expand">
+                  {isDescriptionVisible ? (
+                    <BsX onClick={toggleDescription} />
+                  ) : (
+                    <BsPlus onClick={toggleDescription} />
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-          <button className="buttonadd-to-bag">Add to Bag</button>
+        <button className="buttonadd-to-bag">Add to Bag</button>
         <div className="tinypromises">
           <div className="s-parent">
             <div className="icoutline-done-parent">
-            <BsCheck2 />
+              <BsCheck2 />
               <div className="uvauvb-protection">100% UVA+UVB protection</div>
             </div>
             <div className="icoutline-done-parent">
-            <BsCheck2 />
+              <BsCheck2 />
               <div className="uvauvb-protection">Recycled materials</div>
             </div>
             <div className="icoutline-done-parent">
-            <BsCheck2 />
+              <BsCheck2 />
               <div className="uvauvb-protection">100% scratchfree</div>
             </div>
           </div>
         </div>
-
       </div>
     </div>
-
-  )
+  );
 }
 
 export default ProductDetails;

@@ -8,7 +8,7 @@ function Features1() {
   return (
     <>
       <div className="features-small">
-        <div className="rectangle-parent">
+        <div className="rectangle-parent rectangle-parent-first">
           <img className="frame-child" alt="" src={Sand} />
           <div className="scratch-resistant-parent">
             <div className="scratch-resistant">Scratch resistant</div>
@@ -18,7 +18,7 @@ function Features1() {
             </div>
           </div>
         </div>
-        <div className="rectangle-parent">
+        <div className="rectangle-parent rectangle-parent-sec">
           <img className="frame-child" alt="" src={sustainability} />
           <div className="scratch-resistant-parent">
             <div className="scratch-resistant">Handcrafted sustainability</div>
@@ -29,7 +29,7 @@ function Features1() {
             </div>
           </div>
         </div>
-        <div className="rectangle-parent">
+        <div className="rectangle-parent rectangle-parent-third">
           <img className="frame-child" alt="" src={Shipping} />
           <div className="scratch-resistant-parent">
             <div className="scratch-resistant">Always free shipping</div>

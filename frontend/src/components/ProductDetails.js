@@ -8,7 +8,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 import { BsPlus, BsX, BsCheck2 } from 'react-icons/bs';
 import rio1 from '../images/Product_Rio1.png';
 import rio2 from '../images/Product_Rio2.png';
@@ -30,17 +31,19 @@ import pink2 from '../images/SS_Pink_2.png';
 import pink3 from '../images/SS_Pink_3.png';
 import '../styles/ProductDetails.css';
 function ProductDetails({ product }) {
+    const { id } = useParams();
     const [products, setProducts] = useState([]);
     const [isDescriptionVisible, setIsDescriptionVisible] = useState(false);
+    console.log(id);
     const toggleDescription = () => {
         setIsDescriptionVisible(!isDescriptionVisible);
     };
     useEffect(() => {
         fetchProducts();
-    }, []);
+    }, [id]);
     const fetchProducts = () => __awaiter(this, void 0, void 0, function* () {
         try {
-            const response = yield fetch('http://localhost:8080/products');
+            const response = yield fetch('http://localhost:8080/products/');
             const jsonData = yield response.json();
             console.log('Fetched: ', jsonData);
             setProducts(jsonData);

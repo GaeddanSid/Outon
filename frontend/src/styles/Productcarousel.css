@@ -49,6 +49,7 @@
 .product-item {
   width: 80%;
   height: 80%;
+  cursor: pointer;
 }
 
 .product-item img {
@@ -182,7 +183,6 @@ Background
 }
 
 @media screen and (max-width: 510px) {
-
   .the-rio-rush {
     font-size: 24px;
     line-height: 18px;

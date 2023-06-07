@@ -7,8 +7,8 @@ import sizes from '../images/Small features 2_sizes.jpg';
 function Features2() {
   return (
     <>
-      <div className="features-small-2">
-        <div className="rectangle-parent-2">
+      <div className="features-small-2 ">
+        <div className="rectangle-parent-2 rectangle-parent-2-first">
           <img className="frame-child-2" alt="Uv-protection" src={uv} />
           <div className="scratch-resistant-parent-2">
             <div className="scratch-resistant-2">100% UV protection</div>
@@ -18,7 +18,7 @@ function Features2() {
             </div>
           </div>
         </div>
-        <div className="rectangle-parent-2">
+        <div className="rectangle-parent-2 rectangle-parent-2-sec ">
           <img className="frame-child-2" alt="" src={prescription} />
           <div className="scratch-resistant-parent-2">
             <div className="scratch-resistant-2">
@@ -35,7 +35,7 @@ function Features2() {
             </div>
           </div>
         </div>
-        <div className="rectangle-parent-2">
+        <div className="rectangle-parent-2 rectangle-parent-2-third">
           <img className="frame-child-2" alt="" src={sizes} />
           <div className="scratch-resistant-parent-2">
             <div className="scratch-resistant-2">Different sizes</div>

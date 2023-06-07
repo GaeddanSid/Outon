@@ -99,19 +99,24 @@ function Productcarousel2({ onProductClick }: ProductCarouselProps) {
                     className="product-item"
                     onClick={() => onProductClick(product)}
                   >
-                    <img
-                      className="d-block hover-effect"
-                      src={getImagePath(product.image)}
-                      alt={product.name}
-                    />
-                    <div className="product-info">
-                      <h3>{product.name}</h3>
-                      <p className="product-text">{product.color}</p>
-                      <p className="product-text">
-                        <strong>$</strong>
-                        {product.price}
-                      </p>
-                    </div>
+                    <Link
+                      key={product.id}
+                      to={`/Product-details/${product.id}`}
+                    >
+                      <img
+                        className="d-block hover-effect"
+                        src={getImagePath(product.image)}
+                        alt={product.name}
+                      />
+                      <div className="product-info">
+                        <h3>{product.name}</h3>
+                        <p className="product-text">{product.color}</p>
+                        <p className="product-text">
+                          <strong>$</strong>
+                          {product.price}
+                        </p>
+                      </div>
+                    </Link>
                   </div>
                 ))}
               </div>

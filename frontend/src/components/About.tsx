@@ -24,18 +24,21 @@ function About() {
                 </div>
               </div>
               <button className="buttonseespecs">
-                Explore our sustainable promise
+                <p className="hide-in-mobile">
+                  Explore our sustainable promise
+                </p>
+                <p className="hide-in-desktop">Explore</p>
               </button>
             </div>
             <img
-              className="pic-about-substainability-icon hover-effect"
+              className="pic-about-substainability-icon"
               alt=""
               src={sustainability}
             />
           </div>
-          <div className="sustainabilitypicture">
+          <div className="sustainabilitypicture sustainabilitypicture-mid">
             <img
-              className="pic-about-substainability-icon hover-effect"
+              className="pic-about-substainability-icon"
               alt=""
               src={durability}
             />
@@ -56,7 +59,10 @@ function About() {
                   </p>
                 </div>
               </div>
-              <button className="buttonseespecs">See the tech specs</button>
+              <button className="buttonseespecs">
+                <p className="hide-in-mobile">See the tech specs</p>
+                <p className="hide-in-desktop">Explore</p>
+              </button>
             </div>
           </div>
           <div className="sustainabilitypicture">
@@ -74,11 +80,12 @@ function About() {
                 </div>
               </div>
               <button className="buttonseespecs">
-                Discover the craftsmanship
+                <p className="hide-in-mobile">Discover the craftsmanship</p>
+                <p className="hide-in-desktop">Explore</p>
               </button>
             </div>
             <img
-              className="pic-about-substainability-icon hover-effect"
+              className="pic-about-substainability-icon"
               alt=""
               src={artisans}
             />
