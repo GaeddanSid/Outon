@@ -2,15 +2,15 @@ import React, { useEffect, useState } from 'react';
 import arrow from '../images/arrow-up.png';
 import '../styles/BackToTop.css';
 
-function BackToTop() {
-  const [isVisible, setIsVisible] = useState(false);
+const BackToTop: React.FC = () => {
+  const [isVisible, setIsVisible] = useState<boolean>(false);
 
-  const handleScroll = () => {
+  const handleScroll = (): void => {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     setIsVisible(scrollTop > window.innerHeight / 2);
   };
 
-  const scrollToTop = () => {
+  const scrollToTop = (): void => {
     window.scrollTo({
       top: 0,
       behavior: 'smooth',
@@ -34,6 +34,6 @@ function BackToTop() {
       </div>
     </div>
   );
-}
+};
 
 export default BackToTop;

@@ -4,6 +4,7 @@
   letter-spacing: 0.04em;
   font-weight: 500;
 }
+
 .frame-child5,
 .frame-child6 {
   position: relative;
@@ -11,15 +12,18 @@
   flex-shrink: 0;
   object-fit: cover;
 }
+
 .frame-child5 {
   width: 411px;
   height: 410px;
   z-index: 0;
 }
+
 .frame-child6 {
   width: 200px;
   height: 197px;
 }
+
 .frame-wrapper3 {
   display: flex;
   flex-direction: column;
@@ -27,6 +31,7 @@
   justify-content: flex-start;
   z-index: 1;
 }
+
 .frame-child7 {
   position: relative;
   width: 411px;
@@ -36,6 +41,7 @@
   object-fit: cover;
   z-index: 2;
 }
+
 .skarmavbild-2023-05-19-kl-08 {
   position: absolute;
   margin: 0 !important;
@@ -46,6 +52,7 @@
   object-fit: cover;
   z-index: 3;
 }
+
 .frame-parent13 {
   display: flex;
   flex-direction: row;
@@ -54,6 +61,7 @@
   position: relative;
   gap: var(--gap-base);
 }
+
 .frame-child10,
 .frame-child8 {
   position: relative;
@@ -63,10 +71,12 @@
   flex-shrink: 0;
   object-fit: cover;
 }
+
 .frame-child10 {
   width: 410px;
   height: 408px;
 }
+
 .frame-parent12,
 .frame-parent14 {
   display: flex;
@@ -75,30 +85,23 @@
   justify-content: flex-start;
   gap: var(--gap-base);
 }
+
 .frame-parent12 {
   flex-direction: column;
 }
+
 .see-more1 {
   position: relative;
   letter-spacing: 0.03em;
   font-weight: 600;
 }
+
 .button6,
 .style-feed {
   display: flex;
   align-items: center;
 }
-.button6 {
-  background-color: var(--soft);
-  border: 3px solid var(--suave);
-  box-sizing: border-box;
-  height: 48px;
-  flex-direction: row;
-  padding: var(--padding-lgi) var(--padding-5xl);
-  justify-content: center;
-  text-align: center;
-  font-size: var(--outon-button-text-size);
-}
+
 .style-feed {
   /* position: absolute;
   top: 72px;
@@ -198,7 +201,7 @@
   justify-content: center;
   text-align: center;
   font-size: var(--outon-button-text-size);
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 .style-feed-mobile {

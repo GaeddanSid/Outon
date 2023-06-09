@@ -226,7 +226,7 @@ header {
   }
 
   .slide-in-menu.open {
-    max-height: 100px;
+    max-height: 120px;
   }
 
   /* @keyframes slidedown {

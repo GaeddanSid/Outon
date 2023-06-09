@@ -1,3 +1,5 @@
+// https://blog.openreplay.com/capture-real-time-images-and-videos-with-react-webcam/
+
 import photo1 from '../images/polaroid-manhattanmoon-purple-black-above-smile.jpeg';
 import { FiCameraOff } from 'react-icons/fi';
 import { BiPowerOff } from 'react-icons/bi';
@@ -11,13 +13,12 @@ import {
   BootstrapReboot,
 } from 'react-bootstrap-icons';
 
-const PhoneHeader = () => {
-  const [showButtons, setShowButtons] = useState(false);
-  const [isCameraOn, setIsCameraOn] = useState(false);
+const PhoneHeader: React.FC = () => {
+  const [showButtons, setShowButtons] = useState<boolean>(false);
+  const [isCameraOn, setIsCameraOn] = useState<boolean>(false);
   const [img, setImg] = useState<string | null>(null);
   const webcamRef = useRef<Webcam>(null);
-
-  const handleCameraButtonClick = () => {
+  const handleCameraButtonClick = (): void => {
     setIsCameraOn((prevIsCameraOn) => !prevIsCameraOn);
   };
 
@@ -31,12 +32,12 @@ const PhoneHeader = () => {
     facingMode: 'user',
   };
 
-  const capture = useCallback(() => {
+  const capture = useCallback((): void => {
     const imageSrc = webcamRef.current?.getScreenshot();
     setImg(imageSrc || null);
   }, []);
 
-  const handleRetake = () => {
+  const handleRetake = (): void => {
     setImg(null);
     // setShowButtons(false);
   };

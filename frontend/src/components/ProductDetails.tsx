@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { BsPlus, BsX, BsCheck2 } from 'react-icons/bs';
@@ -180,7 +181,9 @@ function ProductDetails({ product }: ProductDetailProps) {
           />
         </div>
         <div className="button">
-          <div className="virtual-try-on">Virtual try-on</div>
+          <Link to="/All-sunglasses">
+            <div className="virtual-try-on">Virtual try-on</div>
+          </Link>
         </div>
       </div>
       <div className="cardprojectdetail">

@@ -6,11 +6,11 @@ import Logo from '../images/logo.png';
 import Search from '../images/search-icon.png';
 import Shoppingbag from '../images/shoppingbag.png';
 
-function Navbar() {
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+const Navbar: React.FC = () => {
+  const [screenWidth, setScreenWidth] = useState<number>(window.innerWidth);
+  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
   useEffect(() => {
-    const handleResize = () => {
+    const handleResize = (): void => {
       setScreenWidth(window.innerWidth);
     };
 
@@ -21,7 +21,7 @@ function Navbar() {
     };
   }, []);
 
-  const toggleMenu = () => {
+  const toggleMenu = (): void => {
     setIsMenuOpen(!isMenuOpen);
   };
   return (
@@ -117,12 +117,15 @@ function Navbar() {
               <li>
                 <Link to="/about">House of OutOn</Link>
               </li>
+              <li>
+                <Link to="/Login"> Login</Link>
+              </li>
             </ul>
           </div>
         )}
       </nav>
     </header>
   );
-}
+};
 
 export default Navbar;

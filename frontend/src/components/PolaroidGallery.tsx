@@ -96,7 +96,7 @@ const PolaroidGallery = () => {
       <div className="button-container-p">
         <div className="button6 yellow-hover send-button">
           <div className="see-more1" onClick={handleSendMyFaves}>
-            Email me my{' '}
+            Email me my
             <img className="heart-email" src={HeartFill} alt="Empty Heart" />
           </div>
         </div>
