@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.02a9a06b.css",
-    "main.js": "/static/js/main.d3aff418.js",
+    "main.js": "/static/js/main.4a4c9401.js",
     "static/media/hero-section-icecream.jpg": "/static/media/hero-section-icecream.b6817c7dfa8f8f2cafaf.jpg",
     "static/media/Product_Tokyo3.png": "/static/media/Product_Tokyo3.8307eef6ac9406578233.png",
     "static/media/Stylefeed_birds.jpg": "/static/media/Stylefeed_birds.a4a77ac97f363785d4dc.jpg",
@@ -59,10 +59,10 @@
     "static/media/bootstrap-icons.woff2?": "/static/media/bootstrap-icons.6d63d0501e5ed7b79dab.woff2",
     "index.html": "/index.html",
     "main.02a9a06b.css.map": "/static/css/main.02a9a06b.css.map",
-    "main.d3aff418.js.map": "/static/js/main.d3aff418.js.map"
+    "main.4a4c9401.js.map": "/static/js/main.4a4c9401.js.map"
   },
   "entrypoints": [
     "static/css/main.02a9a06b.css",
-    "static/js/main.d3aff418.js"
+    "static/js/main.4a4c9401.js"
   ]
 }
